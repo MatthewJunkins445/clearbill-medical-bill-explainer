@@ -7,10 +7,14 @@ Templates use an inline PII marker syntax that is stripped from the final
 text while the exact character offsets are recorded:
 
     <<CATEGORY|value>>   PII that redaction MUST remove (mustRedact: true)
-    <<CATEGORY!|value>>  identifying but allowed to stay (mustRedact: false),
-                         e.g. a facility name or a provider's public NPI
+    <<CATEGORY!|value>>  identifying but allowed to stay (mustRedact: false):
+                         only a facility name, a facility address or a
+                         facility billing phone (see KEEPABLE_CATEGORIES)
 
 A value may contain newlines (used for numbers split across lines).
+
+Clinician names and every NPI are mustRedact: true. The on-device LocalVault
+rehydrates them for display, so the cloud never needs them.
 """
 
 from __future__ import annotations
@@ -27,6 +31,11 @@ PII_CATEGORIES = (
     "DIAGNOSIS", "OTHER_ID",
 )
 
+# The only categories that may be marked mustRedact: false. Even within these,
+# K() is for the facility's own name, address and billing phone; a patient's
+# address or phone always uses M(). validate.py enforces the same list.
+KEEPABLE_CATEGORIES = ("FACILITY_NAME", "ADDRESS", "PHONE")
+
 MARK_RE = re.compile(r"<<([A-Z_]+)(!?)\|(.*?)>>", re.S)
 
 DESC_WIDTH = 34
@@ -40,9 +49,15 @@ def M(category: str, value: str) -> str:
 
 
 def K(category: str, value: str) -> str:
-    """Marker for identifying text that may be kept (mustRedact: false)."""
-    assert category in PII_CATEGORIES, category
+    """Marker for facility text that may be kept (mustRedact: false)."""
+    if category not in KEEPABLE_CATEGORIES:
+        raise ValueError(f"{category} must be redacted; use M(), not K()")
     return f"<<{category}!|{value}>>"
+
+
+def NPI(rng: random.Random) -> str:
+    """Marker for a synthetic NPI. NPIs are always mustRedact: true."""
+    return M("OTHER_ID", fake_npi(rng))
 
 
 def visible(s: str) -> str:

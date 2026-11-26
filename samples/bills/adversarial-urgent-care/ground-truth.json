@@ -9,7 +9,7 @@
     "pdf": "bill.pdf",
     "image": "bill.png"
   },
-  "approxTokens": 474,
+  "approxTokens": 477,
   "pii": [
     {
       "category": "FACILITY_NAME",
@@ -32,8 +32,8 @@
           "end": 167
         },
         {
-          "start": 1817,
-          "end": 1837
+          "start": 1829,
+          "end": 1849
         }
       ]
     },
@@ -128,11 +128,22 @@
     {
       "category": "PROVIDER_NAME",
       "value": "Ezekiel Pumpernickel PA-C",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 393,
           "end": 418
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "1044343842",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 420,
+          "end": 430
         }
       ]
     },
@@ -142,8 +153,8 @@
       "mustRedact": true,
       "occurrences": [
         {
-          "start": 423,
-          "end": 460
+          "start": 435,
+          "end": 472
         }
       ]
     },
@@ -153,12 +164,12 @@
       "mustRedact": true,
       "occurrences": [
         {
-          "start": 709,
-          "end": 728
+          "start": 721,
+          "end": 740
         },
         {
-          "start": 1792,
-          "end": 1811
+          "start": 1804,
+          "end": 1823
         }
       ]
     },
@@ -168,8 +179,8 @@
       "mustRedact": true,
       "occurrences": [
         {
-          "start": 818,
-          "end": 833
+          "start": 830,
+          "end": 845
         }
       ]
     },
@@ -179,12 +190,12 @@
       "mustRedact": true,
       "occurrences": [
         {
-          "start": 1009,
-          "end": 1028
+          "start": 1021,
+          "end": 1040
         },
         {
-          "start": 1874,
-          "end": 1893
+          "start": 1886,
+          "end": 1905
         }
       ]
     },
@@ -194,8 +205,8 @@
       "mustRedact": true,
       "occurrences": [
         {
-          "start": 1080,
-          "end": 1088
+          "start": 1092,
+          "end": 1100
         }
       ]
     },
@@ -205,8 +216,8 @@
       "mustRedact": true,
       "occurrences": [
         {
-          "start": 1752,
-          "end": 1764
+          "start": 1764,
+          "end": 1776
         }
       ]
     }

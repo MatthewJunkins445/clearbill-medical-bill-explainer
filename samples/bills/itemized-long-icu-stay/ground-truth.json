@@ -182,7 +182,7 @@
     {
       "category": "PROVIDER_NAME",
       "value": "Dr. Cornelius Fumblebee",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 378,
@@ -193,7 +193,7 @@
     {
       "category": "OTHER_ID",
       "value": "1876836169",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 407,

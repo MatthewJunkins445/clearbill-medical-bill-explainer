@@ -91,7 +91,7 @@
     {
       "category": "PROVIDER_NAME",
       "value": "Ophelia Quackenbush, MD",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 471,

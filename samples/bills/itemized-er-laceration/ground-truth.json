@@ -162,7 +162,7 @@
     {
       "category": "PROVIDER_NAME",
       "value": "Dr. Hortense Noodleman",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 647,
@@ -173,7 +173,7 @@
     {
       "category": "OTHER_ID",
       "value": "1270925113",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 676,

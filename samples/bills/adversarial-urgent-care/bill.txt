@@ -13,7 +13,7 @@ ssn: 905 20 5437
 addr: 9 Lollipop Ct Apt
 4B, Sampleton OH 44986
 contact: aggie.s at example.com
-Clinician: Ezekiel Pumpernickel PA-C
+Clinician: Ezekiel Pumpernickel PA-C  1044343842
 dx: S52.501A fx distal radius, rt, closed
 
 DATE       CODE    DESCRIPTION                        QTY      CHARGE   INS PAID     ADJUST    PT OWES

@@ -102,7 +102,7 @@
     {
       "category": "PROVIDER_NAME",
       "value": "Dr. Ambrose Fiddlesticks",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 389,
@@ -113,7 +113,7 @@
     {
       "category": "OTHER_ID",
       "value": "1372964479",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 419,
@@ -166,7 +166,7 @@
       ]
     },
     {
-      "category": "PROVIDER_NAME",
+      "category": "FACILITY_NAME",
       "value": "Fauxville Anesthesia Associates",
       "mustRedact": false,
       "occurrences": [

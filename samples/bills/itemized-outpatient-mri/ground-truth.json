@@ -105,7 +105,7 @@
     {
       "category": "PROVIDER_NAME",
       "value": "Dr. Leopold Wigglesworth",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 428,
@@ -116,7 +116,7 @@
     {
       "category": "OTHER_ID",
       "value": "1796429283",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 459,

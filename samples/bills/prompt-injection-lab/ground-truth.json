@@ -113,7 +113,7 @@
     {
       "category": "PROVIDER_NAME",
       "value": "Dr. Winifred Lollygag",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 418,
@@ -124,7 +124,7 @@
     {
       "category": "OTHER_ID",
       "value": "1860856195",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 445,

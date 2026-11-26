@@ -44,10 +44,11 @@ samples/
 | not-medical-utility | not_medical | none |
 | prompt-injection-lab | itemized_bill | POSSIBLE_UNBUNDLING, OTHER (prompt injection) |
 
-The adversarial bill puts names inside line descriptions, writes names in
-lowercase and after "Pt:" prefixes, splits the account number, member ID,
-phone number and address across lines, spaces out the SSN and writes the email
-as "name at example.com". DOBs appear in seven formats across the set.
+The adversarial bill puts patient and relative names inside line
+descriptions, writes names in lowercase and after "Pt:" prefixes, splits the
+account number, member ID, phone number and address across lines, spaces out
+the SSN, writes the email as "name at example.com" and prints the clinician's
+NPI with no "NPI" label. DOBs appear in seven formats across the set.
 
 ## Ground-truth conventions
 
@@ -56,10 +57,30 @@ as "name at example.com". DOBs appear in seven formats across the set.
   bytes. Every occurrence is listed. Matching is exact and case-sensitive, so
   `AGATHA SPROCKETMORE` and `agatha sprocketmore` are separate entries. A value
   may contain `\n` when the bill splits it across lines.
-- `mustRedact: false` marks identifying text the app may keep because the
-  explanation needs it: facility names and addresses, billing phone numbers,
-  provider names and provider NPIs. Everything about the patient or their family
-  is `mustRedact: true`, including diagnoses.
+- `mustRedact: false` is allowed for three things only: the facility's name
+  (`FACILITY_NAME`, which includes group practices such as "Fauxville
+  Emergency Physicians"), the facility's address (`ADDRESS`) and the
+  facility's billing phone (`PHONE`). A patient's own address or phone is
+  always `mustRedact: true`.
+- Everything else is `mustRedact: true`: `PATIENT_NAME`, `PERSON_NAME`
+  (relatives, account holders), `PROVIDER_NAME` (every individual clinician:
+  physicians, PAs, NPs), `DOB`, `SSN`, `MEMBER_ID`, `ACCOUNT_NUMBER`, `EMAIL`,
+  `DIAGNOSIS` and every `OTHER_ID`, which includes MRNs, group, claim and
+  requisition numbers and every NPI (individual or group).
+- Why clinicians are redacted: a clinician's name and NPI, together with a
+  service date and facility, narrow down who the patient is, and the cloud
+  model does not need them to audit a bill. The redaction contract's
+  LocalVault keeps the original values on the device and rehydrates the
+  redaction placeholders in the explanation the user sees. So the user still reads "Dr. Hortense Noodleman", and the cloud never
+  receives it.
+- Line-item descriptions are raw. `lineItems[].description` is the
+  description as printed on the bill (whitespace collapsed), PII included. On
+  the adversarial bill, descriptions contain the patient's and her mother's
+  names ("Visit est pt, seen w/ agatha sprocketmore", "mom Bertha Sprocketmore
+  present"). Those names are listed in `pii` with offsets into `bill.txt` like
+  any other occurrence. A redactor must work on the full text, descriptions
+  included. Code that compares line items after redaction should compare
+  codes, dates and amounts, not descriptions.
 - `mustKeep` lists the codes, service dates, line charges and totals that
   redaction must not remove.
 - Each line item's adjustment is implicit:
@@ -72,11 +93,21 @@ as "name at example.com". DOBs appear in seven formats across the set.
 
 ## Synthetic-data rules (enforced by validate.py)
 
-- Phone numbers use 555-0100 to 555-0199, the range reserved for fiction.
+- Phone numbers use 555-0100 to 555-0199, the range reserved for fiction, on
+  geographic area codes (330, 717, 970, 320). Toll-free area codes (800, 888,
+  877, 866, 855, 844, 833) are rejected: 555-01xx is reserved only for
+  geographic area codes, so a toll-free 555 number could be real.
 - Emails and URLs are on example.com or example.org.
 - SSNs use area numbers 900-999, which are never issued, and group 01-49,
   which is outside the ITIN ranges.
-- NPIs fail the NPI Luhn check with the 80840 prefix.
+- NPIs fail the NPI Luhn check with the 80840 prefix. The validator finds NPIs
+  three ways: a 10-digit number after an "NPI" label, an unlabeled 10-digit
+  number on the same line as a `PROVIDER_NAME` and within 40 characters of
+  it, and any `OTHER_ID` value that is exactly 10 digits. Each one must fail
+  the check digit and be listed in `pii` with `mustRedact: true`. Limit: an
+  unlabeled 10-digit number that is far from any provider name, or on another
+  line, is not recognised as an NPI. Mark it with `NPI(r)` in the generator
+  and it is covered by the third rule.
 - The digits in each member ID fail a Luhn mod-10 check.
 - Names are deliberately whimsical and towns are fictional (Sampleton OH,
   Fauxville PA, Nowhere Falls CO, Lake Imaginary MN). ZIP codes are in the
@@ -99,8 +130,9 @@ the Courier Type 1 font bundled with reportlab, not a system font. The
 generated files are committed.
 
 To add a bill, write a builder in `generator/bills.py`. Wrap each PII value
-with `M(CATEGORY, value)`, or with `K(...)` if it may be kept, and add the
-builder to `BUILDERS`. The generator records the offsets itself. It refuses to
+with `M(CATEGORY, value)`, and each NPI with `NPI(r)`. Use `K(...)` only for the
+facility's name, address and billing phone. `K()` raises for any other
+category. Add the builder to `BUILDERS`. The generator records the offsets itself. It refuses to
 write a bill if a marked value also appears anywhere unmarked.
 
 ## Validate
@@ -112,7 +144,9 @@ python samples/generator/validate.py
 The validator needs only the standard library, so it runs without the venv.
 It exits with a non-zero code on any failure. It checks the schema, ASCII
 text, exact and exhaustive PII offsets, mustKeep values that sit outside
-redacted spans, the synthetic-number rules, the totals arithmetic and
+redacted spans, the redaction policy (only `FACILITY_NAME`, `ADDRESS` and
+`PHONE` may be `mustRedact: false`, and every NPI is redacted), the
+synthetic-number rules, the totals arithmetic and
 duplicate-line consistency. It also checks coverage across the set: bill
 kinds, every issue type, at least 3 DOB formats and a long bill over 9K
 tokens.

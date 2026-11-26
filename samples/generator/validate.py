@@ -7,7 +7,11 @@ Exits 0 when every check passes, 1 otherwise. Checks:
   * bill.txt is printable ASCII (plus newlines)
   * every pii value sits exactly at its listed offsets, with no unlisted occurrence
   * mustKeep values occur outside every mustRedact span
-  * synthetic-number rules (phones, emails, URLs, SSNs, NPIs, member IDs)
+  * redaction policy: only FACILITY_NAME, ADDRESS and PHONE may be mustRedact false;
+    every NPI (labeled, unlabeled next to a provider name, or a 10-digit OTHER_ID)
+    is listed as pii with mustRedact true
+  * synthetic-number rules (phones incl. no toll-free area codes, emails, URLs,
+    SSNs, NPIs, member IDs)
   * totals arithmetic, except where a MATH_ERROR is planted (then it must actually fail)
   * planted-issue line indexes; duplicates really are identical lines
   * set-level coverage: bill kinds, every issue type, >= 3 DOB formats, long bill
@@ -29,6 +33,15 @@ SCHEMA = SAMPLES / "schema" / "ground-truth.schema.json"
 ISSUE_TYPES = {"DUPLICATE_CHARGE", "MATH_ERROR", "POSSIBLE_UPCODING", "POSSIBLE_UNBUNDLING",
                "NO_ITEMIZATION", "OUT_OF_NETWORK_SURPRISE", "SERVICE_NOT_RECEIVED_CHECK", "OTHER"}
 EXAMPLE_DOMAINS = ("example.com", "example.org")
+
+# Only facility identity (name, address, billing phone) may survive redaction.
+# Patient, relative and clinician identity, diagnoses and every ID are always
+# mustRedact true. Keep in sync with common.KEEPABLE_CATEGORIES.
+KEEPABLE_CATEGORIES = {"FACILITY_NAME", "ADDRESS", "PHONE"}
+TOLL_FREE_AREA_CODES = {"800", "888", "877", "866", "855", "844", "833"}
+# How far (same line only) from a provider name an unlabeled 10-digit number is
+# treated as that provider's NPI.
+NPI_NEIGHBOURHOOD = 40
 
 errors: list[str] = []
 
@@ -122,6 +135,8 @@ def phone_ok(raw: str) -> bool:
     if len(d) == 11 and d[0] == "1":
         d = d[1:]
     if len(d) == 10:
+        if d[:3] in TOLL_FREE_AREA_CODES:
+            return False
         d = d[3:]
     return len(d) == 7 and d.startswith("55501")
 
@@ -138,6 +153,50 @@ SSN_RE = re.compile(r"(?<!\d)\d{3}[- ]\d{2}[- ]\d{4}(?!\d)")
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@([A-Za-z0-9.-]+\.[A-Za-z]{2,})")
 URL_RE = re.compile(r"(?:https?://|www\.)([A-Za-z0-9.-]+)")
 NPI_RE = re.compile(r"NPI[^0-9\n]{0,4}(\d{10})(?!\d)")
+BARE_10_DIGITS_RE = re.compile(r"(?<![\dA-Za-z-])\d{10}(?!\d)")
+
+
+def find_npis(text, pii):
+    """Return {npi_value: reason} for every NPI the validator can recognise.
+
+    Recognised: a 10-digit number after an "NPI" label; an unlabeled 10-digit
+    number on the same line as, and within NPI_NEIGHBOURHOOD characters of, a
+    PROVIDER_NAME occurrence; any OTHER_ID pii value that is exactly 10 digits.
+    Not recognised: an unlabeled 10-digit number far from any provider name.
+    """
+    found = {}
+    for m in NPI_RE.finditer(text):
+        found.setdefault(m.group(1), "labeled NPI")
+    for p in pii:
+        if p["category"] == "OTHER_ID" and re.fullmatch(r"\d{10}", p["value"]):
+            found.setdefault(p["value"], "10-digit OTHER_ID")
+        if p["category"] != "PROVIDER_NAME":
+            continue
+        for o in p["occurrences"]:
+            line_start = text.rfind("\n", 0, o["start"]) + 1
+            line_end = text.find("\n", o["end"])
+            line_end = len(text) if line_end == -1 else line_end
+            lo = max(line_start, o["start"] - NPI_NEIGHBOURHOOD)
+            hi = min(line_end, o["end"] + NPI_NEIGHBOURHOOD)
+            for m in BARE_10_DIGITS_RE.finditer(text, lo, hi):
+                found.setdefault(m.group(0), f"unlabeled, next to {p['value']!r}")
+    return found
+
+
+def check_redaction_policy(bid, text, pii):
+    for p in pii:
+        if not p["mustRedact"] and p["category"] not in KEEPABLE_CATEGORIES:
+            fail(bid, f"{p['category']} {p['value']!r} is mustRedact false; only "
+                      f"{sorted(KEEPABLE_CATEGORIES)} may be kept")
+    by_value = {p["value"]: p for p in pii}
+    for npi, why in sorted(find_npis(text, pii).items()):
+        if luhn_ok("80840" + npi):
+            fail(bid, f"NPI {npi} ({why}) passes the check digit (could be real)")
+        p = by_value.get(npi)
+        if p is None:
+            fail(bid, f"NPI {npi} ({why}) is not listed in pii")
+        elif not p["mustRedact"]:
+            fail(bid, f"NPI {npi} ({why}) is mustRedact false")
 
 
 def domain_ok(host: str) -> bool:
@@ -148,7 +207,8 @@ def domain_ok(host: str) -> bool:
 def check_synthetic(bid, text, pii):
     for m in PHONE_RE.finditer(text):
         if not phone_ok(m.group(0)):
-            fail(bid, f"phone-like number {m.group(0)!r} is not 555-01xx")
+            fail(bid, f"phone-like number {m.group(0)!r} is not 555-01xx on a geographic "
+                      f"(non-toll-free) area code")
     for m in SSN_RE.finditer(text):
         if PHONE_RE.fullmatch(m.group(0)):
             continue
@@ -160,13 +220,10 @@ def check_synthetic(bid, text, pii):
     for m in URL_RE.finditer(text):
         if not domain_ok(m.group(1)):
             fail(bid, f"URL host {m.group(1)!r} is not example.com/.org")
-    for m in NPI_RE.finditer(text):
-        if luhn_ok("80840" + m.group(1)):
-            fail(bid, f"NPI {m.group(1)} passes the check digit (could be real)")
     for p in pii:
         v, cat = p["value"], p["category"]
         if cat == "PHONE" and not phone_ok(v):
-            fail(bid, f"PHONE {v!r} is not 555-01xx")
+            fail(bid, f"PHONE {v!r} is not 555-01xx on a geographic area code")
         if cat == "SSN" and not ssn_ok(v):
             fail(bid, f"SSN {v!r} not in area 900-999 / group 01-49")
         if cat == "EMAIL" and not re.search(r"(?:@|\sat\s)(?:[\w-]+\.)*example\.(?:com|org)$", v):
@@ -253,6 +310,7 @@ def check_bill(d: Path, schema):
             fail(bid, f"mustKeep {v!r} has no occurrence outside redacted spans")
 
     check_synthetic(bid, text, gt["pii"])
+    check_redaction_policy(bid, text, gt["pii"])
 
     # Totals arithmetic.
     items = gt["lineItems"]

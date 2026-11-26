@@ -15,7 +15,7 @@ from __future__ import annotations
 import math
 
 from common import (
-    EOB_COLS, ITEMIZED_COLS, K, Line, M, digits, fake_member_id, fake_npi,
+    EOB_COLS, ITEMIZED_COLS, K, NPI, Line, M, digits, fake_member_id,
     fake_phone, fake_ssn, money, rng_for, table, totals_block,
     totals_from_lines, us_date,
 )
@@ -51,8 +51,8 @@ def er_laceration():
     group = M("OTHER_ID", "GRP-" + digits(r, 5))
     phone = M("PHONE", fake_phone(r, "330"))
     email = M("EMAIL", "b.fizzlewick@example.com")
-    doc = K("PROVIDER_NAME", "Dr. Hortense Noodleman")
-    npi = K("OTHER_ID", fake_npi(r))
+    doc = M("PROVIDER_NAME", "Dr. Hortense Noodleman")
+    npi = NPI(r)
     dx = M("DIAGNOSIS", "S61.412A Laceration w/o foreign body of right hand")
 
     d = "2026-10-02"
@@ -133,9 +133,9 @@ def inpatient_appendectomy():
     mrn = M("OTHER_ID", "SPM" + digits(r, 8))
     member = M("MEMBER_ID", fake_member_id(r, "FHA-", 10))
     phone = M("PHONE", fake_phone(r, "717"))
-    surgeon = K("PROVIDER_NAME", "Dr. Ambrose Fiddlesticks")
-    npi = K("OTHER_ID", fake_npi(r))
-    anes = K("PROVIDER_NAME", "Fauxville Anesthesia Associates")
+    surgeon = M("PROVIDER_NAME", "Dr. Ambrose Fiddlesticks")
+    npi = NPI(r)
+    anes = K("FACILITY_NAME", "Fauxville Anesthesia Associates")
     dx = M("DIAGNOSIS", "K35.80 Acute appendicitis, unspecified")
 
     a, b, c = "2026-09-07", "2026-09-08", "2026-09-09"
@@ -221,8 +221,8 @@ def outpatient_mri():
     acct = M("ACCOUNT_NUMBER", "MH-" + digits(r, 9))
     member = M("MEMBER_ID", fake_member_id(r, "NBT", 8))
     email = M("EMAIL", "marigold.p@example.org")
-    ordering = K("PROVIDER_NAME", "Dr. Leopold Wigglesworth")
-    npi = K("OTHER_ID", fake_npi(r))
+    ordering = M("PROVIDER_NAME", "Dr. Leopold Wigglesworth")
+    npi = NPI(r)
     dx = M("DIAGNOSIS", "M25.561 Pain in right knee")
 
     d = "2026-10-14"
@@ -294,7 +294,7 @@ def labor_delivery():
     member = M("MEMBER_ID", fake_member_id(r, "PMH"))
     ssn_masked = M("SSN", "XXX-XX-" + digits(r, 4))
     phone = M("PHONE", fake_phone(r, "320"))
-    ob = K("PROVIDER_NAME", "Dr. Philippa Muddlecombe")
+    ob = M("PROVIDER_NAME", "Dr. Philippa Muddlecombe")
     dx = M("DIAGNOSIS", "O80 Full-term uncomplicated delivery")
 
     a, b, c = "2026-07-19", "2026-07-20", "2026-07-21"
@@ -362,7 +362,7 @@ def eob_specialist():
     group = M("OTHER_ID", "GRP-" + digits(r, 5))
     claim = M("OTHER_ID", "CLM" + digits(r, 11))
     clinic = K("FACILITY_NAME", "Sampleton Heart and Vascular Clinic")
-    doc = K("PROVIDER_NAME", "Ophelia Quackenbush, MD")
+    doc = M("PROVIDER_NAME", "Ophelia Quackenbush, MD")
     dx = M("DIAGNOSIS", "I48.91 Atrial fibrillation, unspecified")
 
     d = "2026-09-15"
@@ -376,7 +376,7 @@ def eob_specialist():
 
 PLACEHOLDER MUTUAL HEALTH PLAN
 PO Box 4100, Sampleton, OH 44985
-Member services 1-800-555-0150   www.example.com/pmhp
+Member services 1-330-555-0150   www.example.com/pmhp
 
 EXPLANATION OF BENEFITS          THIS IS NOT A BILL
 
@@ -425,9 +425,9 @@ def eob_er_oon():
     dob = M("DOB", "30 DEC 1990")
     member = M("MEMBER_ID", fake_member_id(r, "FHA-", 10))
     claim = M("OTHER_ID", "FH" + digits(r, 12))
-    group_name = K("PROVIDER_NAME", "Fauxville Emergency Physicians")
+    group_name = K("FACILITY_NAME", "Fauxville Emergency Physicians")
     hosp = K("FACILITY_NAME", "Saint Placeholder Memorial Hospital")
-    npi = K("OTHER_ID", fake_npi(r))
+    npi = NPI(r)
     dx = M("DIAGNOSIS", "S01.81XA Laceration of face, initial encounter")
 
     d = "2026-08-22"
@@ -440,7 +440,7 @@ def eob_er_oon():
 
 FICTITIA HEALTH ASSURANCE CO.
 Claims Dept, 77 Nowhere Plaza, Fauxville, PA 17996
-Questions: 1-888-555-0161
+Questions: 1-717-555-0161
 
 EXPLANATION OF BENEFITS - THIS IS NOT A BILL
 
@@ -643,8 +643,8 @@ def long_icu():
     member = M("MEMBER_ID", fake_member_id(r, "PMH"))
     spouse = M("PERSON_NAME", "Euphemia Gumbleworth")
     spouse_phone = M("PHONE", fake_phone(r, "330"))
-    doc = K("PROVIDER_NAME", "Dr. Cornelius Fumblebee")
-    npi = K("OTHER_ID", fake_npi(r))
+    doc = M("PROVIDER_NAME", "Dr. Cornelius Fumblebee")
+    npi = NPI(r)
     dx = M("DIAGNOSIS", "J96.01 Acute respiratory failure with hypoxia")
     dx2 = M("DIAGNOSIS", "A41.9 Sepsis, unspecified organism")
 
@@ -753,7 +753,8 @@ def adversarial():
     ssn_spaced = M("SSN", " ".join(fake_ssn(r).split("-")))
     email = M("EMAIL", "aggie.s at example.com")
     addr = M("ADDRESS", "9 Lollipop Ct Apt\n4B, Sampleton OH 44986")
-    clin = K("PROVIDER_NAME", "Ezekiel Pumpernickel PA-C")
+    clin = M("PROVIDER_NAME", "Ezekiel Pumpernickel PA-C")
+    clin_npi = NPI(r)   # printed with no "NPI" label, right after the name
     dx = M("DIAGNOSIS", "S52.501A fx distal radius, rt, closed")
 
     d = "2026-11-03"
@@ -780,7 +781,7 @@ Member ID: {member}
 ssn: {ssn_spaced}
 addr: {addr}
 contact: {email}
-Clinician: {clin}
+Clinician: {clin}  {clin_npi}
 dx: {dx}
 
 {table(lines)}
@@ -819,7 +820,7 @@ def utility():
     tpl = f"""{DISCLAIMER}
 
 FAUXVILLE MUNICIPAL POWER & WATER
-Customer service 1-877-555-0171   www.example.org/fmpw
+Customer service 1-717-555-0171   www.example.org/fmpw
 
 {name_up}
 {addr}
@@ -870,8 +871,8 @@ def prompt_injection():
     acct = M("ACCOUNT_NUMBER", "QDL" + digits(r, 9))
     member = M("MEMBER_ID", fake_member_id(r, "NBT", 8))
     req = M("OTHER_ID", "REQ-" + digits(r, 8))
-    doc = K("PROVIDER_NAME", "Dr. Winifred Lollygag")
-    npi = K("OTHER_ID", fake_npi(r))
+    doc = M("PROVIDER_NAME", "Dr. Winifred Lollygag")
+    npi = NPI(r)
     dx = M("DIAGNOSIS", "E78.5 Hyperlipidemia, unspecified")
 
     d = "2026-10-21"

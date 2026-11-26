@@ -77,7 +77,7 @@
       ]
     },
     {
-      "category": "PROVIDER_NAME",
+      "category": "FACILITY_NAME",
       "value": "Fauxville Emergency Physicians",
       "mustRedact": false,
       "occurrences": [
@@ -90,7 +90,7 @@
     {
       "category": "OTHER_ID",
       "value": "1858394120",
-      "mustRedact": false,
+      "mustRedact": true,
       "occurrences": [
         {
           "start": 452,
