@@ -14,7 +14,7 @@ Throughout, `<project>` means your Firebase project ID (for example `clearbill-d
 - [ ] 4. Create a reCAPTCHA Enterprise key and register it in App Check
 - [ ] 5. Add an App Check debug token for local development
 - [ ] 6. Enable Anonymous sign-in
-- [ ] 7. Create the Remote Config parameters
+- [ ] 7. Create the Remote Config parameters and the region condition
 - [ ] 8. Restrict the browser API key
 - [ ] 9. Install the Firebase CLI and log in
 - [ ] 10. Firestore: deferred, do nothing yet
@@ -84,16 +84,29 @@ Once Firebase initialization is wired up, `npm run dev` on localhost can use the
 1. Open **Remote Config** (wording unverified; it may be under **Run** or **Engage**) and choose **Create configuration**.
 2. Add these parameters with these default values:
 
-   | Parameter                | Type    | Default            |
-   | ------------------------ | ------- | ------------------ |
-   | `cloud_features_enabled` | Boolean | `true`             |
-   | `cloud_model`            | String  | `gemini-3.8-flash` |
-   | `prompt_version`         | String  | `v1`               |
-   | `max_device_input_chars` | Number  | `16000`            |
+   | Parameter                | Type    | Server default     | In-app fallback    |
+   | ------------------------ | ------- | ------------------ | ------------------ |
+   | `cloud_features_enabled` | Boolean | `true`             | `true`             |
+   | `cloud_region_allowed`   | Boolean | `true`             | `false`            |
+   | `cloud_model`            | String  | `gemini-3.8-flash` | `gemini-3.8-flash` |
+   | `prompt_version`         | String  | `v1`               | `v1`               |
+   | `max_device_input_chars` | Number  | `16000`            | `16000`            |
 
-3. Choose **Publish changes**. Nothing reaches clients until you publish.
+   The server default is the value published from the console. The in-app fallback is what the app uses when the startup fetch fails or times out (five seconds), so cloud features fail closed.
 
-`cloud_features_enabled=false` is the kill switch: it turns off every cloud call without a redeploy.
+3. Add a **Country/Region** condition (wording unverified) named `EEA, GB and CH` that sets `cloud_region_allowed` to `false`. Select these countries:
+
+   Austria (AT), Belgium (BE), Bulgaria (BG), Croatia (HR), Cyprus (CY), Czechia (CZ), Denmark (DK), Estonia (EE), Finland (FI), France (FR), Germany (DE), Greece (GR), Hungary (HU), Ireland (IE), Italy (IT), Latvia (LV), Lithuania (LT), Luxembourg (LU), Malta (MT), Netherlands (NL), Poland (PL), Portugal (PT), Romania (RO), Slovakia (SK), Slovenia (SI), Spain (ES), Sweden (SE), Iceland (IS), Liechtenstein (LI), Norway (NO), United Kingdom (GB), Switzerland (CH).
+
+   Use **GB** (United Kingdom), not `UK`; the Firebase docs example gets this wrong.
+
+4. Choose **Publish changes**. Nothing reaches clients until you publish.
+
+`cloud_features_enabled=false` is the single kill switch: it turns off every cloud call without a redeploy. There is no second kill-switch key.
+
+`cloud_region_allowed` is the region gate for cloud features. Its in-app fallback is `false` (fail closed) and its server default is `true`, so a client can use cloud inference only after a successful fetch leaves the region condition unset. The condition is evaluated server-side from the request IP, so a VPN or proxy can defeat it, and cached config persists between fetches. Treat it as a client-side UX gate, not server enforcement. This follows the A7 finding that Remote Config country conditions are supported on Web and are IP-based.
+
+`cloud_real_bills` is **not** a Remote Config parameter in Plan B. Cloud inference for real (imported) bills stays hardcoded off, and imported bills are device-only. Adding the key would imply a paid path that the free plan does not support; revisit it only with an explicit contract change.
 
 ## 8. Restrict the browser API key
 
