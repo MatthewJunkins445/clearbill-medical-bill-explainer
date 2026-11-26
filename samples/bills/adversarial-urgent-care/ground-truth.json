@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "id": "adversarial-urgent-care",
+  "synthetic": true,
+  "kind": "itemized_bill",
+  "description": "Urgent-care bill built to break naive redaction: lowercase names, 'Pt:' prefixes, names inside line descriptions, numbers split across lines, spaced SSN and an obfuscated email.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf",
+    "image": "bill.png"
+  },
+  "approxTokens": 474,
+  "pii": [
+    {
+      "category": "FACILITY_NAME",
+      "value": "Sampleton Urgent Care Pavilion",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 74,
+          "end": 104
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "sprocketmore, agatha",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 147,
+          "end": 167
+        },
+        {
+          "start": 1817,
+          "end": 1837
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "19790105",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 181,
+          "end": 189
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "AGATHA SPROCKETMORE",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 204,
+          "end": 223
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "Jan 5, 1979",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 231,
+          "end": 242
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "88-\n41207-3",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 251,
+          "end": 262
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "SQX-\n120239",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 274,
+          "end": 285
+        }
+      ]
+    },
+    {
+      "category": "SSN",
+      "value": "905 20 5437",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 291,
+          "end": 302
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "9 Lollipop Ct Apt\n4B, Sampleton OH 44986",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 309,
+          "end": 349
+        }
+      ]
+    },
+    {
+      "category": "EMAIL",
+      "value": "aggie.s at example.com",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 359,
+          "end": 381
+        }
+      ]
+    },
+    {
+      "category": "PROVIDER_NAME",
+      "value": "Ezekiel Pumpernickel PA-C",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 393,
+          "end": 418
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "S52.501A fx distal radius, rt, closed",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 423,
+          "end": 460
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "agatha sprocketmore",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 709,
+          "end": 728
+        },
+        {
+          "start": 1792,
+          "end": 1811
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Sprocketmore A.",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 818,
+          "end": 833
+        }
+      ]
+    },
+    {
+      "category": "PERSON_NAME",
+      "value": "Bertha Sprocketmore",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 1009,
+          "end": 1028
+        },
+        {
+          "start": 1874,
+          "end": 1893
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Aggie S.",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 1080,
+          "end": 1088
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "330 555\n0163",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 1752,
+          "end": 1764
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "99213",
+      "reason": "CPT code"
+    },
+    {
+      "value": "73110",
+      "reason": "CPT code"
+    },
+    {
+      "value": "29125",
+      "reason": "CPT code"
+    },
+    {
+      "value": "L3908",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "96372",
+      "reason": "CPT code"
+    },
+    {
+      "value": "J1885",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "11/03/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "185.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "160.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "210.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "95.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "60.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "18.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "728.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "250.00",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "343.00",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "153.00",
+      "reason": "total patientResponsibility"
+    }
+  ],
+  "lineItems": [
+    {
+      "serviceDate": "2026-11-03",
+      "code": "99213",
+      "codeSystem": "CPT",
+      "description": "Visit est pt, seen w/ agatha sprocketmore",
+      "units": 1,
+      "charge": 185.0,
+      "insurancePaid": 90.0,
+      "patientOwes": 30.0
+    },
+    {
+      "serviceDate": "2026-11-03",
+      "code": "73110",
+      "codeSystem": "CPT",
+      "description": "X-ray wrist 3v - Pt: Sprocketmore A.",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 75.0,
+      "patientOwes": 30.0
+    },
+    {
+      "serviceDate": "2026-11-03",
+      "code": "29125",
+      "codeSystem": "CPT",
+      "description": "Short arm splint mom Bertha Sprocketmore present",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 100.0,
+      "patientOwes": 40.0
+    },
+    {
+      "serviceDate": "2026-11-03",
+      "code": "L3908",
+      "codeSystem": "HCPCS",
+      "description": "Wrist brace prefab (for Aggie S.)",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 40.0,
+      "patientOwes": 20.0
+    },
+    {
+      "serviceDate": "2026-11-03",
+      "code": "96372",
+      "codeSystem": "CPT",
+      "description": "Inj ther/proph IM",
+      "units": 1,
+      "charge": 60.0,
+      "insurancePaid": 30.0,
+      "patientOwes": 10.0
+    },
+    {
+      "serviceDate": "2026-11-03",
+      "code": "J1885",
+      "codeSystem": "HCPCS",
+      "description": "ketorolac 15mg",
+      "units": 2,
+      "charge": 18.0,
+      "insurancePaid": 8.0,
+      "patientOwes": 5.0
+    }
+  ],
+  "totals": {
+    "charges": 728.0,
+    "adjustments": 250.0,
+    "insurancePaid": 343.0,
+    "patientResponsibility": 153.0
+  },
+  "plantedIssues": [
+    {
+      "type": "MATH_ERROR",
+      "lineIndexes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "note": "Line items owe 135.00 in total but the printed patient responsibility is 153.00 (transposed digits)."
+    }
+  ],
+  "tags": [
+    "adversarial",
+    "urgent_care",
+    "split_numbers",
+    "lowercase_names",
+    "png"
+  ]
+}

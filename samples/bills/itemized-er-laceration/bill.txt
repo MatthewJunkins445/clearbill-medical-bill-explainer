@@ -1,0 +1,48 @@
+SYNTHETIC SAMPLE - NOT A REAL BILL - ALL NAMES AND NUMBERS ARE FICTIONAL
+
+Nonesuch Valley General Hospital
+4400 Placeholder Pkwy
+Sampleton, OH 44985
+Billing questions: (330) 555-0110  billing@example.org
+
+ITEMIZED STATEMENT OF HOSPITAL CHARGES
+
+Statement date: 10/28/2026          Account number: NV81995635
+Patient: Barnaby Fizzlewick          Medical record: MRN3463228
+Date of birth: 03/14/1961
+Guarantor: Barnaby Fizzlewick
+Mailing address:
+77 Gumdrop Hollow Rd
+Sampleton, OH 44987
+Phone: (330) 555-0170   Email: b.fizzlewick@example.com
+
+Primary insurance: Placeholder Mutual Health Plan
+Member ID: PMH563466991   Group: GRP-48946
+Attending: Dr. Hortense Noodleman   NPI 1270925113
+Admit type: Emergency   Date of service: 10/02/2026
+Principal diagnosis: S61.412A Laceration w/o foreign body of right hand
+
+DATE       CODE    DESCRIPTION                        QTY      CHARGE   INS PAID     ADJUST    PT OWES
+------------------------------------------------------------------------------------------------------
+10/02/2026 99285   ER visit, high complexity            1    2,450.00   1,102.50     980.00     367.50
+10/02/2026 12002   Simple wound repair 2.6-7.5 cm       1      890.00     400.50     356.00     133.50
+10/02/2026 90715   Tdap vaccine, IM                     1      145.00      65.25      58.00      21.75
+10/02/2026 90715   Tdap vaccine, IM                     1      145.00      65.25      58.00      21.75
+10/02/2026 90471   Immunization admin, first            1       60.00      27.00      24.00       9.00
+10/02/2026 73130   X-ray hand, 3+ views                 1      410.00     184.50     164.00      61.50
+10/02/2026 A6402   Gauze, sterile, per pad              4       24.00      10.80       9.60       3.60
+
+                                                    TOTAL CHARGES                     4,124.00
+                                                    TOTAL ADJUSTMENTS                 1,649.60
+                                                    TOTAL INSURANCE PAID              1,855.80
+                                                    PATIENT RESPONSIBILITY              618.60
+
+Amount due by 11/27/2026: 618.60
+Pay online at https://pay.example.org/nvgh or call (330) 555-0110.
+Financial assistance may be available. Ask us about our charity care policy.
+
+------------------------- detach and return with payment -------------------------
+FIZZLEWICK, BARNABY    Account NV81995635
+77 Gumdrop Hollow Rd
+Sampleton, OH 44987
+Amount due: 618.60    Amount enclosed: ____________

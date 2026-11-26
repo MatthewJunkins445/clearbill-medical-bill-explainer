@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "not-medical-utility",
+  "synthetic": true,
+  "kind": "not_medical",
+  "description": "Municipal electric and water bill; the app should recognise it is not a medical bill and decline to audit it.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf",
+    "image": "bill.png"
+  },
+  "approxTokens": 263,
+  "pii": [
+    {
+      "category": "PERSON_NAME",
+      "value": "ROSAMUND KETTLEBY",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 164,
+          "end": 181
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "302 Teakettle Trace\nFauxville, PA 17994",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 182,
+          "end": 221
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "467-02274-30",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 239,
+          "end": 251
+        }
+      ]
+    },
+    {
+      "category": "EMAIL",
+      "value": "r.kettleby@example.com",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 939,
+          "end": 961
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(717) 555-0153",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 978,
+          "end": 992
+        }
+      ]
+    },
+    {
+      "category": "PERSON_NAME",
+      "value": "Rosamund Kettleby",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 1004,
+          "end": 1021
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "142.37",
+      "reason": "amount due"
+    },
+    {
+      "value": "11/25/2026",
+      "reason": "due date"
+    },
+    {
+      "value": "613 kWh",
+      "reason": "usage"
+    }
+  ],
+  "lineItems": [],
+  "totals": null,
+  "plantedIssues": [],
+  "tags": [
+    "utility",
+    "not_medical",
+    "png"
+  ]
+}

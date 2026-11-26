@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "id": "itemized-er-laceration",
+  "synthetic": true,
+  "kind": "itemized_bill",
+  "description": "Emergency department visit for a hand laceration with a level-5 E/M code and a vaccine billed twice.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf",
+    "image": "bill.png"
+  },
+  "approxTokens": 630,
+  "pii": [
+    {
+      "category": "FACILITY_NAME",
+      "value": "Nonesuch Valley General Hospital",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 74,
+          "end": 106
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "4400 Placeholder Pkwy\nSampleton, OH 44985",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 107,
+          "end": 148
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(330) 555-0110",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 168,
+          "end": 182
+        },
+        {
+          "start": 2205,
+          "end": 2219
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "NV81995635",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 297,
+          "end": 307
+        },
+        {
+          "start": 2413,
+          "end": 2423
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Barnaby Fizzlewick",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 317,
+          "end": 335
+        },
+        {
+          "start": 409,
+          "end": 427
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "MRN3463228",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 361,
+          "end": 371
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "03/14/1961",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 387,
+          "end": 397
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "77 Gumdrop Hollow Rd\nSampleton, OH 44987",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 445,
+          "end": 485
+        },
+        {
+          "start": 2424,
+          "end": 2464
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(330) 555-0170",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 493,
+          "end": 507
+        }
+      ]
+    },
+    {
+      "category": "EMAIL",
+      "value": "b.fizzlewick@example.com",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 517,
+          "end": 541
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "PMH563466991",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 604,
+          "end": 616
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "GRP-48946",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 626,
+          "end": 635
+        }
+      ]
+    },
+    {
+      "category": "PROVIDER_NAME",
+      "value": "Dr. Hortense Noodleman",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 647,
+          "end": 669
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "1270925113",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 676,
+          "end": 686
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "S61.412A Laceration w/o foreign body of right hand",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 760,
+          "end": 810
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "FIZZLEWICK, BARNABY",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 2382,
+          "end": 2401
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "99285",
+      "reason": "CPT code"
+    },
+    {
+      "value": "12002",
+      "reason": "CPT code"
+    },
+    {
+      "value": "90715",
+      "reason": "CPT code"
+    },
+    {
+      "value": "90471",
+      "reason": "CPT code"
+    },
+    {
+      "value": "73130",
+      "reason": "CPT code"
+    },
+    {
+      "value": "A6402",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "10/02/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "2,450.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "890.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "145.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "60.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "410.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "24.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "4,124.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "1,649.60",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "1,855.80",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "618.60",
+      "reason": "total patientResponsibility"
+    }
+  ],
+  "lineItems": [
+    {
+      "serviceDate": "2026-10-02",
+      "code": "99285",
+      "codeSystem": "CPT",
+      "description": "ER visit, high complexity",
+      "units": 1,
+      "charge": 2450.0,
+      "insurancePaid": 1102.5,
+      "patientOwes": 367.5
+    },
+    {
+      "serviceDate": "2026-10-02",
+      "code": "12002",
+      "codeSystem": "CPT",
+      "description": "Simple wound repair 2.6-7.5 cm",
+      "units": 1,
+      "charge": 890.0,
+      "insurancePaid": 400.5,
+      "patientOwes": 133.5
+    },
+    {
+      "serviceDate": "2026-10-02",
+      "code": "90715",
+      "codeSystem": "CPT",
+      "description": "Tdap vaccine, IM",
+      "units": 1,
+      "charge": 145.0,
+      "insurancePaid": 65.25,
+      "patientOwes": 21.75
+    },
+    {
+      "serviceDate": "2026-10-02",
+      "code": "90715",
+      "codeSystem": "CPT",
+      "description": "Tdap vaccine, IM",
+      "units": 1,
+      "charge": 145.0,
+      "insurancePaid": 65.25,
+      "patientOwes": 21.75
+    },
+    {
+      "serviceDate": "2026-10-02",
+      "code": "90471",
+      "codeSystem": "CPT",
+      "description": "Immunization admin, first",
+      "units": 1,
+      "charge": 60.0,
+      "insurancePaid": 27.0,
+      "patientOwes": 9.0
+    },
+    {
+      "serviceDate": "2026-10-02",
+      "code": "73130",
+      "codeSystem": "CPT",
+      "description": "X-ray hand, 3+ views",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 184.5,
+      "patientOwes": 61.5
+    },
+    {
+      "serviceDate": "2026-10-02",
+      "code": "A6402",
+      "codeSystem": "HCPCS",
+      "description": "Gauze, sterile, per pad",
+      "units": 4,
+      "charge": 24.0,
+      "insurancePaid": 10.8,
+      "patientOwes": 3.6
+    }
+  ],
+  "totals": {
+    "charges": 4124.0,
+    "adjustments": 1649.6,
+    "insurancePaid": 1855.8,
+    "patientResponsibility": 618.6
+  },
+  "plantedIssues": [
+    {
+      "type": "POSSIBLE_UPCODING",
+      "lineIndexes": [
+        0
+      ],
+      "note": "Level-5 ER visit (99285) billed for a simple laceration repair; level 5 implies high-complexity decision making. Ask for the coding rationale."
+    },
+    {
+      "type": "DUPLICATE_CHARGE",
+      "lineIndexes": [
+        2,
+        3
+      ],
+      "note": "Tdap vaccine 90715 billed twice on the same date with only one administration (90471) billed."
+    }
+  ],
+  "tags": [
+    "hospital",
+    "emergency",
+    "insured",
+    "png"
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "summary-statement-final-notice",
+  "synthetic": true,
+  "kind": "summary_statement",
+  "description": "Final notice threatening collections with no itemization while a secondary insurance claim is still pending.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf"
+  },
+  "approxTokens": 176,
+  "pii": [
+    {
+      "category": "FACILITY_NAME",
+      "value": "Mount Hypothetical Regional Medical Center",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 74,
+          "end": 116
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "PUDDINGFOOT, THADDEUS",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 131,
+          "end": 152
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "88 Gingersnap Gulch Rd\nNowhere Falls, CO 81397",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 153,
+          "end": 199
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Thaddeus Puddingfoot",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 205,
+          "end": 225
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "08-AUG-1945",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 232,
+          "end": 243
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "MH-028215621",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 254,
+          "end": 266
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "NBT76541145",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 306,
+          "end": 317
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(970) 555-0103",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 639,
+          "end": 653
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(970) 555-0133",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 685,
+          "end": 699
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "1,975.50",
+      "reason": "total charges"
+    },
+    {
+      "value": "300.00",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "1,212.30",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "463.20",
+      "reason": "total patientResponsibility"
+    },
+    {
+      "value": "08/04/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/06/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "12/01/2026",
+      "reason": "due date"
+    }
+  ],
+  "lineItems": [],
+  "totals": {
+    "charges": 1975.5,
+    "adjustments": 300.0,
+    "insurancePaid": 1212.3,
+    "patientResponsibility": 463.2
+  },
+  "plantedIssues": [
+    {
+      "type": "NO_ITEMIZATION",
+      "lineIndexes": [],
+      "note": "Balance-only notice with no line items or codes."
+    },
+    {
+      "type": "OTHER",
+      "lineIndexes": [],
+      "note": "Collections threatened while the secondary insurance claim is still pending; the patient can ask the provider to hold the account until it is processed."
+    }
+  ],
+  "tags": [
+    "hospital",
+    "summary",
+    "collections"
+  ]
+}

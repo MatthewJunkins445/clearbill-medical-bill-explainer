@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "eob-er-out-of-network",
+  "synthetic": true,
+  "kind": "eob",
+  "description": "Insurer EOB for an emergency visit where the ER physician group was out of network and the patient is shown owing the balance.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf"
+  },
+  "approxTokens": 397,
+  "pii": [
+    {
+      "category": "PATIENT_NAME",
+      "value": "WILHELMINA CRUMPET",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 242,
+          "end": 260
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "6 Teacup Terrace Apt 2\nFauxville, PA 17997",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 261,
+          "end": 303
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Wilhelmina Crumpet",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 314,
+          "end": 332
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "30 DEC 1990",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 341,
+          "end": 352
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "FHA-0262899363",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 357,
+          "end": 371
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "FH075248930178",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 381,
+          "end": 395
+        }
+      ]
+    },
+    {
+      "category": "PROVIDER_NAME",
+      "value": "Fauxville Emergency Physicians",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 416,
+          "end": 446
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "1858394120",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 452,
+          "end": 462
+        }
+      ]
+    },
+    {
+      "category": "FACILITY_NAME",
+      "value": "Saint Placeholder Memorial Hospital",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 482,
+          "end": 517
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "S01.81XA Laceration of face, initial encounter",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 582,
+          "end": 628
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "99284",
+      "reason": "CPT code"
+    },
+    {
+      "value": "12001",
+      "reason": "CPT code"
+    },
+    {
+      "value": "08/22/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "1,450.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "520.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "1,970.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "450.00",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "1,520.00",
+      "reason": "total patientResponsibility"
+    },
+    {
+      "value": "THIS IS NOT A BILL",
+      "reason": "EOB disclaimer the explanation must surface"
+    }
+  ],
+  "lineItems": [
+    {
+      "serviceDate": "2026-08-22",
+      "code": "99284",
+      "codeSystem": "CPT",
+      "description": "ER visit, moderate complexity",
+      "units": 1,
+      "charge": 1450.0,
+      "insurancePaid": 310.0,
+      "patientOwes": 1140.0
+    },
+    {
+      "serviceDate": "2026-08-22",
+      "code": "12001",
+      "codeSystem": "CPT",
+      "description": "Simple repair, 2.5 cm or less",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 140.0,
+      "patientOwes": 380.0
+    }
+  ],
+  "totals": {
+    "charges": 1970.0,
+    "adjustments": 0.0,
+    "insurancePaid": 450.0,
+    "patientResponsibility": 1520.0
+  },
+  "plantedIssues": [
+    {
+      "type": "OUT_OF_NETWORK_SURPRISE",
+      "lineIndexes": [
+        0,
+        1
+      ],
+      "note": "Emergency care from an out-of-network physician group at an in-network hospital; under the No Surprises Act the patient should owe in-network cost sharing only, not the 1,520.00 shown (which includes balance billing above the allowed amount)."
+    }
+  ],
+  "tags": [
+    "eob",
+    "emergency",
+    "out_of_network"
+  ]
+}
