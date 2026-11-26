@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="880" viewBox="0 0 1200 880" role="img" aria-labelledby="t-S07 d-S07" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S07">S07: Your bill, explained (low-fidelity wireframe)</title>
+<desc id="d-S07">Low-fidelity wireframe. See s07.md for a full description of each numbered element.</desc>
+<rect width="1200" height="880" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M188.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M328.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M468.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="628.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="840" x2="1200" y2="840" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="865" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your bill is read in Chrome on this computer. Nothing is saved after you close the tab.</text>
+<text x="1160" y="865" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Your bill, explained</text>
+<text x="40" y="178" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">Here is what each charge means, in plain words.</text>
+<rect x="40" y="210" width="1120" height="110" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="56" y="238" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Summary</text>
+<rect x="1020" y="222" width="137" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<rect x="1030" y="228" width="12" height="8" rx="1.5" fill="none" stroke="#1F2430" stroke-width="1.4"/><line x1="1028" y1="239" x2="1044" y2="239" stroke="#1F2430" stroke-width="1.6"/>
+<text x="1048" y="238.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">On this device</text>
+<text x="60" y="270" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">Billed</text>
+<text x="60" y="298" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">$2,274.00</text>
+<text x="330" y="270" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">Insurance paid</text>
+<text x="330" y="298" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">$1,320.00</text>
+<text x="600" y="270" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">Discounts and adjustments</text>
+<text x="600" y="298" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">$310.00</text>
+<text x="870" y="270" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">You may owe</text>
+<text x="870" y="298" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">$644.00</text>
+<circle cx="24" cy="230" r="11" fill="#111827"/>
+<text x="24" y="234.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="40" y="340" width="1120" height="100" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="60" y="368" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Emergency department visit, high severity</text>
+<text x="60" y="388" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Code 99284</text>
+<text x="940" y="368" font-size="15" font-weight="700" fill="#1F2430" text-anchor="end">$1,850.00</text>
+<rect x="1000" y="352" width="137" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<rect x="1010" y="358" width="12" height="8" rx="1.5" fill="none" stroke="#1F2430" stroke-width="1.4"/><line x1="1008" y1="369" x2="1024" y2="369" stroke="#1F2430" stroke-width="1.6"/>
+<text x="1028" y="368.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">On this device</text>
+<rect x="60" y="402" width="760" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="418" width="456" height="8" rx="4" fill="#C9CED6"/>
+<text x="960" y="422" font-size="14" font-weight="500" fill="#1F2430" text-anchor="start">Ask about this charge</text>
+<line x1="960" y1="425" x2="1111.2" y2="425" stroke="#1F2430" stroke-width="1"/>
+<rect x="40" y="452" width="1120" height="100" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="60" y="480" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Comprehensive metabolic panel</text>
+<text x="60" y="500" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Code 80053</text>
+<text x="940" y="480" font-size="15" font-weight="700" fill="#1F2430" text-anchor="end">$212.00</text>
+<rect x="1000" y="464" width="137" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<rect x="1010" y="470" width="12" height="8" rx="1.5" fill="none" stroke="#1F2430" stroke-width="1.4"/><line x1="1008" y1="481" x2="1024" y2="481" stroke="#1F2430" stroke-width="1.6"/>
+<text x="1028" y="480.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">On this device</text>
+<rect x="60" y="514" width="760" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="530" width="456" height="8" rx="4" fill="#C9CED6"/>
+<text x="960" y="534" font-size="14" font-weight="500" fill="#1F2430" text-anchor="start">Ask about this charge</text>
+<line x1="960" y1="537" x2="1111.2" y2="537" stroke="#1F2430" stroke-width="1"/>
+<rect x="40" y="564" width="1120" height="100" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="60" y="592" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Comprehensive metabolic panel</text>
+<text x="60" y="612" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Code 80053</text>
+<text x="940" y="592" font-size="15" font-weight="700" fill="#1F2430" text-anchor="end">$212.00</text>
+<rect x="1000" y="576" width="122" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<path d="M1012 593 a3.5 3.5 0 0 1 0.5 -7 a4.5 4.5 0 0 1 8.5 1 a3 3 0 0 1 0.5 6 z" fill="none" stroke="#1F2430" stroke-width="1.4"/><path d="M1016 591.5 v-4.5 m-2 2 l2 -2 l2 2" fill="none" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1028" y="592.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">In the cloud</text>
+<rect x="60" y="626" width="760" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="642" width="456" height="8" rx="4" fill="#C9CED6"/>
+<text x="960" y="646" font-size="14" font-weight="500" fill="#1F2430" text-anchor="start">Ask about this charge</text>
+<line x1="960" y1="649" x2="1111.2" y2="649" stroke="#1F2430" stroke-width="1"/>
+<rect x="40" y="676" width="1120" height="100" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="60" y="704" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">IV fluids, saline</text>
+<text x="60" y="724" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Code J7030</text>
+<text x="940" y="704" font-size="15" font-weight="700" fill="#1F2430" text-anchor="end"></text>
+<rect x="1000" y="688" width="85" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2" stroke-dasharray="1.5 2.5"/>
+<circle cx="1011" cy="700" r="1.6" fill="#1F2430"/>
+<circle cx="1016" cy="700" r="1.6" fill="#1F2430"/>
+<circle cx="1021" cy="700" r="1.6" fill="#1F2430"/>
+<text x="1028" y="704.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">Working</text>
+<text x="60" y="750" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">Explaining line 4 of 4…</text>
+<circle cx="1170" cy="352" r="11" fill="#111827"/>
+<text x="1170" y="356.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="1170" cy="576" r="11" fill="#111827"/>
+<text x="1170" y="580.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<circle cx="1170" cy="688" r="11" fill="#111827"/>
+<text x="1170" y="692.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<rect x="40" y="800" width="160" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="120.0" y="825" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Ask a question</text>
+<rect x="220" y="800" width="200" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="320.0" y="825" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">See things to check</text>
+<circle cx="440" cy="820" r="11" fill="#111827"/>
+<text x="440" y="824.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="600.0" y="865" font-size="11" fill="#6B7280" text-anchor="middle">S07 · low-fi wireframe · not to scale</text>
+</svg>

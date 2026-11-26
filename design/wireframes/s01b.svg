@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="t-S01b d-S01b" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S01b">S01b: Add bill: PDF or photo chosen (low-fidelity wireframe)</title>
+<desc id="d-S01b">Low-fidelity wireframe. See s01b.md for a full description of each numbered element.</desc>
+<rect width="1200" height="820" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="68.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="780" x2="1200" y2="780" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="805" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your bill is read in Chrome on this computer. Nothing is saved after you close the tab.</text>
+<text x="1160" y="805" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Add your medical bill</text>
+<rect x="40" y="190" width="146" height="38" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+<text x="113" y="214" font-size="14" font-weight="400" fill="#1F2430" text-anchor="middle">Paste text</text>
+<rect x="190" y="190" width="146" height="38" rx="6" fill="#FFFFFF" stroke="#1F2430" stroke-width="2"/>
+<text x="263" y="214" font-size="14" font-weight="700" fill="#1F2430" text-anchor="middle">Upload a PDF</text>
+<rect x="340" y="190" width="146" height="38" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+<text x="413" y="214" font-size="14" font-weight="400" fill="#1F2430" text-anchor="middle">Upload a photo</text>
+<rect x="40" y="250" width="760" height="150" rx="8" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="420" y="318" font-size="15" font-weight="400" fill="#1F2430" text-anchor="middle">Drag a file here, or choose a file</text>
+<rect x="360" y="336" width="120" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="420.0" y="361" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Choose file</text>
+<circle cx="820" cy="260" r="11" fill="#111827"/>
+<text x="820" y="264.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="40" y="425" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">We read the text inside the PDF on this computer. Scanned PDFs with no text may not work. Try a photo instead.</text>
+<rect x="40" y="450" width="760" height="120" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="56" y="466" width="48" height="60" rx="3" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.2"/>
+<text x="120" y="486" font-size="14" font-weight="600" fill="#1F2430" text-anchor="start">Selected: statement-march.pdf</text>
+<text x="120" y="510" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Found 2 pages.</text>
+<rect x="120" y="524" width="137" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<rect x="130" y="530" width="12" height="8" rx="1.5" fill="none" stroke="#1F2430" stroke-width="1.4"/><line x1="128" y1="541" x2="144" y2="541" stroke="#1F2430" stroke-width="1.6"/>
+<text x="148" y="540.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">On this device</text>
+<text x="250" y="541" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Read on this computer with pdf.js</text>
+<rect x="660" y="486" width="120" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="720.0" y="511" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Remove file</text>
+<circle cx="820" cy="470" r="11" fill="#111827"/>
+<text x="820" y="474.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="40" y="590" width="760" height="64" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<circle cx="62" cy="612" r="10" fill="none" stroke="#1F2430" stroke-width="1.4"/>
+<text x="62" y="617" font-size="12" font-weight="700" fill="#1F2430" text-anchor="middle">i</text>
+<text x="82" y="616" font-size="14" font-weight="700" fill="#1F2430" text-anchor="start">This bill is long</text>
+<text x="82" y="636" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Found 2 pages. The on-device model reads about one page at a time. We'll start with page 1.</text>
+<circle cx="820" cy="610" r="11" fill="#111827"/>
+<text x="820" y="614.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<rect x="40" y="690" width="138" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="109.0" y="715" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Check my bill</text>
+<text x="600.0" y="805" font-size="11" fill="#6B7280" text-anchor="middle">S01b · low-fi wireframe · not to scale</text>
+</svg>

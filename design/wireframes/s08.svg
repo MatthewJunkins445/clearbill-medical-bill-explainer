@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="t-S08 d-S08" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S08">S08: Ask about your bill (single-turn) (low-fidelity wireframe)</title>
+<desc id="d-S08">Low-fidelity wireframe. See s08.md for a full description of each numbered element.</desc>
+<rect width="1200" height="860" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M188.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M328.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M468.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M608.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="820" x2="1200" y2="820" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="845" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your bill is read in Chrome on this computer. Nothing is saved after you close the tab.</text>
+<text x="1160" y="845" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Ask about your bill</text>
+<text x="40" y="178" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">Ask one question at a time. Each answer looks at your bill fresh and doesn't remember earlier questions.</text>
+<circle cx="24" cy="145" r="11" fill="#111827"/>
+<text x="24" y="149.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="40" y="222" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Your question</text>
+<rect x="40" y="230" width="900" height="44" rx="6" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="52" y="254" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">For example: Why was I charged twice for lab work?</text>
+<text x="40" y="292" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Don't type your name or ID numbers. If you do, they may leave your computer when the answer needs the cloud.</text>
+<rect x="960" y="232" width="100" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1010.0" y="257" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ask</text>
+<circle cx="24" cy="252" r="11" fill="#111827"/>
+<text x="24" y="256.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="40" y="330" font-size="13" font-weight="700" fill="#1F2430" text-anchor="start">Common questions</text>
+<rect x="40" y="342" width="189" height="30" rx="15" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.2"/>
+<text x="52" y="362" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">What is a facility fee?</text>
+<rect x="239" y="342" width="376" height="30" rx="15" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.2"/>
+<text x="251" y="362" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Why is the amount I owe different from the total?</text>
+<rect x="625" y="342" width="268" height="30" rx="15" fill="#F3F4F6" stroke="#6B7280" stroke-width="1.2"/>
+<text x="637" y="362" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Should I ask for an itemized bill?</text>
+<circle cx="917" cy="357" r="11" fill="#111827"/>
+<text x="917" y="361.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<rect x="40" y="400" width="1020" height="160" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="60" y="430" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Answer to: Why was I charged twice for lab work?</text>
+<rect x="900" y="414" width="137" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<rect x="910" y="420" width="12" height="8" rx="1.5" fill="none" stroke="#1F2430" stroke-width="1.4"/><line x1="908" y1="431" x2="924" y2="431" stroke="#1F2430" stroke-width="1.6"/>
+<text x="928" y="430.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">On this device</text>
+<rect x="60" y="456" width="900" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="474" width="900" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="492" width="900" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="510" width="540" height="8" rx="4" fill="#C9CED6"/>
+<text x="60" y="540" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">Each answer stands alone.</text>
+<rect x="40" y="580" width="1020" height="160" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="60" y="610" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Answer to: What is a facility fee?</text>
+<rect x="900" y="594" width="122" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<path d="M912 611 a3.5 3.5 0 0 1 0.5 -7 a4.5 4.5 0 0 1 8.5 1 a3 3 0 0 1 0.5 6 z" fill="none" stroke="#1F2430" stroke-width="1.4"/><path d="M916 609.5 v-4.5 m-2 2 l2 -2 l2 2" fill="none" stroke="#1F2430" stroke-width="1.2"/>
+<text x="928" y="610.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">In the cloud</text>
+<rect x="60" y="636" width="900" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="654" width="900" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="672" width="900" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="690" width="540" height="8" rx="4" fill="#C9CED6"/>
+<text x="60" y="720" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">Each answer stands alone.</text>
+<circle cx="1080" cy="420" r="11" fill="#111827"/>
+<text x="1080" y="424.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<circle cx="1080" cy="600" r="11" fill="#111827"/>
+<text x="1080" y="604.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="600.0" y="845" font-size="11" fill="#6B7280" text-anchor="middle">S08 · low-fi wireframe · not to scale</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="t-S03d d-S03d" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S03d">S03d: Set up: model ready (low-fidelity wireframe)</title>
+<desc id="d-S03d">Low-fidelity wireframe. See s03d.md for a full description of each numbered element.</desc>
+<rect width="1200" height="820" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="208.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="780" x2="1200" y2="780" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="805" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your bill is read in Chrome on this computer. Nothing is saved after you close the tab.</text>
+<text x="1160" y="805" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">The on-device model is ready</text>
+<text x="40" y="178" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">Your personal details will be found and removed on this computer.</text>
+<rect x="40" y="200" width="137" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<rect x="50" y="206" width="12" height="8" rx="1.5" fill="none" stroke="#1F2430" stroke-width="1.4"/><line x1="48" y1="217" x2="64" y2="217" stroke="#1F2430" stroke-width="1.6"/>
+<text x="68" y="216.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">On this device</text>
+<text x="180" y="217" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">Gemini Nano (in Chrome)</text>
+<circle cx="24" cy="145" r="11" fill="#111827"/>
+<text x="24" y="149.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="40" y="250" width="110" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="95.0" y="275" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Continue</text>
+<circle cx="170" cy="270" r="11" fill="#111827"/>
+<text x="170" y="274.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="600.0" y="805" font-size="11" fill="#6B7280" text-anchor="middle">S03d · low-fi wireframe · not to scale</text>
+</svg>
