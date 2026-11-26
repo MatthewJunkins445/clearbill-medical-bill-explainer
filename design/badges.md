@@ -72,13 +72,12 @@ Audit flags use a tag with the same anatomy. They must never say "error" on its 
 | Place | Badge |
 |---|---|
 | Redaction review header | The source of the redaction pass: `ON_DEVICE`, or `LOCAL_RULES` in the rules-only fallback. The final regex guard always adds a second small `LOCAL_RULES` badge next to the "Always removed" notice. |
-| Bill-type check (not-a-bill screen) | `ON_DEVICE` or `LOCAL_RULES` (heuristic fallback) |
 | Each explained line item | `ON_DEVICE` or `IN_CLOUD` |
 | Summary card | Same as the explanation call |
-| Each question answer | `ON_DEVICE` or `IN_CLOUD` |
+| Each question answer | `ON_DEVICE` |
 | Each audit flag and the audit header | Usually `IN_CLOUD`; `ON_DEVICE` if the cloud-first call fell back |
 | Letter header | Usually `IN_CLOUD` |
-| "Fill in my details" toggle on the letter | `LOCAL_RULES` (it is a local find-and-replace, no model) |
+| "Fill in my details" toggle on the letter | Plain on-device description. `LocalVault.rehydrate()` returns text with no inference source badge. |
 | Under the hood call log, "Ran" column | The same badge, in a compact form (icon plus short text) |
 
 ## Live updates

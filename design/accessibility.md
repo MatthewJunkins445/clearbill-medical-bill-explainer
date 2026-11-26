@@ -65,8 +65,8 @@ Each highlight in the preview is a `mark`-like `span` with visible text (the pla
 |---|---|---|---|
 | Removed by the model or rules | `[PATIENT_NAME_1]` | `highlight.srRemoved` | "Removed Patient name: patient name 1." |
 | Removed, always-removed category | `[DOB_1]` | `highlight.srRemovedLocked` | "Removed Date of birth: date of birth 1. Always removed." |
-| Kept by the user | `Dr. Lee` (dashed underline) | `highlight.srKept` | "Kept Doctor or provider name: Dr. Lee. Will be sent as written." |
-| Kept by the user but re-added by the guard | `[ACCOUNT_NUMBER_1]` | `highlight.srKeptButGuarded` | "You kept this Account number, but it is always removed. It will be sent as account number 1." |
+| Kept by the user | `Dr. Lee` (dashed underline) | `highlight.srKept` | "Kept Doctor or provider name: Dr. Lee. It appears as written in the text after removal." |
+| Kept by the user but re-added by the guard | `[ACCOUNT_NUMBER_1]` | `highlight.srKeptButGuarded` | "You kept this Account number, but the final check removes it. The text after removal shows account number 1." |
 | Added by the user | `[PERSON_NAME_2]` | `highlight.srManual` | "Removed by you as Other person's name: other person's name 2." |
 
 Implementation notes for frontend:
@@ -79,9 +79,10 @@ Implementation notes for frontend:
 ## 3. Consent screen (S06)
 
 - The checkbox has a real `label` (`consent.agreeLabel`). "Agree and continue" uses `aria-disabled="true"` (not the `disabled` attribute) until it's ticked, so it stays focusable and its reason (`consent.agreeButtonDisabledHint`) is announced via `aria-describedby`.
+- Keep `consent.keptOnPurpose` and `consent.notStored` inside the consent card above the checkbox, at the same size and contrast as body text. The checkbox references both notes with `aria-describedby`. The terms link appears beside the data-use notice.
 - "Keep everything on this computer" is a full button of the same size, never a link or a small text option.
 - "See the exact text" is a disclosure (`button` with `aria-expanded`) that reveals the same redacted text, in a focusable region with the same highlight labels as S05.
-- Focus order: `h1`, "Always stays" card, "Leaves only if you agree" card, "See the exact text", the "We can miss things" note, the checkbox, "Agree and continue", "Keep everything on this computer", "Back".
+- Focus order: `h1`, "Always stays" card, "Leaves only if you agree" card, "See the exact text", data-use and review notes with terms link, checkbox, "Agree and continue", "Keep everything on this computer", "Back". In the device-only variant, announce the availability reason before the continue action. Omit the cloud checkbox and offer to set up the model if it is unavailable.
 
 ## 4. Badges, tags and results
 

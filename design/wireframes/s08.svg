@@ -39,7 +39,7 @@
 <text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
 <line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
 <line x1="0" y1="820" x2="1200" y2="820" stroke="#C9CED6" stroke-width="1.2"/>
-<text x="40" y="845" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your bill is read in Chrome on this computer. Nothing is saved after you close the tab.</text>
+<text x="40" y="845" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
 <text x="1160" y="845" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
 <text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Ask about your bill</text>
 <text x="40" y="178" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">Ask one question at a time. Each answer looks at your bill fresh and doesn't remember earlier questions.</text>
@@ -48,7 +48,7 @@
 <text x="40" y="222" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Your question</text>
 <rect x="40" y="230" width="900" height="44" rx="6" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
 <text x="52" y="254" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">For example: Why was I charged twice for lab work?</text>
-<text x="40" y="292" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Don't type your name or ID numbers. If you do, they may leave your computer when the answer needs the cloud.</text>
+<text x="40" y="292" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill answers your questions on this computer.</text>
 <rect x="960" y="232" width="100" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
 <text x="1010.0" y="257" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ask</text>
 <circle cx="24" cy="252" r="11" fill="#111827"/>
@@ -74,9 +74,9 @@
 <text x="60" y="540" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">Each answer stands alone.</text>
 <rect x="40" y="580" width="1020" height="160" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
 <text x="60" y="610" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Answer to: What is a facility fee?</text>
-<rect x="900" y="594" width="122" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
-<path d="M912 611 a3.5 3.5 0 0 1 0.5 -7 a4.5 4.5 0 0 1 8.5 1 a3 3 0 0 1 0.5 6 z" fill="none" stroke="#1F2430" stroke-width="1.4"/><path d="M916 609.5 v-4.5 m-2 2 l2 -2 l2 2" fill="none" stroke="#1F2430" stroke-width="1.2"/>
-<text x="928" y="610.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">In the cloud</text>
+<rect x="900" y="594" width="137" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<rect x="910" y="600" width="12" height="8" rx="1.5" fill="none" stroke="#1F2430" stroke-width="1.4"/><line x1="908" y1="611" x2="924" y2="611" stroke="#1F2430" stroke-width="1.6"/>
+<text x="928" y="610.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">On this device</text>
 <rect x="60" y="636" width="900" height="8" rx="4" fill="#C9CED6"/>
 <rect x="60" y="654" width="900" height="8" rx="4" fill="#C9CED6"/>
 <rect x="60" y="672" width="900" height="8" rx="4" fill="#C9CED6"/>
@@ -86,5 +86,4 @@
 <text x="1080" y="424.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
 <circle cx="1080" cy="600" r="11" fill="#111827"/>
 <text x="1080" y="604.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
-<text x="600.0" y="845" font-size="11" fill="#6B7280" text-anchor="middle">S08 · low-fi wireframe · not to scale</text>
 </svg>

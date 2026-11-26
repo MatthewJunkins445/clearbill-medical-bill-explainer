@@ -2,7 +2,7 @@
   "_meta": {
     "version": "1.0.0",
     "owner": "ux-designer",
-    "status": "Draft for Rai review (consent, disclaimers, what leaves your device)",
+    "status": "W2 revision for reviewer and Rai verification",
     "readingLevel": "Aim for US grade 8 or lower. Short sentences. No jargon without a plain explanation.",
     "interpolation": "Words in {braces} are filled in by the app. Never show the braces.",
     "plurals": "Keys ending in _one and _other are picked by count. Use _one when the count is exactly 1.",
@@ -16,12 +16,12 @@
 
   "app": {
     "name": "ClearBill",
-    "tagline": "Understand your medical bill. Your private details stay on your computer.",
+    "tagline": "Understand your medical bill. You see and choose what leaves your computer.",
     "skipLink": "Skip to main content",
     "landmarkMain": "ClearBill",
     "startOver": "Start over",
     "startOverConfirmTitle": "Start over with a new bill?",
-    "startOverConfirmBody": "This clears the bill, the removed details and any answers from this tab. Nothing is saved.",
+    "startOverConfirmBody": "This clears the bill, the removed details and any answers from this tab. It can't take back anything already sent.",
     "startOverConfirmYes": "Yes, start over",
     "startOverConfirmNo": "Keep working",
     "back": "Back",
@@ -32,7 +32,7 @@
     "copy": "Copy",
     "copied": "Copied",
     "loading": "Working on it…",
-    "footerPrivacy": "Your bill is read in Chrome on this computer. Nothing is saved after you close the tab.",
+    "footerPrivacy": "ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.",
     "footerDisclaimerShort": "Not medical, legal or financial advice."
   },
 
@@ -53,11 +53,11 @@
 
   "import": {
     "title": "Add your medical bill",
-    "intro": "ClearBill explains each charge in plain words. First, it removes your personal details on this computer.",
+    "intro": "ClearBill explains charges in plain words. First, it looks for personal details on this computer.",
     "privacyPoints": [
       "Your bill is read here, in Chrome.",
-      "You see exactly what would leave your computer before anything is sent.",
-      "Nothing is sent unless you say yes."
+      "Your own bill stays on this computer.",
+      "Only the built-in sample can use cloud features, and only if you agree."
     ],
     "tabsLabel": "How do you want to add your bill?",
     "tabPaste": "Paste text",
@@ -82,12 +82,12 @@
     "submitDisabledHint": "Add a bill first.",
     "trySample": "Try a sample bill",
     "sampleNote": "The sample is made up. It contains no real person's details.",
-    "detecting": "Checking that this looks like a medical bill…"
+    "sampleLabel": "Made-up sample bill"
   },
 
   "deviceModel": {
     "panelTitle": "Private on-device model",
-    "whatItIs": "Gemini Nano is an AI model that runs inside Chrome on this computer. ClearBill uses it to find and remove your personal details before anything is sent.",
+    "whatItIs": "Gemini Nano is an AI model that runs inside Chrome on this computer. ClearBill uses it to look for details to remove, then asks you to check the text.",
     "states": {
       "unsupported": {
         "badge": "Not supported",
@@ -95,7 +95,7 @@
         "body": "The on-device model needs a recent version of Chrome on a desktop or laptop computer with enough memory and disk space. Phones and tablets aren't supported yet. You can still use ClearBill. It will use simple rules to find details, and you'll check them yourself.",
         "primaryAction": "Use simple rules",
         "secondaryAction": "What does my computer need?",
-        "requirements": "You need Chrome 139 or later, at least 22 GB of free disk space, and either a graphics card with more than 4 GB of memory or 16 GB of RAM."
+        "requirements": "Use an up-to-date desktop Chrome with at least 22 GB of free disk space. You need either a graphics card with more than 4 GB of video memory or at least 16 GB of RAM and four processor cores."
       },
       "unavailable": {
         "badge": "Not available right now",
@@ -125,7 +125,7 @@
       "available": {
         "badge": "Ready",
         "title": "The on-device model is ready",
-        "body": "Your personal details will be found and removed on this computer.",
+        "body": "Gemini Nano will look for your personal details and remove them on this computer. You'll check what it found.",
         "primaryAction": "Continue",
         "srAnnounce": "The on-device model is ready."
       }
@@ -159,7 +159,7 @@
     "lockedTag": "Always removed",
     "lockedTooltip": "This kind of detail is always removed before anything is sent, even if you unmark it.",
     "previewTitle": "Text after removal",
-    "previewHint": "This is the text that could leave your computer, if you agree on the next step.",
+    "previewHint": "Check that the text shows the details you meant to keep and the labels for details you removed.",
     "showOriginal": "Show original",
     "showRemoved": "Show text after removal",
     "addTitle": "Add a detail we missed",
@@ -174,7 +174,7 @@
     "keptAnnounce": "{placeholder} will stay in the text as \"{original}\".",
     "removedAnnounce": "{original} will be replaced with {placeholder}.",
     "guardTitle": "Some details are always removed",
-    "guardBody": "Social Security numbers, member IDs, account numbers, phone numbers, email addresses and dates of birth are always removed before anything is sent. This happens even if you unmark them. The letter can still use them, because they are filled back in on this computer.",
+    "guardBody": "A final check puts back labels for Social Security numbers, member IDs, account numbers, phone numbers, email addresses and birth dates it finds, even if you chose to keep them. Check the final text for anything we missed.",
     "guardAppliedNotice_one": "{count} detail you kept will still be removed, because it is always removed.",
     "guardAppliedNotice_other": "{count} details you kept will still be removed, because they are always removed.",
     "continue": "Looks right, continue",
@@ -200,8 +200,8 @@
   "highlight": {
     "srRemoved": "Removed {category}: {placeholder}.",
     "srRemovedLocked": "Removed {category}: {placeholder}. Always removed.",
-    "srKept": "Kept {category}: {original}. Will be sent as written.",
-    "srKeptButGuarded": "You kept this {category}, but it is always removed. It will be sent as {placeholder}.",
+    "srKept": "Kept {category}: {original}. It appears as written in the text after removal.",
+    "srKeptButGuarded": "You kept this {category}, but the final check removes it. The text after removal shows {placeholder}.",
     "srManual": "Removed by you as {category}: {placeholder}.",
     "previewRegionLabel": "Bill text after removal. {count} details removed.",
     "visibleLegendRemoved": "Removed",
@@ -215,33 +215,34 @@
     "staysTitle": "Always stays on this computer",
     "staysItems": [
       "Your original bill, file or photo",
-      "The details we removed, like your name and member ID",
-      "The list that links each label, like [PATIENT_NAME_1], to the real detail"
+      "The list that links each label, like [PATIENT_NAME_1], to the detail it replaced",
+      "The questions you type"
     ],
     "leavesTitle": "Leaves your computer only if you agree",
     "leavesItems": [
-      "The text after removal, exactly as shown on the last step",
-      "Your questions, if the on-device model can't answer them"
+      "The made-up sample bill text after removal, as shown here"
     ],
-    "leavesWhere": "It goes to Google's Gemini model in the cloud, through Firebase. The model looks for things worth asking about and drafts a letter.",
+    "leavesWhere": "Google's Gemini cloud model can check the sample and draft a letter. It can also explain charges when the on-device model isn't available.",
     "leavesSize": "About {characters} characters of text after removal.",
     "viewText": "See the exact text",
     "hideText": "Hide the text",
-    "notPerfect": "We try hard to remove personal details, but we can miss some. Please check the text before you agree.",
-    "notStored": "ClearBill doesn't save your bill. Google processes the text to answer you, under Google's terms for the Gemini API. On the free tier, those terms let Google use the text to improve its products.",
-    "agreeLabel": "I checked the text. Send it to the cloud model for the check and the letter.",
+    "notPerfect": "We try to remove personal details, but we can miss some. Read the text before you agree. If there's anything you don't want to send, go back and remove it.",
+    "keptOnPurpose": "The sample is made up. Some details stay in the text so we can check it: charge descriptions, billing codes, service dates, amounts, and any names you chose to keep. You can go back and remove any of them.",
+    "notStored": "This demo uses Google's free Gemini service. Google may use the text you send to improve its products, and people at Google may read it. The sample bill is made up, so no real details are sent.",
+    "termsLink": "Read Google's Gemini API terms",
+    "agreeLabel": "I've read the sample text after removal. Send it to Google's Gemini cloud model to check the sample, draft a letter, and explain charges if the on-device model isn't available.",
     "agreeButton": "Agree and continue",
     "agreeButtonDisabledHint": "Tick the box to agree, or choose to keep everything on this computer.",
     "declineButton": "Keep everything on this computer",
-    "declineHint": "You'll get the explanation and answers from the on-device model. The check for things worth asking about and the letter need the cloud, so they will be off.",
-    "declineNoDevice": "Without the on-device model, the explanation also needs the cloud. If you keep everything on this computer, you'll only see the text after removal.",
+    "declineHint": "With the on-device model ready, you can read the explanation and ask questions. The cloud check and letter will be off.",
+    "declineNoDevice": "The on-device model isn't ready. You can read the text after removal and set up the model for explanations and questions.",
     "scope": "Your choice applies to this bill only, in this tab.",
     "killSwitchNote": "Cloud features are paused right now, so nothing can be sent. You can keep going on this computer.",
     "changeLater": "Change my choice",
-    "statusAgreed": "You agreed to send the text after removal to the cloud.",
-    "statusDeclined": "Everything stays on this computer.",
+    "statusAgreed": "You agreed to send the sample text after removal to the cloud.",
+    "statusDeclined": "Cloud sending is off for this bill.",
     "withdraw": "Stop sending to the cloud",
-    "withdrawDone": "Done. Nothing more will be sent to the cloud for this bill."
+    "withdrawDone": "Cloud sending is off for this bill. Text already sent can't be called back."
   },
 
   "explain": {
@@ -257,8 +258,7 @@
     "lineNoCode": "No code listed",
     "lineWhatItIs": "What this is",
     "lineWhyCharged": "Why you may see it",
-    "explaining": "Explaining line {n} of {total}…",
-    "explainMore": "Explain in simpler words",
+    "explaining": "Explaining the charges…",
     "noLines": "We couldn't find separate charges. Here is a summary of the whole bill instead.",
     "askAbout": "Ask about this charge",
     "nextQuestions": "Ask a question",
@@ -272,7 +272,7 @@
     "intro": "Ask one question at a time. Each answer looks at your bill fresh and doesn't remember earlier questions.",
     "inputLabel": "Your question",
     "inputPlaceholder": "For example: Why was I charged twice for lab work?",
-    "inputHint": "Don't type your name or ID numbers. If you do, they may leave your computer when the answer needs the cloud.",
+    "inputHint": "ClearBill answers your questions on this computer.",
     "ask": "Ask",
     "asking": "Finding an answer…",
     "suggestionsTitle": "Common questions",
@@ -286,9 +286,7 @@
     "standsAlone": "Each answer stands alone.",
     "historyTitle": "Your earlier questions",
     "historyEmpty": "Your questions and answers will show here.",
-    "piiWarning": "Your question may include a personal detail ({category}). Edit it, or remove it with one click.",
-    "piiWarningAction": "Remove it",
-    "cloudNeededDeclined": "The on-device model couldn't answer this one. Answering would need the cloud, and you chose to keep everything on this computer."
+    "deviceUnavailable": "The on-device model isn't ready. Set it up to ask questions."
   },
 
   "audit": {
@@ -308,7 +306,8 @@
     "flagWhy": "Why we flagged it",
     "flagAsk": "What to ask",
     "flagLines": "Related charges: {lines}",
-    "countSummary": "{likely} likely errors, {asking} worth asking about",
+    "countSummary_one": "{likely} likely error, {asking} worth asking about",
+    "countSummary_other": "{likely} likely errors, {asking} worth asking about",
     "noFlags": "We didn't find anything that stands out. You can still ask for an itemized bill or call your insurer.",
     "includeInLetter": "Include in letter",
     "includedInLetter": "In letter",
@@ -327,8 +326,8 @@
     "drafting": "Drafting your letter in the cloud…",
     "editorLabel": "Letter text, you can edit it",
     "fillDetails": "Fill in my details on this computer",
-    "fillDetailsHint": "Puts your real name, account number and other details back into the letter. This happens only on this computer. The cloud only ever saw the labels.",
-    "fillDetailsOn": "Your details are filled in. They were never sent.",
+    "fillDetailsHint": "Puts your removed details, such as your name and account number, back into the letter. This happens only on this computer.",
+    "fillDetailsOn": "The removed details are filled in on this computer.",
     "placeholdersLeft_one": "{count} label is left to fill in, like [ACCOUNT_NUMBER_1].",
     "placeholdersLeft_other": "{count} labels are left to fill in, like [ACCOUNT_NUMBER_1].",
     "copy": "Copy letter",
@@ -349,7 +348,7 @@
     "IN_CLOUD": {
       "label": "In the cloud",
       "srLabel": "Made in the cloud by Gemini, from the text after removal.",
-      "tooltip": "Made by Gemini in the cloud. It only saw the text after removal, which you agreed to send."
+      "tooltip": "Made by Gemini in the cloud using the made-up sample text you agreed to send."
     },
     "LOCAL_RULES": {
       "label": "Simple rules",
@@ -374,46 +373,47 @@
       "title": "This doesn't look like a medical bill",
       "body": "ClearBill works with medical bills and insurance statements, often called an Explanation of Benefits (EOB). This text looks like something else.",
       "primaryAction": "Use a different bill",
-      "secondaryAction": "It is a medical bill, continue anyway",
-      "secondaryHint": "We'll try, but the results may not make sense."
+      "previewTitle": "What we saw"
     },
     "longBill": {
       "title": "This bill is long",
-      "body": "The on-device model can read about one page at a time. Paste one page, get it explained, then add the next.",
-      "primaryAction": "Edit the text",
-      "pageHint": "Tip: Start with the page that lists the charges.",
-      "secondaryAction": "Use only the first part",
-      "secondaryHint": "We'll keep the first {characters} characters and drop the rest."
+      "body": "ClearBill couldn't process this bill in sections. Edit the text and keep the charges you want explained.",
+      "primaryAction": "Edit the text"
+    },
+    "cloudSampleOnly": {
+      "body": "In this demo, cloud features work only with the built-in sample bill. Your own bill stays on this computer. Explanations and questions need a ready on-device model."
+    },
+    "regionUnavailable": {
+      "body": "Cloud features aren't available here right now. Explanations and questions need a ready on-device model."
     },
     "killSwitch": {
       "bannerTitle": "Cloud features are paused",
-      "bannerBody": "The check for things worth asking about and the letter are turned off for now. Removing details, the explanation and questions still work on this computer.",
+      "bannerBody": "The cloud check and letter are paused. You can still remove details. Explanations and questions need a ready on-device model.",
       "auditCard": "The check is paused. Please try again later.",
       "letterCard": "The letter is paused. Please try again later."
     },
     "offline": {
       "bannerTitle": "You're offline",
-      "bannerBody": "On-device features still work. Cloud features will come back when you reconnect."
+      "bannerBody": "You can keep removing details. With the on-device model ready, you can also read explanations and ask questions."
     }
   },
 
   "errors": {
     "DEVICE_MODEL_NOT_READY": {
       "title": "The on-device model isn't ready yet",
-      "body": "We need the on-device model to remove your details safely. Finish the download, or use simple rules and check the details yourself.",
+      "body": "This step needs the on-device model. Finish setting it up, or go back to the text after removal.",
       "primaryAction": "Go to setup",
-      "secondaryAction": "Use simple rules"
+      "secondaryAction": "View text after removal"
     },
     "INPUT_TOO_LONG": {
       "title": "This is too much text at once",
-      "body": "Please paste one page at a time. Start with the page that lists the charges.",
+      "body": "ClearBill couldn't process this bill in sections. Edit the text and keep the charges you want explained.",
       "primaryAction": "Edit the text"
     },
     "NOT_A_BILL": {
       "title": "This doesn't look like a medical bill",
       "body": "ClearBill works with medical bills and insurance statements (EOBs). Try a different file or page.",
-      "primaryAction": "Use a different bill",
-      "secondaryAction": "Continue anyway"
+      "primaryAction": "Use a different bill"
     },
     "UNSUPPORTED_INPUT": {
       "title": "We can't read this file",
@@ -425,6 +425,11 @@
       "body": "This step sends the text after removal to the cloud. You haven't agreed to that for this bill.",
       "primaryAction": "Review my choice",
       "secondaryAction": "Not now"
+    },
+    "CLOUD_NOT_ALLOWED": {
+      "title": "Cloud features are unavailable",
+      "body": "The cloud check and letter are available only for the built-in sample in eligible regions.",
+      "primaryAction": "Go to the explanation"
     },
     "SCHEMA_PARSE_FAILED": {
       "title": "We got a jumbled answer",
@@ -438,22 +443,22 @@
     },
     "QUOTA_OR_RATE_LIMIT": {
       "title": "Too many requests right now",
-      "body": "Lots of people are using ClearBill, or you've asked a lot in a short time. Please wait a minute and try again. On-device features still work.",
+      "body": "ClearBill reached a cloud limit. Wait a minute and try again.",
       "primaryAction": "Try again"
     },
     "APP_CHECK_FAILED": {
       "title": "We couldn't confirm this app is genuine",
-      "body": "A security check failed, so cloud features are blocked. Reload the page. If you use a VPN or ad blocker, try turning it off for this site.",
+      "body": "A security check failed, so cloud features are blocked. Reload the page and try again.",
       "primaryAction": "Reload page"
     },
     "NETWORK": {
       "title": "Can't reach the internet",
-      "body": "Check your connection and try again. Your bill is still here, and on-device features still work.",
+      "body": "Check your connection and try again. Your bill is still here.",
       "primaryAction": "Try again"
     },
     "KILL_SWITCH": {
       "title": "Cloud features are paused",
-      "body": "We've turned off cloud features for now. Removing details, the explanation and questions still work on this computer.",
+      "body": "The cloud check and letter are paused. Explanations and questions need a ready on-device model.",
       "primaryAction": "OK"
     },
     "ABORTED": {
@@ -518,7 +523,6 @@
       "sent": "Sent to cloud"
     },
     "stepNames": {
-      "detect": "Check bill type",
       "redact": "Remove details",
       "guard": "Final check (rules)",
       "explain": "Explain line",
@@ -530,8 +534,7 @@
       "ONLY_ON_DEVICE": "Device only",
       "PREFER_ON_DEVICE": "Device first",
       "PREFER_IN_CLOUD": "Cloud first",
-      "ONLY_IN_CLOUD": "Cloud only",
-      "LOCAL_RULES": "Rules only"
+      "NONE": "Rules only"
     },
     "latencyValue": "{ms} ms",
     "sentValue": "{characters} characters",
