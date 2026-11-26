@@ -94,7 +94,7 @@ Once Firebase initialization is wired up, `npm run dev` on localhost can use the
 
    The server default is the value published from the console. The in-app fallback is what the app uses when the startup fetch fails or times out (five seconds), so cloud features fail closed.
 
-3. Add a **Country/Region** condition (wording unverified) named `EEA, GB and CH` that sets `cloud_region_allowed` to `false`. Select these countries:
+3. Add a **Country/Region** condition (wording unverified) named `EEA_GB_CH` (the console rejects commas in condition names) that sets `cloud_region_allowed` to `false`. Select these countries:
 
    Austria (AT), Belgium (BE), Bulgaria (BG), Croatia (HR), Cyprus (CY), Czechia (CZ), Denmark (DK), Estonia (EE), Finland (FI), France (FR), Germany (DE), Greece (GR), Hungary (HU), Ireland (IE), Italy (IT), Latvia (LV), Lithuania (LT), Luxembourg (LU), Malta (MT), Netherlands (NL), Poland (PL), Portugal (PT), Romania (RO), Slovakia (SK), Slovenia (SI), Spain (ES), Sweden (SE), Iceland (IS), Liechtenstein (LI), Norway (NO), United Kingdom (GB), Switzerland (CH).
 
@@ -102,7 +102,7 @@ Once Firebase initialization is wired up, `npm run dev` on localhost can use the
 
 4. Choose **Publish changes**. Nothing reaches clients until you publish.
 
-`cloud_features_enabled=false` is the single kill switch: it turns off every cloud call without a redeploy. There is no second kill-switch key.
+`cloud_features_enabled=false` is the single kill switch: it turns off every cloud call without a redeploy; clients pick it up on their next page load, within about 10 minutes (the production Remote Config fetch interval; `npm run dev` refetches on every load). There is no second kill-switch key.
 
 `cloud_region_allowed` is the region gate for cloud features. Its in-app fallback is `false` (fail closed) and its server default is `true`, so a client can use cloud inference only after a successful fetch leaves the region condition unset. The condition is evaluated server-side from the request IP, so a VPN or proxy can defeat it, and cached config persists between fetches. Treat it as a client-side UX gate, not server enforcement. This follows the A7 finding that Remote Config country conditions are supported on Web and are IP-based.
 
@@ -166,3 +166,11 @@ On-device inference uses Chrome's built-in Gemini Nano through the Prompt API. D
 ## When you're done
 
 Tell the team which steps are complete. Don't send the values. The app reads everything from your `.env.local`.
+
+## Troubleshooting (learned during verification)
+
+- **App Check `exchangeDebugToken` returns HTTP 403.** The debug token registered in the console differs from `VITE_APPCHECK_DEBUG_TOKEN` in `.env.local`. Pasting a token into the console's **Add debug token** dialog and then clicking **Generate token** can overwrite the pasted value. Add the token **without** clicking Generate, make sure it matches `.env.local` exactly, then restart `npm run dev` (Vite restarts by itself when `.env.local` changes).
+- **Model name.** `gemini-3.8-flash` is the valid model name (the `cloud_model` default). The older `gemini-2.5-flash` returns 404 "no longer available to new users", and an unknown model name also returns 404.
+- **HTTP 429 (`RESOURCE_EXHAUSTED`).** Check the Firebase AI Logic response for the quota ID and any retry delay. The free-tier request limit can be per day, per project, and per model. If that limit is reached, wait until it resets before retrying. [Firebase AI Logic quotas](https://firebase.google.com/docs/ai-logic/quotas)
+- **HTTP 500 "model is currently experiencing high demand".** ClearBill's cloud AI error also covers busy responses (HTTP 500 or 503). Retry after demand subsides. With Nano available, the SDK can fall back to the device on some HTTP errors. A cloud request that exceeds 45 seconds is cancelled and shows the same busy card ("Cloud AI is temporarily unavailable", Try again after a wait); a timeout does not trigger the on-device fallback.
+- **On-device model.** `await LanguageModel.availability()` must return `"available"`. `"downloadable"` means the one-time download (several gigabytes) has not run yet: click **Download model** in the app, or run the snippet in step 11 above. `"downloading"` means wait for it to finish; `"unavailable"` means Chrome cannot use the model on this computer right now (check disk space and hardware).
