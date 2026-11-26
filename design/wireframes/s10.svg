@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="880" viewBox="0 0 1200 880" role="img" aria-labelledby="t-S10 d-S10" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S10">S10: Your letter (low-fidelity wireframe)</title>
+<desc id="d-S10">Low-fidelity wireframe. See s10.md for a full description of each numbered element.</desc>
+<rect width="1200" height="880" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M188.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M328.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M468.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M608.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M748.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M888.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="840" x2="1200" y2="840" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="865" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
+<text x="1160" y="865" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Your letter</text>
+<text x="40" y="178" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">This is a draft. Read it and change anything you want before you send it.</text>
+<circle cx="24" cy="145" r="11" fill="#111827"/>
+<text x="24" y="149.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="40" y="222" font-size="13" font-weight="700" fill="#1F2430" text-anchor="start">What kind of letter?</text>
+<circle cx="49" cy="245" r="8" fill="none" stroke="#1F2430" stroke-width="1.4"/>
+<text x="64" y="250" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Ask for an itemized bill</text>
+<circle cx="309" cy="245" r="8" fill="none" stroke="#1F2430" stroke-width="1.4"/>
+<circle cx="309" cy="245" r="4" fill="#1F2430"/>
+<text x="324" y="250" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Question specific charges</text>
+<circle cx="569" cy="245" r="8" fill="none" stroke="#1F2430" stroke-width="1.4"/>
+<text x="584" y="250" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Ask my insurer to review a claim</text>
+<circle cx="840" cy="245" r="11" fill="#111827"/>
+<text x="840" y="249.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="40" y="276" width="760" height="470" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="660" y="288" width="122" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<path d="M672 305 a3.5 3.5 0 0 1 0.5 -7 a4.5 4.5 0 0 1 8.5 1 a3 3 0 0 1 0.5 6 z" fill="none" stroke="#1F2430" stroke-width="1.4"/><path d="M676 303.5 v-4.5 m-2 2 l2 -2 l2 2" fill="none" stroke="#1F2430" stroke-width="1.2"/>
+<text x="688" y="304.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">In the cloud</text>
+<text x="60" y="330" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Dear Billing Department at [FACILITY_NAME_1],</text>
+<text x="60" y="360" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">I am writing about account [ACCOUNT_NUMBER_1] for care on 03/02.</text>
+<rect x="60" y="384" width="700" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="406" width="700" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="428" width="700" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="450" width="700" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="472" width="700" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="494" width="700" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="516" width="700" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="538" width="700" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="560" width="420" height="8" rx="4" fill="#C9CED6"/>
+<text x="60" y="600" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Sincerely,</text>
+<text x="60" y="624" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">[PATIENT_NAME_1]</text>
+<circle cx="820" cy="300" r="11" fill="#111827"/>
+<text x="820" y="304.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="60" y="730" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">The letter is polite and sticks to facts. It asks questions.</text>
+<rect x="840" y="276" width="320" height="210" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="856" y="304" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Fill in my details on this computer</text>
+<rect x="860" y="320" width="46" height="24" rx="12" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<circle cx="872" cy="332" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="920" y="337" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Off</text>
+<text x="860" y="374" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Puts your removed details back into the letter.</text>
+<text x="860" y="392" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">This happens only on this computer.</text>
+<text x="860" y="450" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">3 labels are left to fill in.</text>
+<circle cx="1170" cy="290" r="11" fill="#111827"/>
+<text x="1170" y="294.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<rect x="840" y="510" width="150" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="915.0" y="535" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Copy letter</text>
+<rect x="840" y="560" width="200" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="940.0" y="585" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Download as text file</text>
+<rect x="840" y="610" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="890.0" y="635" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Print</text>
+<rect x="840" y="660" width="130" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="905.0" y="685" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Draft again</text>
+<circle cx="1170" cy="530" r="11" fill="#111827"/>
+<text x="1170" y="534.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="40" y="780" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Before you send it: keep a copy, note the date, and ask for a reply in writing.</text>
+<text x="40" y="802" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">This letter is a draft, not legal advice. Read it carefully before you send it.</text>
+<circle cx="24" cy="790" r="11" fill="#111827"/>
+<text x="24" y="794.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+</svg>

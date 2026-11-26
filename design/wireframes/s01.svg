@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="t-S01 d-S01" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S01">S01: Add bill: paste text (low-fidelity wireframe)</title>
+<desc id="d-S01">Low-fidelity wireframe. See s01.md for a full description of each numbered element.</desc>
+<rect width="1200" height="820" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="68.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="780" x2="1200" y2="780" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="805" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
+<text x="1160" y="805" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Add your medical bill</text>
+<text x="40" y="178" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">ClearBill explains charges in plain words. First, it looks for personal details on this computer.</text>
+<circle cx="24" cy="145" r="11" fill="#111827"/>
+<text x="24" y="149.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="70" y="220" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">•  Your bill is read here, in Chrome.</text>
+<text x="70" y="254" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">•  Your own bill stays on this computer.</text>
+<text x="70" y="288" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">•  Only the built-in sample can use cloud features, and only if you agree.</text>
+<circle cx="600" cy="238" r="11" fill="#111827"/>
+<text x="600" y="242.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="40" y="340" width="146" height="38" rx="6" fill="#FFFFFF" stroke="#1F2430" stroke-width="2"/>
+<text x="113" y="364" font-size="14" font-weight="700" fill="#1F2430" text-anchor="middle">Paste text</text>
+<rect x="190" y="340" width="146" height="38" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+<text x="263" y="364" font-size="14" font-weight="400" fill="#1F2430" text-anchor="middle">Upload a PDF</text>
+<rect x="340" y="340" width="146" height="38" rx="6" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+<text x="413" y="364" font-size="14" font-weight="400" fill="#1F2430" text-anchor="middle">Upload a photo</text>
+<circle cx="510" cy="359" r="11" fill="#111827"/>
+<text x="510" y="363.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="40" y="402" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Bill text</text>
+<rect x="40" y="410" width="760" height="230" rx="6" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="52" y="434" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">Paste your bill here</text>
+<text x="40" y="658" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Copy the text from your bill or online statement and paste it here.</text>
+<circle cx="820" cy="420" r="11" fill="#111827"/>
+<text x="820" y="424.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<rect x="40" y="680" width="138" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="109.0" y="705" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Check my bill</text>
+<text x="210" y="705" font-size="14" font-weight="500" fill="#1F2430" text-anchor="start">Try a sample bill</text>
+<line x1="210" y1="708" x2="332.4" y2="708" stroke="#1F2430" stroke-width="1"/>
+<text x="350" y="705" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">The sample is made up. It contains no real person's details.</text>
+<circle cx="24" cy="700" r="11" fill="#111827"/>
+<text x="24" y="704.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<rect x="860" y="220" width="300" height="200" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="876" y="248" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">How ClearBill works</text>
+<text x="876" y="268" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">1  Remove details on this computer</text>
+<text x="876" y="302" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">2  You check what was removed</text>
+<text x="876" y="336" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">3  You choose what can leave</text>
+<text x="876" y="370" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">4  Read the explanation</text>
+<circle cx="1170" cy="230" r="11" fill="#111827"/>
+<text x="1170" y="234.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="t-S13 d-S13" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S13">S13: Under the hood panel (low-fidelity wireframe)</title>
+<desc id="d-S13">Low-fidelity wireframe. See s13.md for a full description of each numbered element.</desc>
+<rect width="1200" height="860" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M188.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M328.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M468.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="628.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="820" x2="1200" y2="820" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="845" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
+<text x="1160" y="845" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Your bill, explained</text>
+<rect x="40" y="200" width="680" height="8" rx="4" fill="#C9CED6"/>
+<rect x="40" y="218" width="680" height="8" rx="4" fill="#C9CED6"/>
+<rect x="40" y="236" width="408" height="8" rx="4" fill="#C9CED6"/>
+<rect x="40" y="260" width="700" height="100" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="60" y="290" width="600" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="308" width="600" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="326" width="360" height="8" rx="4" fill="#C9CED6"/>
+<rect x="40" y="380" width="700" height="100" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="60" y="410" width="600" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="428" width="600" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="446" width="360" height="8" rx="4" fill="#C9CED6"/>
+<rect x="40" y="500" width="700" height="100" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="60" y="530" width="600" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="548" width="600" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="566" width="360" height="8" rx="4" fill="#C9CED6"/>
+<rect x="760" y="111" width="440" height="708" rx="0" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.6"/>
+<text x="780" y="147" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">Under the hood</text>
+<rect x="1090" y="125" width="80" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1130.0" y="150" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Close</text>
+<text x="780" y="171" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">See where each step ran: on this computer or in the cloud.</text>
+<circle cx="746" cy="141" r="11" fill="#111827"/>
+<text x="746" y="145.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="780" y="211" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">On-device model</text>
+<text x="940" y="211" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Ready</text>
+<text x="780" y="235" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Model</text>
+<text x="940" y="235" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Gemini Nano (in Chrome)</text>
+<text x="780" y="259" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Cloud model</text>
+<text x="940" y="259" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">gemini-3.8-flash</text>
+<text x="780" y="283" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Cloud consent</text>
+<text x="940" y="283" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Agreed</text>
+<text x="780" y="307" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Cloud features</text>
+<text x="940" y="307" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">On</text>
+<circle cx="746" cy="231" r="11" fill="#111827"/>
+<text x="746" y="235.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="780" y="351" font-size="14" font-weight="700" fill="#1F2430" text-anchor="start">Calls this session</text>
+<text x="780" y="379" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start">Step</text>
+<text x="872" y="379" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start">Mode</text>
+<text x="956" y="379" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start">Ran</text>
+<text x="1028" y="379" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start">Model</text>
+<text x="1100" y="379" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start">Time</text>
+<text x="1144" y="379" font-size="11" font-weight="700" fill="#6B7280" text-anchor="start">Sent</text>
+<line x1="780" y1="387" x2="1180" y2="387" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="780" y="409" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Remove</text>
+<text x="872" y="409" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Device only</text>
+<text x="956" y="409" font-size="11" font-weight="600" fill="#1F2430" text-anchor="start">Device</text>
+<text x="1028" y="409" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Nano</text>
+<text x="1100" y="409" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">2.1 s</text>
+<text x="1144" y="409" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Nothing</text>
+<line x1="780" y1="417" x2="1180" y2="417" stroke="#EEF0F3" stroke-width="1.2"/>
+<text x="780" y="435" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Final check</text>
+<text x="872" y="435" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Rules only</text>
+<text x="956" y="435" font-size="11" font-weight="600" fill="#1F2430" text-anchor="start">Rules</text>
+<text x="1028" y="435" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">regex</text>
+<text x="1100" y="435" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">4 ms</text>
+<text x="1144" y="435" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Nothing</text>
+<line x1="780" y1="443" x2="1180" y2="443" stroke="#EEF0F3" stroke-width="1.2"/>
+<text x="780" y="461" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Question</text>
+<text x="872" y="461" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Device only</text>
+<text x="956" y="461" font-size="11" font-weight="600" fill="#1F2430" text-anchor="start">Device</text>
+<text x="1028" y="461" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Nano</text>
+<text x="1100" y="461" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">640 ms</text>
+<text x="1144" y="461" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Nothing</text>
+<line x1="780" y1="469" x2="1180" y2="469" stroke="#EEF0F3" stroke-width="1.2"/>
+<text x="780" y="487" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Explain</text>
+<text x="872" y="487" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Device first</text>
+<text x="956" y="487" font-size="11" font-weight="600" fill="#1F2430" text-anchor="start">Cloud</text>
+<text x="1028" y="487" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">3.8 flash</text>
+<text x="1100" y="487" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">1.2 s</text>
+<text x="1144" y="487" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">4,100</text>
+<line x1="780" y1="495" x2="1180" y2="495" stroke="#EEF0F3" stroke-width="1.2"/>
+<text x="780" y="513" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Check</text>
+<text x="872" y="513" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">Cloud first</text>
+<text x="956" y="513" font-size="11" font-weight="600" fill="#1F2430" text-anchor="start">Cloud</text>
+<text x="1028" y="513" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">3.8 flash</text>
+<text x="1100" y="513" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">3.4 s</text>
+<text x="1144" y="513" font-size="11" font-weight="400" fill="#1F2430" text-anchor="start">4,100</text>
+<line x1="780" y1="521" x2="1180" y2="521" stroke="#EEF0F3" stroke-width="1.2"/>
+<circle cx="746" cy="451" r="11" fill="#111827"/>
+<text x="746" y="455.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<rect x="780" y="581" width="380" height="70" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="794" y="607" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Sent to the cloud so far: 8,200 characters</text>
+<text x="794" y="625" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">of text after removal.</text>
+<text x="794" y="643" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Your original bill has not left this computer.</text>
+<circle cx="746" cy="613" r="11" fill="#111827"/>
+<text x="746" y="617.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="780" y="681" font-size="14" font-weight="500" fill="#1F2430" text-anchor="start">Clear this list</text>
+<line x1="780" y1="684" x2="888.0" y2="684" stroke="#1F2430" stroke-width="1"/>
+</svg>

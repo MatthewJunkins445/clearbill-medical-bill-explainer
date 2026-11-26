@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="t-S03a d-S03a" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S03a">S03a: Set up: model downloadable (low-fidelity wireframe)</title>
+<desc id="d-S03a">Low-fidelity wireframe. See s03a.md for a full description of each numbered element.</desc>
+<rect width="1200" height="820" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="208.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="780" x2="1200" y2="780" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="805" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
+<text x="1160" y="805" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Download the private on-device model</text>
+<text x="40" y="190" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">Gemini Nano is an AI model that runs inside Chrome on this computer.</text>
+<text x="40" y="212" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">ClearBill uses it to find and remove your personal details before anything is sent.</text>
+<circle cx="24" cy="145" r="11" fill="#111827"/>
+<text x="24" y="149.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="40" y="240" width="720" height="120" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="60" y="262" width="64" height="44" rx="4" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<line x1="52" y1="314" x2="132" y2="314" stroke="#1F2430" stroke-width="2"/>
+<text x="150" y="274" font-size="14" font-weight="600" fill="#1F2430" text-anchor="start">One-time download, several gigabytes.</text>
+<text x="150" y="298" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Chrome keeps it for next time. We suggest Wi-Fi.</text>
+<text x="150" y="322" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">The download starts only when you choose it.</text>
+<circle cx="780" cy="260" r="11" fill="#111827"/>
+<text x="780" y="264.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="40" y="390" width="180" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="130.0" y="415" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Download model</text>
+<rect x="240" y="390" width="220" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="350.0" y="415" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Use simple rules instead</text>
+<text x="240" y="452" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Simple rules find numbers like phone and account numbers,</text>
+<text x="240" y="468" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">but not names or diagnoses. You'll need to mark those yourself.</text>
+<circle cx="480" cy="410" r="11" fill="#111827"/>
+<text x="480" y="414.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<rect x="860" y="160" width="300" height="170" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="876" y="188" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Model status</text>
+<text x="876" y="220" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Status: Not downloaded</text>
+<text x="876" y="244" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Model: Gemini Nano (in Chrome)</text>
+<text x="876" y="268" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Nothing has been sent.</text>
+<circle cx="1170" cy="170" r="11" fill="#111827"/>
+<text x="1170" y="174.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+</svg>

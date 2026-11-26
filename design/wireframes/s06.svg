@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960" role="img" aria-labelledby="t-S06 d-S06" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S06">S06: What leaves your computer (consent) (low-fidelity wireframe)</title>
+<desc id="d-S06">Low-fidelity wireframe. See s06.md for a full description of each numbered element.</desc>
+<rect width="1200" height="960" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M188.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M328.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="488.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="920" x2="1200" y2="920" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="945" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
+<text x="1160" y="945" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">What leaves your computer</text>
+<text x="40" y="178" font-size="15" font-weight="600" fill="#1F2430" text-anchor="start">Made-up sample bill</text>
+<circle cx="24" cy="145" r="11" fill="#111827"/>
+<text x="24" y="149.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="40" y="210" width="540" height="200" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="60" y="238" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Always stays on this computer</text>
+<text x="60" y="268" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">•  Your original bill, file or photo</text>
+<text x="60" y="298" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">•  The list matching each label to the detail it replaced</text>
+<text x="60" y="328" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">•  The questions you type</text>
+<circle cx="24" cy="230" r="11" fill="#111827"/>
+<text x="24" y="234.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="620" y="210" width="540" height="200" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="640" y="238" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Leaves your computer only if you agree</text>
+<text x="640" y="268" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">•  The made-up sample bill text after removal, as shown here</text>
+<text x="640" y="300" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Google's Gemini cloud model can check the sample and draft a letter. It</text>
+<text x="640" y="320" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">can also explain charges when the on-device model isn't available.</text>
+<text x="640" y="368" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">About 4,100 characters of text after removal.</text>
+<text x="640" y="392" font-size="14" font-weight="600" fill="#1F2430" text-anchor="start">See the exact text</text>
+<circle cx="1170" cy="230" r="11" fill="#111827"/>
+<text x="1170" y="234.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<rect x="40" y="430" width="1120" height="445" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="60" y="464" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">The sample is made up. Some details stay in the text so we can check it: charge descriptions, billing codes, service dates,</text>
+<text x="60" y="484" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">amounts, and any names you chose to keep. You can go back and remove any of them.</text>
+<text x="60" y="526" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">We try to remove personal details, but we can miss some. Read the text before you agree. If there's anything you don't want to</text>
+<text x="60" y="546" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">send, go back and remove it.</text>
+<text x="60" y="588" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">This demo uses Google's free Gemini service. Google may use the text you send to improve its products, and people at Google may</text>
+<text x="60" y="608" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">read it. The sample bill is made up, so no real details are sent.</text>
+<text x="60" y="636" font-size="14" font-weight="600" fill="#1F2430" text-anchor="start">Read Google's Gemini API terms</text>
+<line x1="60" y1="640" x2="261" y2="640" stroke="#1F2430" stroke-width="1"/>
+<circle cx="24" cy="456" r="11" fill="#111827"/>
+<text x="24" y="460.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<rect x="60" y="664" width="18" height="18" rx="3" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="88" y="678" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">I've read the sample text after removal. Send it to Google's Gemini cloud model to check the sample, draft a letter, and</text>
+<text x="88" y="698" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">explain charges if the on-device model isn't available.</text>
+<rect x="60" y="730" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="205" y="755" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Agree and continue</text>
+<rect x="370" y="730" width="290" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="515" y="755" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Keep everything on this computer</text>
+<text x="60" y="793" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Tick the box to agree, or choose to keep everything on this computer.</text>
+<text x="60" y="825" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">Your choice applies to this bill only, in this tab.</text>
+<circle cx="24" cy="673" r="11" fill="#111827"/>
+<text x="24" y="677.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="60" y="899" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">Not medical, legal or financial advice.</text>
+<circle cx="346" cy="894" r="11" fill="#111827"/>
+<text x="346" y="898.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+</svg>

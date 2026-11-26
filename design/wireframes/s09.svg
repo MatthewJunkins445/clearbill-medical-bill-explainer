@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="t-S09 d-S09" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S09">S09: Things worth checking (audit) (low-fidelity wireframe)</title>
+<desc id="d-S09">Low-fidelity wireframe. See s09.md for a full description of each numbered element.</desc>
+<rect width="1200" height="860" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M188.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M328.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M468.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M608.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M748.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="820" x2="1200" y2="820" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="845" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
+<text x="1160" y="845" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Things worth checking</text>
+<text x="40" y="178" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">We looked for charges that people often question. These are not proof of a mistake.</text>
+<text x="40" y="200" font-size="15" font-weight="400" fill="#1F2430" text-anchor="start">They are good questions to ask your provider or insurer.</text>
+<circle cx="24" cy="145" r="11" fill="#111827"/>
+<text x="24" y="149.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="40" y="220" width="1120" height="64" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<circle cx="62" cy="242" r="10" fill="none" stroke="#1F2430" stroke-width="1.4"/>
+<text x="62" y="247" font-size="12" font-weight="700" fill="#1F2430" text-anchor="middle">i</text>
+<text x="82" y="246" font-size="14" font-weight="700" fill="#1F2430" text-anchor="start">Suggestions, not findings</text>
+<text x="82" y="266" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Only your provider or insurer can confirm a mistake. Not medical, legal or financial advice.</text>
+<circle cx="24" cy="250" r="11" fill="#111827"/>
+<text x="24" y="254.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="40" y="316" font-size="14" font-weight="700" fill="#1F2430" text-anchor="start">1 likely error, 2 worth asking about</text>
+<rect x="1020" y="300" width="122" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<path d="M1032 317 a3.5 3.5 0 0 1 0.5 -7 a4.5 4.5 0 0 1 8.5 1 a3 3 0 0 1 0.5 6 z" fill="none" stroke="#1F2430" stroke-width="1.4"/><path d="M1036 315.5 v-4.5 m-2 2 l2 -2 l2 2" fill="none" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1048" y="316.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">In the cloud</text>
+<circle cx="340" cy="312" r="11" fill="#111827"/>
+<text x="340" y="316.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<rect x="40" y="336" width="1120" height="122" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="60" y="350" width="120" height="24" rx="4" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="74" y="367" font-size="13" font-weight="700" fill="#1F2430" text-anchor="middle">!</text>
+<text x="86" y="366.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">Likely error</text>
+<text x="60" y="398" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Same lab test billed twice on 03/02</text>
+<text x="60" y="420" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Why we flagged it: Two charges for code 80053 on the same day.</text>
+<text x="60" y="442" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">What to ask: …</text>
+<rect x="980" y="396" width="18" height="18" rx="3" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<path d="M984 405 l4 4 l7 -8" fill="none" stroke="#1F2430" stroke-width="2"/>
+<text x="1008" y="410" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Include in letter</text>
+<rect x="40" y="472" width="1120" height="122" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="60" y="486" width="163" height="24" rx="4" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="74" y="503" font-size="13" font-weight="700" fill="#1F2430" text-anchor="middle">?</text>
+<text x="86" y="502.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">Worth asking about</text>
+<text x="60" y="534" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">High-severity emergency visit level</text>
+<text x="60" y="556" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Why we flagged it: Level 5 (99284 is level 4 in the bill text). Ask how the level was chosen.</text>
+<text x="60" y="578" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">What to ask: …</text>
+<rect x="980" y="532" width="18" height="18" rx="3" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<path d="M984 541 l4 4 l7 -8" fill="none" stroke="#1F2430" stroke-width="2"/>
+<text x="1008" y="546" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Include in letter</text>
+<rect x="40" y="608" width="1120" height="122" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<rect x="60" y="622" width="163" height="24" rx="4" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="74" y="639" font-size="13" font-weight="700" fill="#1F2430" text-anchor="middle">?</text>
+<text x="86" y="638.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">Worth asking about</text>
+<text x="60" y="670" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Facility fee not explained</text>
+<text x="60" y="692" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Why we flagged it: Ask for an itemized bill that lists the facility fee.</text>
+<text x="60" y="714" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">What to ask: …</text>
+<rect x="980" y="668" width="18" height="18" rx="3" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1008" y="682" font-size="14" font-weight="400" fill="#1F2430" text-anchor="start">Include in letter</text>
+<circle cx="1170" cy="352" r="11" fill="#111827"/>
+<text x="1170" y="356.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<rect x="40" y="760" width="170" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="125.0" y="785" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Draft a letter</text>
+<text x="230" y="785" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">We'll draft a letter asking about the items you chose.</text>
+<circle cx="600" cy="780" r="11" fill="#111827"/>
+<text x="600" y="784.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+</svg>

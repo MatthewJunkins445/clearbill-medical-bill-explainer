@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "owner": "ux-designer",
+    "status": "W2 revision for reviewer and Rai verification",
+    "readingLevel": "Aim for US grade 8 or lower. Short sentences. No jargon without a plain explanation.",
+    "interpolation": "Words in {braces} are filled in by the app. Never show the braces.",
+    "plurals": "Keys ending in _one and _other are picked by count. Use _one when the count is exactly 1.",
+    "rules": [
+      "Never promise perfect redaction.",
+      "Never call an audit flag an error on its own. Use 'Worth asking about' or 'Likely error'.",
+      "Say 'Gemini Nano', never 'Nano 4'.",
+      "Frontend imports this file read-only. Ask ux-designer to change wording."
+    ]
+  },
+
+  "app": {
+    "name": "ClearBill",
+    "tagline": "Understand your medical bill. You see and choose what leaves your computer.",
+    "skipLink": "Skip to main content",
+    "landmarkMain": "ClearBill",
+    "startOver": "Start over",
+    "startOverConfirmTitle": "Start over with a new bill?",
+    "startOverConfirmBody": "This clears the bill, the removed details and any answers from this tab. It can't take back anything already sent.",
+    "startOverConfirmYes": "Yes, start over",
+    "startOverConfirmNo": "Keep working",
+    "back": "Back",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "close": "Close",
+    "retry": "Try again",
+    "copy": "Copy",
+    "copied": "Copied",
+    "loading": "Working on it…",
+    "footerPrivacy": "ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.",
+    "footerDisclaimerShort": "Not medical, legal or financial advice."
+  },
+
+  "steps": {
+    "navLabel": "Progress",
+    "current": "Step {n} of {total}: {name}",
+    "completed": "{name}, done",
+    "upcoming": "{name}, not started",
+    "import": "Add bill",
+    "model": "Set up",
+    "review": "Check details",
+    "consent": "Your choice",
+    "explain": "Explanation",
+    "questions": "Questions",
+    "audit": "Things to check",
+    "letter": "Letter"
+  },
+
+  "import": {
+    "title": "Add your medical bill",
+    "intro": "ClearBill explains charges in plain words. First, it looks for personal details on this computer.",
+    "privacyPoints": [
+      "Your bill is read here, in Chrome.",
+      "Your own bill stays on this computer.",
+      "Only the built-in sample can use cloud features, and only if you agree."
+    ],
+    "tabsLabel": "How do you want to add your bill?",
+    "tabPaste": "Paste text",
+    "tabPdf": "Upload a PDF",
+    "tabPhoto": "Upload a photo",
+    "pasteLabel": "Bill text",
+    "pasteHint": "Copy the text from your bill or online statement and paste it here.",
+    "pastePlaceholder": "Paste your bill here",
+    "pdfLabel": "Choose a PDF file",
+    "pdfHint": "We read the text inside the PDF on this computer. Scanned PDFs with no text may not work. Try a photo instead.",
+    "photoLabel": "Choose a photo",
+    "photoHint": "JPEG or PNG. Lay the page flat, in good light, with all four corners showing.",
+    "dropZone": "Drag a file here, or choose a file",
+    "chooseFile": "Choose file",
+    "fileSelected": "Selected: {fileName}",
+    "removeFile": "Remove file",
+    "readingPdf": "Reading the PDF on this computer…",
+    "readingPhoto": "Reading the photo on this computer…",
+    "pagesFound_one": "Found {count} page.",
+    "pagesFound_other": "Found {count} pages.",
+    "submit": "Check my bill",
+    "submitDisabledHint": "Add a bill first.",
+    "trySample": "Try a sample bill",
+    "sampleNote": "The sample is made up. It contains no real person's details.",
+    "sampleLabel": "Made-up sample bill"
+  },
+
+  "deviceModel": {
+    "panelTitle": "Private on-device model",
+    "whatItIs": "Gemini Nano is an AI model that runs inside Chrome on this computer. ClearBill uses it to look for details to remove, then asks you to check the text.",
+    "states": {
+      "unsupported": {
+        "badge": "Not supported",
+        "title": "This browser can't run the on-device model",
+        "body": "The on-device model needs a recent version of Chrome on a desktop or laptop computer with enough memory and disk space. Phones and tablets aren't supported yet. You can still use ClearBill. It will use simple rules to find details, and you'll check them yourself.",
+        "primaryAction": "Use simple rules",
+        "secondaryAction": "What does my computer need?",
+        "requirements": "Use an up-to-date desktop Chrome with at least 22 GB of free disk space. You need either a graphics card with more than 4 GB of video memory or at least 16 GB of RAM and four processor cores."
+      },
+      "unavailable": {
+        "badge": "Not available right now",
+        "title": "The on-device model isn't available right now",
+        "body": "Chrome says it can't use the model at the moment. This can happen if disk space is low or a setting is off. You can try again later, or keep going with simple rules.",
+        "primaryAction": "Use simple rules",
+        "secondaryAction": "Check again"
+      },
+      "downloadable": {
+        "badge": "Ready to download",
+        "title": "Download the private on-device model",
+        "body": "This is a one-time download of several gigabytes. Chrome keeps it for next time. We suggest Wi-Fi. The download starts only when you choose it.",
+        "primaryAction": "Download model",
+        "secondaryAction": "Use simple rules instead",
+        "secondaryHint": "Simple rules find numbers like phone and account numbers, but not names or diagnoses. You'll need to mark those yourself."
+      },
+      "downloading": {
+        "badge": "Downloading",
+        "title": "Downloading the on-device model",
+        "bodyProgress": "{percent}% done. Keep this tab open.",
+        "bodyIndeterminate": "This can take several minutes. Keep this tab open.",
+        "progressLabel": "Model download progress",
+        "srProgressUpdate": "Download {percent}% done",
+        "secondaryAction": "Use simple rules while I wait",
+        "secondaryHint": "The download keeps going. You can switch to the model next time."
+      },
+      "available": {
+        "badge": "Ready",
+        "title": "The on-device model is ready",
+        "body": "Gemini Nano will look for your personal details and remove them on this computer. You'll check what it found.",
+        "primaryAction": "Continue",
+        "srAnnounce": "The on-device model is ready."
+      }
+    },
+    "checking": "Checking this computer…",
+    "downloadDone": "Download complete. The model is ready.",
+    "rerunWithModel": "Run again with the on-device model",
+    "rerunWithModelHint": "The model can find names, places and diagnoses that simple rules miss. Your changes so far will be replaced."
+  },
+
+  "redacting": {
+    "title": "Removing your personal details",
+    "bodyDevice": "Gemini Nano is reading your bill on this computer. Nothing has been sent.",
+    "bodyRules": "Simple rules are checking your bill on this computer. Nothing has been sent.",
+    "cancel": "Stop"
+  },
+
+  "review": {
+    "title": "Check what we removed",
+    "intro": "We replaced personal details with labels like [PATIENT_NAME_1]. Please read the text and fix anything we missed. ClearBill can miss things.",
+    "summary_one": "We found {count} detail to remove.",
+    "summary_other": "We found {count} details to remove.",
+    "summaryNone": "We didn't find any personal details. Please read the text carefully. You can add any we missed.",
+    "listTitle": "Details we found",
+    "listHint": "Unmark a detail to keep it in the text. Mark it again to remove it.",
+    "groupCount": "{category} ({count})",
+    "itemRemoved": "Removed",
+    "itemKept": "Kept",
+    "toggleRemove": "Remove",
+    "toggleKeep": "Keep",
+    "lockedTag": "Always removed",
+    "lockedTooltip": "This kind of detail is always removed before anything is sent, even if you unmark it.",
+    "previewTitle": "Text after removal",
+    "previewHint": "Check that the text shows the details you meant to keep and the labels for details you removed.",
+    "showOriginal": "Show original",
+    "showRemoved": "Show text after removal",
+    "addTitle": "Add a detail we missed",
+    "addHint": "Select words in the text, or type them below. Every match is removed.",
+    "addTextLabel": "Words to remove",
+    "addCategoryLabel": "What kind of detail is it?",
+    "addButton": "Remove these words",
+    "addSelection": "Remove selected words",
+    "addNoMatch": "We couldn't find \"{text}\" in the bill. Check the spelling.",
+    "addedAnnounce_one": "Removed {count} match as {category}.",
+    "addedAnnounce_other": "Removed {count} matches as {category}.",
+    "keptAnnounce": "{placeholder} will stay in the text as \"{original}\".",
+    "removedAnnounce": "{original} will be replaced with {placeholder}.",
+    "guardTitle": "Some details are always removed",
+    "guardBody": "A final check puts back labels for Social Security numbers, member IDs, account numbers, phone numbers, email addresses and birth dates it finds, even if you chose to keep them. Check the final text for anything we missed.",
+    "guardAppliedNotice_one": "{count} detail you kept will still be removed, because it is always removed.",
+    "guardAppliedNotice_other": "{count} details you kept will still be removed, because they are always removed.",
+    "continue": "Looks right, continue",
+    "backToImport": "Use a different bill"
+  },
+
+  "pii": {
+    "PATIENT_NAME": { "label": "Patient name", "description": "The name of the person who got care." },
+    "PERSON_NAME": { "label": "Other person's name", "description": "A family member, guarantor or other person." },
+    "PROVIDER_NAME": { "label": "Doctor or provider name", "description": "The doctor, nurse or other person who gave care." },
+    "FACILITY_NAME": { "label": "Hospital or clinic name", "description": "The place where care was given." },
+    "DOB": { "label": "Date of birth", "description": "A birth date." },
+    "ADDRESS": { "label": "Address", "description": "A street address, city or ZIP code." },
+    "PHONE": { "label": "Phone number", "description": "Any phone or fax number." },
+    "EMAIL": { "label": "Email address", "description": "Any email address." },
+    "SSN": { "label": "Social Security number", "description": "A Social Security number, full or partial." },
+    "MEMBER_ID": { "label": "Insurance member ID", "description": "Your insurance member, policy or group number." },
+    "ACCOUNT_NUMBER": { "label": "Account number", "description": "A billing, patient or claim account number." },
+    "DIAGNOSIS": { "label": "Diagnosis or condition", "description": "A health condition, diagnosis or diagnosis code." },
+    "OTHER_ID": { "label": "Other ID number", "description": "Any other number that could identify you." }
+  },
+
+  "highlight": {
+    "srRemoved": "Removed {category}: {placeholder}.",
+    "srRemovedLocked": "Removed {category}: {placeholder}. Always removed.",
+    "srKept": "Kept {category}: {original}. It appears as written in the text after removal.",
+    "srKeptButGuarded": "You kept this {category}, but the final check removes it. The text after removal shows {placeholder}.",
+    "srManual": "Removed by you as {category}: {placeholder}.",
+    "previewRegionLabel": "Bill text after removal. {count} details removed.",
+    "visibleLegendRemoved": "Removed",
+    "visibleLegendKept": "Kept by you",
+    "visibleLegendLocked": "Always removed"
+  },
+
+  "consent": {
+    "title": "What leaves your computer",
+    "intro": "Here is the choice. You can change it later.",
+    "staysTitle": "Always stays on this computer",
+    "staysItems": [
+      "Your original bill, file or photo",
+      "The list that links each label, like [PATIENT_NAME_1], to the detail it replaced",
+      "The questions you type"
+    ],
+    "leavesTitle": "Leaves your computer only if you agree",
+    "leavesItems": [
+      "The made-up sample bill text after removal, as shown here"
+    ],
+    "leavesWhere": "Google's Gemini cloud model can check the sample and draft a letter. It can also explain charges when the on-device model isn't available.",
+    "leavesSize": "About {characters} characters of text after removal.",
+    "viewText": "See the exact text",
+    "hideText": "Hide the text",
+    "notPerfect": "We try to remove personal details, but we can miss some. Read the text before you agree. If there's anything you don't want to send, go back and remove it.",
+    "keptOnPurpose": "The sample is made up. Some details stay in the text so we can check it: charge descriptions, billing codes, service dates, amounts, and any names you chose to keep. You can go back and remove any of them.",
+    "notStored": "This demo uses Google's free Gemini service. Google may use the text you send to improve its products, and people at Google may read it. The sample bill is made up, so no real details are sent.",
+    "termsLink": "Read Google's Gemini API terms",
+    "agreeLabel": "I've read the sample text after removal. Send it to Google's Gemini cloud model to check the sample, draft a letter, and explain charges if the on-device model isn't available.",
+    "agreeButton": "Agree and continue",
+    "agreeButtonDisabledHint": "Tick the box to agree, or choose to keep everything on this computer.",
+    "declineButton": "Keep everything on this computer",
+    "declineHint": "With the on-device model ready, you can read the explanation and ask questions. The cloud check and letter will be off.",
+    "declineNoDevice": "The on-device model isn't ready. You can read the text after removal and set up the model for explanations and questions.",
+    "scope": "Your choice applies to this bill only, in this tab.",
+    "killSwitchNote": "Cloud features are paused right now, so nothing can be sent. You can keep going on this computer.",
+    "changeLater": "Change my choice",
+    "statusAgreed": "You agreed to send the sample text after removal to the cloud.",
+    "statusDeclined": "Cloud sending is off for this bill.",
+    "withdraw": "Stop sending to the cloud",
+    "withdrawDone": "Cloud sending is off for this bill. Text already sent can't be called back."
+  },
+
+  "explain": {
+    "title": "Your bill, explained",
+    "intro": "Here is what each charge means, in plain words.",
+    "summaryTitle": "Summary",
+    "totalBilled": "Billed",
+    "insurancePaid": "Insurance paid",
+    "adjustments": "Discounts and adjustments",
+    "youOwe": "You may owe",
+    "amountUnknown": "Not shown on the bill",
+    "lineCode": "Code {code}",
+    "lineNoCode": "No code listed",
+    "lineWhatItIs": "What this is",
+    "lineWhyCharged": "Why you may see it",
+    "explaining": "Explaining the charges…",
+    "noLines": "We couldn't find separate charges. Here is a summary of the whole bill instead.",
+    "askAbout": "Ask about this charge",
+    "nextQuestions": "Ask a question",
+    "nextAudit": "See things to check",
+    "auditOffDeclined": "The check needs the cloud. You chose to keep everything on this computer.",
+    "auditOffKillSwitch": "The check is paused right now."
+  },
+
+  "questions": {
+    "title": "Ask about your bill",
+    "intro": "Ask one question at a time. Each answer looks at your bill fresh and doesn't remember earlier questions.",
+    "inputLabel": "Your question",
+    "inputPlaceholder": "For example: Why was I charged twice for lab work?",
+    "inputHint": "ClearBill answers your questions on this computer.",
+    "ask": "Ask",
+    "asking": "Finding an answer…",
+    "suggestionsTitle": "Common questions",
+    "suggestions": [
+      "What is a facility fee?",
+      "Why is the amount I owe different from the total?",
+      "What does 'not covered' mean here?",
+      "Should I ask for an itemized bill?"
+    ],
+    "answerFor": "Answer to: {question}",
+    "standsAlone": "Each answer stands alone.",
+    "historyTitle": "Your earlier questions",
+    "historyEmpty": "Your questions and answers will show here.",
+    "deviceUnavailable": "The on-device model isn't ready. Set it up to ask questions."
+  },
+
+  "audit": {
+    "title": "Things worth checking",
+    "intro": "We looked for charges that people often question. These are not proof of a mistake. They are good questions to ask your provider or insurer.",
+    "running": "Checking your bill in the cloud…",
+    "severity": {
+      "likely_error": {
+        "label": "Likely error",
+        "description": "This looks like a mistake. It's worth asking about first."
+      },
+      "worth_asking": {
+        "label": "Worth asking about",
+        "description": "This may be fine, but it's worth a question."
+      }
+    },
+    "flagWhy": "Why we flagged it",
+    "flagAsk": "What to ask",
+    "flagLines": "Related charges: {lines}",
+    "countSummary_one": "{likely} likely error, {asking} worth asking about",
+    "countSummary_other": "{likely} likely errors, {asking} worth asking about",
+    "noFlags": "We didn't find anything that stands out. You can still ask for an itemized bill or call your insurer.",
+    "includeInLetter": "Include in letter",
+    "includedInLetter": "In letter",
+    "makeLetter": "Draft a letter",
+    "makeLetterHint": "We'll draft a letter asking about the items you chose."
+  },
+
+  "letter": {
+    "title": "Your letter",
+    "intro": "This is a draft. Read it and change anything you want before you send it.",
+    "typeLabel": "What kind of letter?",
+    "typeItemized": "Ask for an itemized bill",
+    "typeDispute": "Question specific charges",
+    "typeAppeal": "Ask my insurer to review a claim",
+    "toneNote": "The letter is polite and sticks to facts. It asks questions. It doesn't make threats or legal claims.",
+    "drafting": "Drafting your letter in the cloud…",
+    "editorLabel": "Letter text, you can edit it",
+    "fillDetails": "Fill in my details on this computer",
+    "fillDetailsHint": "Puts your removed details, such as your name and account number, back into the letter. This happens only on this computer.",
+    "fillDetailsOn": "The removed details are filled in on this computer.",
+    "placeholdersLeft_one": "{count} label is left to fill in, like [ACCOUNT_NUMBER_1].",
+    "placeholdersLeft_other": "{count} labels are left to fill in, like [ACCOUNT_NUMBER_1].",
+    "copy": "Copy letter",
+    "download": "Download as text file",
+    "print": "Print",
+    "regenerate": "Draft again",
+    "nextSteps": "Before you send it: keep a copy, note the date, and ask for a reply in writing.",
+    "unavailableDeclined": "The letter needs the cloud. You chose to keep everything on this computer.",
+    "changeChoice": "Change my choice"
+  },
+
+  "badges": {
+    "ON_DEVICE": {
+      "label": "On this device",
+      "srLabel": "Made on this device by Gemini Nano.",
+      "tooltip": "Made by Gemini Nano in Chrome on this computer. Nothing was sent."
+    },
+    "IN_CLOUD": {
+      "label": "In the cloud",
+      "srLabel": "Made in the cloud by Gemini, from the text after removal.",
+      "tooltip": "Made by Gemini in the cloud using the made-up sample text you agreed to send."
+    },
+    "LOCAL_RULES": {
+      "label": "Simple rules",
+      "srLabel": "Made on this device by simple rules, not AI.",
+      "tooltip": "Found by simple pattern rules on this computer. No AI model was used. Nothing was sent."
+    },
+    "pending": {
+      "label": "Working",
+      "srLabel": "Still working."
+    },
+    "groupLabel": "Where this was made"
+  },
+
+  "specialStates": {
+    "rulesOnly": {
+      "bannerTitle": "Using simple rules, not AI",
+      "bannerBody": "Without the on-device model, simple rules look for numbers, dates, phone numbers and email addresses. They can't find names, places or diagnoses. Please mark those yourself.",
+      "reviewNudge": "Look for names, places and health conditions. Rules can't find these.",
+      "tryModel": "Set up the on-device model"
+    },
+    "notABill": {
+      "title": "This doesn't look like a medical bill",
+      "body": "ClearBill works with medical bills and insurance statements, often called an Explanation of Benefits (EOB). This text looks like something else.",
+      "primaryAction": "Use a different bill",
+      "previewTitle": "What we saw"
+    },
+    "longBill": {
+      "title": "This bill is long",
+      "body": "ClearBill couldn't process this bill in sections. Edit the text and keep the charges you want explained.",
+      "primaryAction": "Edit the text"
+    },
+    "cloudSampleOnly": {
+      "body": "In this demo, cloud features work only with the built-in sample bill. Your own bill stays on this computer. Explanations and questions need a ready on-device model."
+    },
+    "regionUnavailable": {
+      "body": "Cloud features aren't available here right now. Explanations and questions need a ready on-device model."
+    },
+    "killSwitch": {
+      "bannerTitle": "Cloud features are paused",
+      "bannerBody": "The cloud check and letter are paused. You can still remove details. Explanations and questions need a ready on-device model.",
+      "auditCard": "The check is paused. Please try again later.",
+      "letterCard": "The letter is paused. Please try again later."
+    },
+    "offline": {
+      "bannerTitle": "You're offline",
+      "bannerBody": "You can keep removing details. With the on-device model ready, you can also read explanations and ask questions."
+    }
+  },
+
+  "errors": {
+    "DEVICE_MODEL_NOT_READY": {
+      "title": "The on-device model isn't ready yet",
+      "body": "This step needs the on-device model. Finish setting it up, or go back to the text after removal.",
+      "primaryAction": "Go to setup",
+      "secondaryAction": "View text after removal"
+    },
+    "INPUT_TOO_LONG": {
+      "title": "This is too much text at once",
+      "body": "ClearBill couldn't process this bill in sections. Edit the text and keep the charges you want explained.",
+      "primaryAction": "Edit the text"
+    },
+    "NOT_A_BILL": {
+      "title": "This doesn't look like a medical bill",
+      "body": "ClearBill works with medical bills and insurance statements (EOBs). Try a different file or page.",
+      "primaryAction": "Use a different bill"
+    },
+    "UNSUPPORTED_INPUT": {
+      "title": "We can't read this file",
+      "body": "Please use pasted text, a PDF with selectable text, or a JPEG or PNG photo. If your PDF is a scan, take a photo of the page instead.",
+      "primaryAction": "Choose another file"
+    },
+    "CONSENT_REQUIRED": {
+      "title": "This needs your OK first",
+      "body": "This step sends the text after removal to the cloud. You haven't agreed to that for this bill.",
+      "primaryAction": "Review my choice",
+      "secondaryAction": "Not now"
+    },
+    "CLOUD_NOT_ALLOWED": {
+      "title": "Cloud features are unavailable",
+      "body": "The cloud check and letter are available only for the built-in sample in eligible regions.",
+      "primaryAction": "Go to the explanation"
+    },
+    "SCHEMA_PARSE_FAILED": {
+      "title": "We got a jumbled answer",
+      "body": "The AI's answer didn't come back in a form we could show. This happens sometimes. Trying again usually works.",
+      "primaryAction": "Try again"
+    },
+    "SAFETY_BLOCKED": {
+      "title": "We can't answer that one",
+      "body": "The AI's safety filters stopped this answer. Try asking in a different way, or about a specific charge.",
+      "primaryAction": "Edit my question"
+    },
+    "QUOTA_OR_RATE_LIMIT": {
+      "title": "Too many requests right now",
+      "body": "ClearBill reached a cloud limit. Wait a minute and try again.",
+      "primaryAction": "Try again"
+    },
+    "APP_CHECK_FAILED": {
+      "title": "We couldn't confirm this app is genuine",
+      "body": "A security check failed, so cloud features are blocked. Reload the page and try again.",
+      "primaryAction": "Reload page"
+    },
+    "NETWORK": {
+      "title": "Can't reach the internet",
+      "body": "Check your connection and try again. Your bill is still here.",
+      "primaryAction": "Try again"
+    },
+    "KILL_SWITCH": {
+      "title": "Cloud features are paused",
+      "body": "The cloud check and letter are paused. Explanations and questions need a ready on-device model.",
+      "primaryAction": "OK"
+    },
+    "ABORTED": {
+      "title": "Stopped",
+      "body": "You stopped this step. Nothing was sent.",
+      "bodyAfterSend": "You stopped this step. The text after removal may already have been sent.",
+      "primaryAction": "Start it again"
+    },
+    "UNKNOWN": {
+      "title": "Something went wrong",
+      "body": "We're not sure what happened. Try again. If it keeps happening, start over with the bill.",
+      "primaryAction": "Try again",
+      "secondaryAction": "Start over"
+    },
+    "detailsToggle": "Technical details",
+    "detailsCode": "Error code: {code}"
+  },
+
+  "disclaimers": {
+    "short": "Not medical, legal or financial advice.",
+    "full": "ClearBill helps you understand your bill and decide what to ask. It is not medical, legal or financial advice. AI can make mistakes, including in what it removes. Check important details with your provider, your insurer or a patient advocate.",
+    "audit": "These flags are suggestions, not findings. Only your provider or insurer can confirm a mistake.",
+    "letter": "This letter is a draft, not legal advice. Read it carefully before you send it.",
+    "redaction": "ClearBill tries to remove personal details, but it can miss some. You are the final check.",
+    "health": "If you have questions about your care or health, ask your doctor."
+  },
+
+  "underTheHood": {
+    "toggleOpen": "Under the hood",
+    "toggleClose": "Hide under the hood",
+    "title": "Under the hood",
+    "intro": "See where each step ran: on this computer or in the cloud.",
+    "deviceSection": "On-device model",
+    "deviceStateLabel": "Status",
+    "deviceStateValues": {
+      "unsupported": "Not supported",
+      "unavailable": "Not available",
+      "downloadable": "Not downloaded",
+      "downloading": "Downloading",
+      "available": "Ready"
+    },
+    "deviceModelLabel": "Model",
+    "deviceModelValue": "Gemini Nano (in Chrome)",
+    "cloudModelLabel": "Cloud model",
+    "consentLabel": "Cloud consent",
+    "consentValues": {
+      "notAsked": "Not asked yet",
+      "agreed": "Agreed",
+      "declined": "Declined",
+      "withdrawn": "Withdrawn"
+    },
+    "killSwitchLabel": "Cloud features",
+    "killSwitchValues": { "on": "On", "off": "Paused" },
+    "callsSection": "Calls this session",
+    "callsEmpty": "No calls yet.",
+    "columns": {
+      "step": "Step",
+      "mode": "Mode",
+      "source": "Ran",
+      "model": "Model",
+      "latency": "Time",
+      "sent": "Sent to cloud"
+    },
+    "stepNames": {
+      "redact": "Remove details",
+      "guard": "Final check (rules)",
+      "explain": "Explain line",
+      "question": "Question",
+      "audit": "Check for issues",
+      "letter": "Draft letter"
+    },
+    "modeValues": {
+      "ONLY_ON_DEVICE": "Device only",
+      "PREFER_ON_DEVICE": "Device first",
+      "PREFER_IN_CLOUD": "Cloud first",
+      "NONE": "Rules only"
+    },
+    "latencyValue": "{ms} ms",
+    "sentValue": "{characters} characters",
+    "sentNone": "Nothing",
+    "errorValue": "Failed ({code})",
+    "totalSent": "Sent to the cloud so far: {characters} characters of text after removal.",
+    "totalSentNone": "Nothing has been sent to the cloud.",
+    "rawNeverSent": "Your original bill has not left this computer.",
+    "clearLog": "Clear this list"
+  }
+}

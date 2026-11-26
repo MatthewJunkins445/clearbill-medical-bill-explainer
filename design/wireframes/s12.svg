@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="t-S12 d-S12" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S12">S12: Error pattern (all AIErrorCodes) (low-fidelity wireframe)</title>
+<desc id="d-S12">Low-fidelity wireframe. See s12.md for a full description of each numbered element.</desc>
+<rect width="1200" height="860" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M188.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M328.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="348.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M468.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M608.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="820" x2="1200" y2="820" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="845" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
+<text x="1160" y="845" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Error pattern</text>
+<rect x="40" y="180" width="900" height="130" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="2"/>
+<rect x="40" y="180" width="6" height="130" rx="0" fill="#1F2430" stroke="#6B7280" stroke-width="1.2"/>
+<path d="M70 196 l11 20 h-22 z" fill="none" stroke="#1F2430" stroke-width="1.5"/>
+<text x="70" y="212" font-size="11" font-weight="700" fill="#1F2430" text-anchor="middle">!</text>
+<text x="94" y="212" font-size="16" font-weight="700" fill="#1F2430" text-anchor="start">We got a jumbled answer</text>
+<text x="94" y="236" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">The AI's answer didn't come back in a form we could show. This happens sometimes.</text>
+<rect x="94" y="252" width="110" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="149.0" y="277" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Try again</text>
+<text x="740" y="276" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Technical details  ▸</text>
+<text x="960" y="216" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start">SCHEMA_PARSE_FAILED</text>
+<rect x="40" y="330" width="900" height="130" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="2"/>
+<rect x="40" y="330" width="6" height="130" rx="0" fill="#1F2430" stroke="#6B7280" stroke-width="1.2"/>
+<path d="M70 346 l11 20 h-22 z" fill="none" stroke="#1F2430" stroke-width="1.5"/>
+<text x="70" y="362" font-size="11" font-weight="700" fill="#1F2430" text-anchor="middle">!</text>
+<text x="94" y="362" font-size="16" font-weight="700" fill="#1F2430" text-anchor="start">This needs your OK first</text>
+<text x="94" y="386" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">This step sends the text after removal to the cloud. You haven't agreed to that for this bill.</text>
+<rect x="94" y="402" width="163" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="175.5" y="427" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Review my choice</text>
+<text x="740" y="426" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Technical details  ▸</text>
+<text x="960" y="366" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start">CONSENT_REQUIRED</text>
+<rect x="40" y="480" width="900" height="130" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="2"/>
+<rect x="40" y="480" width="6" height="130" rx="0" fill="#1F2430" stroke="#6B7280" stroke-width="1.2"/>
+<path d="M70 496 l11 20 h-22 z" fill="none" stroke="#1F2430" stroke-width="1.5"/>
+<text x="70" y="512" font-size="11" font-weight="700" fill="#1F2430" text-anchor="middle">!</text>
+<text x="94" y="512" font-size="16" font-weight="700" fill="#1F2430" text-anchor="start">Too many requests right now</text>
+<text x="94" y="536" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Please wait a minute and try again. On-device features still work.</text>
+<rect x="94" y="552" width="110" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="149.0" y="577" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Try again</text>
+<text x="740" y="576" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Technical details  ▸</text>
+<text x="960" y="516" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start">QUOTA_OR_RATE_LIMIT</text>
+<rect x="40" y="630" width="900" height="130" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="2"/>
+<rect x="40" y="630" width="6" height="130" rx="0" fill="#1F2430" stroke="#6B7280" stroke-width="1.2"/>
+<path d="M70 646 l11 20 h-22 z" fill="none" stroke="#1F2430" stroke-width="1.5"/>
+<text x="70" y="662" font-size="11" font-weight="700" fill="#1F2430" text-anchor="middle">!</text>
+<text x="94" y="662" font-size="16" font-weight="700" fill="#1F2430" text-anchor="start">We can't answer that one</text>
+<text x="94" y="686" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">The AI's safety filters stopped this answer. Try asking in a different way.</text>
+<rect x="94" y="702" width="163" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="175.5" y="727" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Edit my question</text>
+<text x="740" y="726" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Technical details  ▸</text>
+<text x="960" y="666" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start">SAFETY_BLOCKED</text>
+<circle cx="24" cy="196" r="11" fill="#111827"/>
+<text x="24" y="200.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<circle cx="920" cy="252" r="11" fill="#111827"/>
+<text x="920" y="256.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="24" cy="346" r="11" fill="#111827"/>
+<text x="24" y="350.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+</svg>

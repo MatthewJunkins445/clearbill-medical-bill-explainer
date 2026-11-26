@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="t-S05b d-S05b" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<title id="t-S05b">S05b: Check what we removed (rules-only fallback) (low-fidelity wireframe)</title>
+<desc id="d-S05b">Low-fidelity wireframe. See s05b.md for a full description of each numbered element.</desc>
+<rect width="1200" height="860" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1200" height="64" rx="0" fill="#FFFFFF" stroke="#C9CED6" stroke-width="1.2"/>
+<rect x="40" y="18" width="28" height="28" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2"/>
+<text x="80" y="39" font-size="20" font-weight="700" fill="#1F2430" text-anchor="start">ClearBill</text>
+<rect x="890" y="12" width="150" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="965.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Under the hood</text>
+<rect x="1050" y="12" width="110" height="40" rx="8" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1105.0" y="37" font-size="14" font-weight="600" fill="#1F2430" text-anchor="middle">Start over</text>
+<circle cx="52.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M48.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="68.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Add bill</text>
+<line x1="126.8" y1="86" x2="176.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="192.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<path d="M188.0 86 l3 3 l5 -6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+<text x="208.0" y="91" font-size="12" font-weight="400" fill="#1F2430" text-anchor="start">Set up</text>
+<line x1="253.6" y1="86" x2="316.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="332.0" cy="86" r="9" fill="#1F2430" stroke="#1F2430" stroke-width="1.4"/>
+<text x="348.0" y="91" font-size="12" font-weight="700" fill="#1F2430" text-anchor="start">Check details</text>
+<line x1="439.8" y1="86" x2="456.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="472.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="488.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Your choice</text>
+<line x1="566.6" y1="86" x2="596.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="612.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="628.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Explanation</text>
+<line x1="706.6" y1="86" x2="736.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="752.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="768.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Questions</text>
+<line x1="833.4" y1="86" x2="876.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="892.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="908.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Things to check</text>
+<line x1="1013.0" y1="86" x2="1016.0" y2="86" stroke="#C9CED6" stroke-width="1.2"/>
+<circle cx="1032.0" cy="86" r="9" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.4"/>
+<text x="1048.0" y="91" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Letter</text>
+<line x1="0" y1="110" x2="1200" y2="110" stroke="#C9CED6" stroke-width="1.2"/>
+<line x1="0" y1="820" x2="1200" y2="820" stroke="#C9CED6" stroke-width="1.2"/>
+<text x="40" y="845" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">ClearBill reads your bill in Chrome on this computer and doesn't save it. Only text you agree to send leaves this computer.</text>
+<text x="1160" y="845" font-size="12" font-weight="600" fill="#6B7280" text-anchor="end">Not medical, legal or financial advice.</text>
+<text x="40" y="150" font-size="26" font-weight="700" fill="#1F2430" text-anchor="start">Check what we removed</text>
+<rect x="380" y="130" width="122" height="24" rx="12" fill="#FFFFFF" stroke="#1F2430" stroke-width="1.2" stroke-dasharray="4 3"/>
+<path d="M389 137 h9 M389 141.5 h9 M389 146 h5" stroke="#1F2430" stroke-width="1.4"/><path d="M397 145 l2 2 l4 -4" fill="none" stroke="#1F2430" stroke-width="1.4"/>
+<text x="408" y="146.5" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">Simple rules</text>
+<circle cx="24" cy="145" r="11" fill="#111827"/>
+<text x="24" y="149.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="40" y="180" width="1120" height="64" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="1.2" stroke-dasharray="4 3"/>
+<circle cx="62" cy="202" r="10" fill="none" stroke="#1F2430" stroke-width="1.4"/>
+<text x="62" y="207" font-size="12" font-weight="700" fill="#1F2430" text-anchor="middle">!</text>
+<text x="82" y="206" font-size="14" font-weight="700" fill="#1F2430" text-anchor="start">Using simple rules, not AI</text>
+<text x="82" y="226" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Simple rules look for numbers, dates, phone numbers and email addresses. They can't find names, places or diagnoses. Please mark those yourself.</text>
+<text x="960" y="232" font-size="14" font-weight="500" fill="#1F2430" text-anchor="start">Set up the on-device model</text>
+<line x1="960" y1="235" x2="1147.2" y2="235" stroke="#1F2430" stroke-width="1"/>
+<circle cx="24" cy="212" r="11" fill="#111827"/>
+<text x="24" y="216.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="40" y="280" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Text after removal</text>
+<rect x="40" y="292" width="680" height="420" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="60" y="324" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Patient:  Jordan Rivera</text>
+<rect x="120" y="309" width="100" height="22" fill="none" stroke="#1F2430" stroke-width="1.5" stroke-dasharray="2 2"/>
+<text x="270" y="324" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">DOB:</text>
+<rect x="308" y="310" width="65" height="20" rx="3" fill="#E5E7EB" stroke="#1F2430" stroke-width="2"/>
+<text x="315" y="325" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">[DOB_1]</text>
+<text x="60" y="354" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Member ID:</text>
+<rect x="140" y="340" width="108" height="20" rx="3" fill="#E5E7EB" stroke="#1F2430" stroke-width="2"/>
+<text x="147" y="355" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">[MEMBER_ID_1]</text>
+<text x="60" y="384" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Phone:</text>
+<rect x="110" y="370" width="79" height="20" rx="3" fill="#E5E7EB" stroke="#1F2430" stroke-width="2"/>
+<text x="117" y="385" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">[PHONE_1]</text>
+<rect x="60" y="424" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="448" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="472" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="496" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="520" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="544" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="568" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="592" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="616" width="620" height="8" rx="4" fill="#C9CED6"/>
+<rect x="60" y="640" width="372" height="8" rx="4" fill="#C9CED6"/>
+<circle cx="730" cy="310" r="11" fill="#111827"/>
+<text x="730" y="314.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="60" y="740" font-size="13" font-weight="700" fill="#1F2430" text-anchor="start">Look for names, places and health conditions. Rules can't find these.</text>
+<text x="760" y="280" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Details we found (3)</text>
+<rect x="760" y="292" width="400" height="170" rx="8" fill="#FFFFFF" stroke="#6B7280" stroke-width="1.2"/>
+<text x="776" y="322" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">Date of birth (1)</text>
+<text x="776" y="340" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">[DOB_1]</text>
+<text x="940" y="340" font-size="11" font-weight="600" fill="#6B7280" text-anchor="start">Always removed</text>
+<text x="776" y="368" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">Insurance member ID (1)</text>
+<text x="776" y="386" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">[MEMBER_ID_1]</text>
+<text x="940" y="386" font-size="11" font-weight="600" fill="#6B7280" text-anchor="start">Always removed</text>
+<text x="776" y="414" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">Phone number (1)</text>
+<text x="776" y="432" font-size="13" font-weight="600" fill="#1F2430" text-anchor="start">[PHONE_1]</text>
+<text x="940" y="432" font-size="11" font-weight="600" fill="#6B7280" text-anchor="start">Always removed</text>
+<text x="760" y="492" font-size="15" font-weight="700" fill="#1F2430" text-anchor="start">Add a detail we missed</text>
+<rect x="760" y="504" width="400" height="120" rx="6" fill="#F3F4F6" stroke="#1F2430" stroke-width="2"/>
+<text x="776" y="530" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">Words to remove:  Jordan Rivera</text>
+<text x="776" y="556" font-size="13" font-weight="400" fill="#1F2430" text-anchor="start">What kind?  Patient name ▾</text>
+<rect x="776" y="570" width="180" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="866.0" y="595" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Remove these words</text>
+<circle cx="1170" cy="520" r="11" fill="#111827"/>
+<text x="1170" y="524.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<rect x="920" y="760" width="240" height="40" rx="8" fill="#1F2430" stroke="#1F2430" stroke-width="1.2"/>
+<text x="1040.0" y="785" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Looks right, continue</text>
+</svg>
