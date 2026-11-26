@@ -30,6 +30,26 @@ jobs:
       - run: npm run lint
       - run: npm test
       - run: npm run build
+      - name: App Check debug token stays out of the production bundle
+        env:
+          VITE_APPCHECK_DEBUG_TOKEN: CANARY_DEBUG_TOKEN_DO_NOT_SHIP
+        run: |
+          # Keep the debug-token reader reachable until Firebase initialization is wired up.
+          cat >> src/ui/main.ts <<'EOF'
+          import { appCheckDebugToken } from '../firebase/index.ts';
+          document.documentElement.dataset['appCheckProbe'] =
+            appCheckDebugToken() ?? 'app-check-probe-compiled';
+          EOF
+          npm run build
+          if grep -rla 'CANARY_DEBUG_TOKEN_DO_NOT_SHIP' dist/; then
+            echo "::error::The App Check debug token canary was found in dist/ (files listed above)."
+            exit 1
+          fi
+          if ! grep -rl --include='*.js' 'app-check-probe-compiled' dist/; then
+            echo "::error::The App Check probe did not reach the production bundle."
+            exit 1
+          fi
+          echo "Canary not found in $(find dist -type f | wc -l) files under dist/."
 
   secrets:
     name: Secret scan (gitleaks)

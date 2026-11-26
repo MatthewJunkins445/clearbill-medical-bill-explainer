@@ -6,7 +6,8 @@ export default defineConfig({
     sourcemap: true,
   },
   test: {
-    include: ['src/**/*.test.ts', 'tests/unit/**/*.test.ts'],
+    // Unit tests are co-located with the code they test (src/**/x.test.ts).
+    include: ['src/**/*.test.ts'],
     environment: 'node',
   },
 });

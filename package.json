@@ -6,16 +6,16 @@
   "license": "Apache-2.0",
   "type": "module",
   "engines": {
-    "node": ">=24 <25"
+    "node": ">=24.12.0 <25"
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint . --max-warnings=0",
+    "lint": "eslint . --max-warnings=0 && node --test tests/import-boundaries.js",
     "test": "vitest run",
-    "test:e2e": "playwright test",
+    "test:e2e": "playwright test -c tests/playwright.config.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

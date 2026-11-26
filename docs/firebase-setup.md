@@ -12,7 +12,7 @@ Throughout, `<project>` means your Firebase project ID (for example `clearbill-d
 - [ ] 2. Register the web app and fill in `.env.local`
 - [ ] 3. Enable AI Logic with the Gemini Developer API
 - [ ] 4. Create a reCAPTCHA Enterprise key and register it in App Check
-- [ ] 5. Add an App Check debug token (enforcement stays off)
+- [ ] 5. Add an App Check debug token for local development
 - [ ] 6. Enable Anonymous sign-in
 - [ ] 7. Create the Remote Config parameters
 - [ ] 8. Restrict the browser API key
@@ -48,7 +48,7 @@ Optional: put your real project ID in `.firebaserc` in place of `your-firebase-p
 1. In the console's left menu, open **AI Logic** (wording unverified; it may sit under an **AI** or **Build** group).
 2. Choose **Get started** and pick the **Gemini Developer API** provider. This is the provider that works on Spark; the Vertex AI provider needs billing.
 3. Let the console enable the required APIs. It may offer to create a Gemini API key for you; the key is held by Firebase and must not be copied into the app or the repo.
-4. If AI Logic offers an App Check enforcement setting, leave it **off** for now (see step 5).
+4. The guided setup automatically enforces App Check for AI Logic. Keep it enforced and configure the debug token in step 5 for local development. [Firebase AI Logic setup guide](https://firebase.google.com/docs/ai-logic/hybrid/web/get-started)
 
 ## 4. reCAPTCHA Enterprise key and App Check
 
@@ -63,17 +63,16 @@ reCAPTCHA Enterprise works on the Spark plan.
    **Do not add `localhost`.** Local development uses the App Check debug token from step 5 instead. (This differs from the original plan, which listed localhost; the Fact Checker verified that localhost should not be added for the debug flow.)
 
 4. Paste the key's **site key** (the public one) back into the App Check registration and save. Also put it in `.env.local` as `VITE_RECAPTCHA_ENTERPRISE_SITE_KEY`.
-5. Leave **enforcement off** for every service (AI Logic, Authentication, and the rest) until the app sends valid tokens in both development and production.
+5. In **Security > App Check > APIs**, confirm that **Firebase AI Logic** is enforced. If it shows **Unenforced**, enable enforcement. Leave the settings for other services as they are until their integrations send valid tokens. [Firebase AI Logic App Check guide](https://firebase.google.com/docs/ai-logic/app-check)
 
 ## 5. App Check debug token
 
-The debug token lets `npm run dev` on localhost pass App Check without reCAPTCHA.
+Once Firebase initialization is wired up, `npm run dev` on localhost can use the debug token to pass App Check.
 
 1. In **App Check > Apps**, open the overflow menu for `clearbill-web` and choose **Manage debug tokens**, then **Add debug token**. You can let the console generate a value.
 2. Put that value in `.env.local` as `VITE_APPCHECK_DEBUG_TOKEN`. Treat it like a password: anyone who has it can pass App Check for your project.
-3. How the app uses it: in development builds only, `src/firebase` sets `self.FIREBASE_APPCHECK_DEBUG_TOKEN` to this value **before** calling `initializeAppCheck`. Production builds never read it (`readClientEnv` drops it unless `import.meta.env.DEV` is true).
-4. Keep enforcement **off** for now.
-5. If the token ever leaks, delete it in the same **Manage debug tokens** dialog and add a new one.
+3. In development builds, the Firebase initializer must set `self.FIREBASE_APPCHECK_DEBUG_TOKEN` to this value **before** calling `initializeAppCheck`. The value is read in one place only, `appCheckDebugToken()` in `src/firebase/index.ts`, as `import.meta.env.DEV ? import.meta.env.VITE_APPCHECK_DEBUG_TOKEN : undefined`. `vite build` replaces `import.meta.env.DEV` with `false`, so the minifier drops the branch and the token is never inlined into `dist/`. `readClientEnv` neither reads nor returns the token. CI enforces this: it builds with a canary token and fails if the canary appears anywhere in `dist/`, source maps included. Even so, never put a real debug token in a production or CI environment.
+4. If the token ever leaks, delete it in the same **Manage debug tokens** dialog and add a new one.
 
 ## 6. Enable Anonymous sign-in
 
