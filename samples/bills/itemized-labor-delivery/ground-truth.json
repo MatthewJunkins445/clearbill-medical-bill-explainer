@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "id": "itemized-labor-delivery",
+  "synthetic": true,
+  "kind": "itemized_bill",
+  "description": "Two-day maternity stay with a duplicated blood-typing lab and an epidural charge the patient should confirm.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf"
+  },
+  "approxTokens": 551,
+  "pii": [
+    {
+      "category": "FACILITY_NAME",
+      "value": "Lake Imaginary Community Hospital",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 74,
+          "end": 107
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "50 Shoreline Fable Rd\nLake Imaginary, MN 56218",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 108,
+          "end": 154
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(320) 555-0144",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 172,
+          "end": 186
+        },
+        {
+          "start": 2187,
+          "end": 2201
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "WOBBLESBY, CLEMENTINE",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 233,
+          "end": 254
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "11-NOV-1993",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 262,
+          "end": 273
+        }
+      ]
+    },
+    {
+      "category": "PERSON_NAME",
+      "value": "Fenwick Wobblesby",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 285,
+          "end": 302
+        },
+        {
+          "start": 2042,
+          "end": 2059
+        }
+      ]
+    },
+    {
+      "category": "SSN",
+      "value": "XXX-XX-6555",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 320,
+          "end": 331
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "18 Driftwood Doodle Way\nLake Imaginary, MN 56219",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 341,
+          "end": 389
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(320) 555-0132",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 397,
+          "end": 411
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "LICH5311794",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 421,
+          "end": 432
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "PMH939337840",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 483,
+          "end": 495
+        }
+      ]
+    },
+    {
+      "category": "PROVIDER_NAME",
+      "value": "Dr. Philippa Muddlecombe",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 507,
+          "end": 531
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "O80 Full-term uncomplicated delivery",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 587,
+          "end": 623
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Clementine Wobblesby",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 2160,
+          "end": 2180
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "0720",
+      "reason": "REVENUE code"
+    },
+    {
+      "value": "59409",
+      "reason": "CPT code"
+    },
+    {
+      "value": "01967",
+      "reason": "CPT code"
+    },
+    {
+      "value": "0122",
+      "reason": "REVENUE code"
+    },
+    {
+      "value": "85025",
+      "reason": "CPT code"
+    },
+    {
+      "value": "86900",
+      "reason": "CPT code"
+    },
+    {
+      "value": "J2790",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "07/19/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "07/20/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "07/21/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "5,200.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "3,800.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "2,900.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "4,800.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "95.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "72.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "420.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "17,359.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "4,985.00",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "11,430.00",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "944.00",
+      "reason": "total patientResponsibility"
+    }
+  ],
+  "lineItems": [
+    {
+      "serviceDate": "2026-07-19",
+      "code": "0720",
+      "codeSystem": "REVENUE",
+      "description": "Labor room / delivery",
+      "units": 1,
+      "charge": 5200.0,
+      "insurancePaid": 3400.0,
+      "patientOwes": 300.0
+    },
+    {
+      "serviceDate": "2026-07-19",
+      "code": "59409",
+      "codeSystem": "CPT",
+      "description": "Vaginal delivery only",
+      "units": 1,
+      "charge": 3800.0,
+      "insurancePaid": 2500.0,
+      "patientOwes": 200.0
+    },
+    {
+      "serviceDate": "2026-07-19",
+      "code": "01967",
+      "codeSystem": "CPT",
+      "description": "Neuraxial labor analgesia",
+      "units": 1,
+      "charge": 2900.0,
+      "insurancePaid": 1900.0,
+      "patientOwes": 200.0
+    },
+    {
+      "serviceDate": "2026-07-19",
+      "code": "0122",
+      "codeSystem": "REVENUE",
+      "description": "Room and board, OB",
+      "units": 2,
+      "charge": 4800.0,
+      "insurancePaid": 3200.0,
+      "patientOwes": 200.0
+    },
+    {
+      "serviceDate": "2026-07-20",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 60.0,
+      "patientOwes": 10.0
+    },
+    {
+      "serviceDate": "2026-07-20",
+      "code": "86900",
+      "codeSystem": "CPT",
+      "description": "Blood typing, ABO",
+      "units": 1,
+      "charge": 72.0,
+      "insurancePaid": 45.0,
+      "patientOwes": 7.0
+    },
+    {
+      "serviceDate": "2026-07-20",
+      "code": "86900",
+      "codeSystem": "CPT",
+      "description": "Blood typing, ABO",
+      "units": 1,
+      "charge": 72.0,
+      "insurancePaid": 45.0,
+      "patientOwes": 7.0
+    },
+    {
+      "serviceDate": "2026-07-21",
+      "code": "J2790",
+      "codeSystem": "HCPCS",
+      "description": "Rho(D) immune globulin",
+      "units": 1,
+      "charge": 420.0,
+      "insurancePaid": 280.0,
+      "patientOwes": 20.0
+    }
+  ],
+  "totals": {
+    "charges": 17359.0,
+    "adjustments": 4985.0,
+    "insurancePaid": 11430.0,
+    "patientResponsibility": 944.0
+  },
+  "plantedIssues": [
+    {
+      "type": "DUPLICATE_CHARGE",
+      "lineIndexes": [
+        5,
+        6
+      ],
+      "note": "ABO blood typing 86900 billed twice on 07/20/2026."
+    },
+    {
+      "type": "SERVICE_NOT_RECEIVED_CHECK",
+      "lineIndexes": [
+        2
+      ],
+      "note": "Epidural (01967) billed; patients who had an unmedicated birth should confirm whether it was provided."
+    }
+  ],
+  "tags": [
+    "hospital",
+    "maternity",
+    "insured",
+    "guarantor"
+  ]
+}

@@ -1,0 +1,33 @@
+SYNTHETIC SAMPLE - NOT A REAL BILL - ALL NAMES AND NUMBERS ARE FICTIONAL
+
+PLACEHOLDER MUTUAL HEALTH PLAN
+PO Box 4100, Sampleton, OH 44985
+Member services 1-330-555-0150   www.example.com/pmhp
+
+EXPLANATION OF BENEFITS          THIS IS NOT A BILL
+
+HORATIO DUNKELBERRY
+240 Crumbcake Crescent
+Sampleton, OH 44986
+
+Member: Horatio Dunkelberry    Date of birth: 5/3/52
+Member ID: PMH861398476    Group: GRP-20551
+Claim number: CLM77505112165    Processed: 10/03/2026
+Provider: Ophelia Quackenbush, MD, Sampleton Heart and Vascular Clinic
+Network status: IN NETWORK
+Diagnosis on claim: I48.91 Atrial fibrillation, unspecified
+
+DATE       CODE    SERVICE                            QTY      BILLED  PLAN PAID   DISCOUNT    YOU OWE
+------------------------------------------------------------------------------------------------------
+09/15/2026 99204   New patient office visit             1      420.00     210.00     150.00      60.00
+09/15/2026 93000   ECG, 12-lead with interpretation     1       95.00      48.00      37.00      10.00
+09/15/2026 93306   Echo, transthoracic, complete *A1    1    2,100.00       0.00       0.00   2,100.00
+
+                                                    TOTAL BILLED                      2,615.00
+                                                    TOTAL DISCOUNTS                     187.00
+                                                    TOTAL PLAN PAID                     258.00
+                                                    TOTAL YOU MAY OWE                 2,170.00
+
+Remark *A1: Denied. Prior authorization was not on file for this service.
+You may appeal within 180 days of this notice. See the back of this page for appeal rights.
+Your provider may bill you for the amount shown under YOU OWE.

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "summary-statement-er",
+  "synthetic": true,
+  "kind": "summary_statement",
+  "description": "One-page summary statement for an ER visit: totals only, no line items, with a full guarantor SSN printed.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf",
+    "image": "bill.png"
+  },
+  "approxTokens": 197,
+  "pii": [
+    {
+      "category": "FACILITY_NAME",
+      "value": "Saint Placeholder Memorial Hospital",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 74,
+          "end": 109
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "IGNATIUS BUMBLETHORPE",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 135,
+          "end": 156
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "1 Marmalade Mews\nFauxville, PA 17995",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 157,
+          "end": 193
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Ignatius Bumblethorpe",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 204,
+          "end": 225
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "02/29/1956",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 248,
+          "end": 258
+        }
+      ]
+    },
+    {
+      "category": "SSN",
+      "value": "921-26-5949",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 282,
+          "end": 293
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "1408-057896",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 303,
+          "end": 314
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(717) 555-0122",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 726,
+          "end": 740
+        }
+      ]
+    },
+    {
+      "category": "EMAIL",
+      "value": "iggy.bumble@example.org",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 761,
+          "end": 784
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "4,210.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "862.84",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "500.00",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "2,847.16",
+      "reason": "total patientResponsibility"
+    },
+    {
+      "value": "09/12/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "11/19/2026",
+      "reason": "due date"
+    }
+  ],
+  "lineItems": [],
+  "totals": {
+    "charges": 4210.0,
+    "adjustments": 862.84,
+    "insurancePaid": 500.0,
+    "patientResponsibility": 2847.16
+  },
+  "plantedIssues": [
+    {
+      "type": "NO_ITEMIZATION",
+      "lineIndexes": [],
+      "note": "Only totals are shown. The patient should request an itemized bill with CPT/HCPCS codes before paying."
+    }
+  ],
+  "tags": [
+    "hospital",
+    "summary",
+    "ssn"
+  ]
+}

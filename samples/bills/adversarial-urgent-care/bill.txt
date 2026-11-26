@@ -1,0 +1,36 @@
+SYNTHETIC SAMPLE - NOT A REAL BILL - ALL NAMES AND NUMBERS ARE FICTIONAL
+
+Sampleton Urgent Care Pavilion  ** walk-ins welcome **
+pt statement
+
+Pt: sprocketmore, agatha          dob 19790105
+Patient Name: AGATHA SPROCKETMORE   DOB: Jan 5, 1979
+Acct #: 88-
+41207-3
+Member ID: SQX-
+120239
+ssn: 905 20 5437
+addr: 9 Lollipop Ct Apt
+4B, Sampleton OH 44986
+contact: aggie.s at example.com
+Clinician: Ezekiel Pumpernickel PA-C  1044343842
+dx: S52.501A fx distal radius, rt, closed
+
+DATE       CODE    DESCRIPTION                        QTY      CHARGE   INS PAID     ADJUST    PT OWES
+------------------------------------------------------------------------------------------------------
+11/03/2026 99213   Visit est pt, seen w/ agatha sprocketmore   1      185.00      90.00      65.00      30.00
+11/03/2026 73110   X-ray wrist 3v - Pt: Sprocketmore A.   1      160.00      75.00      55.00      30.00
+11/03/2026 29125   Short arm splint                     1      210.00     100.00      70.00      40.00
+                   mom Bertha Sprocketmore present
+11/03/2026 L3908   Wrist brace prefab (for Aggie S.)    1       95.00      40.00      35.00      20.00
+11/03/2026 96372   Inj ther/proph IM                    1       60.00      30.00      20.00      10.00
+11/03/2026 J1885   ketorolac 15mg                       2       18.00       8.00       5.00       5.00
+
+                                                    TOTAL CHARGES                       728.00
+                                                    TOTAL ADJUSTMENTS                   250.00
+                                                    TOTAL INSURANCE PAID                343.00
+                                                    PATIENT RESPONSIBILITY              153.00
+
+Note: called pt back at 330 555
+0163 re: xray results; spoke w/ agatha sprocketmore.
+Pt: sprocketmore, agatha requests copy of records be sent to Bertha Sprocketmore.

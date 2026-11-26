@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "itemized-outpatient-mri",
+  "synthetic": true,
+  "kind": "itemized_bill",
+  "description": "Outpatient knee MRI without contrast that still bills a gadolinium contrast agent, with a total-charges line that does not add up.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf"
+  },
+  "approxTokens": 425,
+  "pii": [
+    {
+      "category": "FACILITY_NAME",
+      "value": "Mount Hypothetical Regional Medical Center",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 74,
+          "end": 116
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "9 Summit Placeholder Dr\nNowhere Falls, CO 81399",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 117,
+          "end": 164
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(970) 555-0133",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 165,
+          "end": 179
+        },
+        {
+          "start": 1682,
+          "end": 1696
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "MARIGOLD PENNYWHISTLE",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 221,
+          "end": 242
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "512 Quince Cottage Ln\nNowhere Falls, CO 81398",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 243,
+          "end": 288
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Marigold Pennywhistle",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 299,
+          "end": 320
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "July 9, 1988",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 339,
+          "end": 351
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "MH-377347257",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 365,
+          "end": 377
+        }
+      ]
+    },
+    {
+      "category": "PROVIDER_NAME",
+      "value": "Dr. Leopold Wigglesworth",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 428,
+          "end": 452
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "1796429283",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 459,
+          "end": 469
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "M25.561 Pain in right knee",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 487,
+          "end": 513
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "NBT03125518",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 557,
+          "end": 568
+        }
+      ]
+    },
+    {
+      "category": "EMAIL",
+      "value": "marigold.p@example.org",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 677,
+          "end": 699
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "73721",
+      "reason": "CPT code"
+    },
+    {
+      "value": "A9579",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "G0463",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "10/14/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "3,120.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "270.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "350.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "3,840.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "1,496.00",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "2,244.00",
+      "reason": "total patientResponsibility"
+    }
+  ],
+  "lineItems": [
+    {
+      "serviceDate": "2026-10-14",
+      "code": "73721",
+      "codeSystem": "CPT",
+      "description": "MRI knee joint w/o contrast",
+      "units": 1,
+      "charge": 3120.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 1872.0
+    },
+    {
+      "serviceDate": "2026-10-14",
+      "code": "A9579",
+      "codeSystem": "HCPCS",
+      "description": "Gadolinium contrast, per ml",
+      "units": 15,
+      "charge": 270.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 162.0
+    },
+    {
+      "serviceDate": "2026-10-14",
+      "code": "G0463",
+      "codeSystem": "HCPCS",
+      "description": "Hospital outpatient clinic visit",
+      "units": 1,
+      "charge": 350.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 210.0
+    }
+  ],
+  "totals": {
+    "charges": 3840.0,
+    "adjustments": 1496.0,
+    "insurancePaid": 0.0,
+    "patientResponsibility": 2244.0
+  },
+  "plantedIssues": [
+    {
+      "type": "SERVICE_NOT_RECEIVED_CHECK",
+      "lineIndexes": [
+        1
+      ],
+      "note": "Contrast agent billed for an MRI coded 'without contrast' (73721). Ask the patient whether contrast was injected."
+    },
+    {
+      "type": "MATH_ERROR",
+      "lineIndexes": [
+        0,
+        1,
+        2
+      ],
+      "note": "Printed total charges 3,840.00 but the line items sum to 3,740.00; charges minus adjustments do not equal the printed balance."
+    }
+  ],
+  "tags": [
+    "hospital",
+    "outpatient",
+    "imaging",
+    "deductible"
+  ]
+}

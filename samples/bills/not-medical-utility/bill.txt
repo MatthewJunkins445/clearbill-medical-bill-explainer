@@ -1,0 +1,27 @@
+SYNTHETIC SAMPLE - NOT A REAL BILL - ALL NAMES AND NUMBERS ARE FICTIONAL
+
+FAUXVILLE MUNICIPAL POWER & WATER
+Customer service 1-717-555-0171   www.example.org/fmpw
+
+ROSAMUND KETTLEBY
+302 Teakettle Trace
+Fauxville, PA 17994
+
+Account number: 467-02274-30
+Billing date: 11/05/2026      Service period: 10/01/2026 - 10/31/2026
+
+ELECTRIC SERVICE
+  Meter reading 10/31: 48,215   previous: 47,602   usage: 613 kWh
+  Energy charge 613 kWh x 0.1420                    87.05
+  Customer charge                                   12.00
+WATER SERVICE
+  Usage 4,100 gal                                   31.98
+  Stormwater fee                                     6.50
+Taxes and fees                                       4.84
+                                                -------
+TOTAL AMOUNT DUE                                   142.37
+
+Payment due by 11/25/2026. A late fee of 5.00 applies after the due date.
+Autopay confirmation will be emailed to r.kettleby@example.com.
+Phone on file: (717) 555-0153
+Thank you, Rosamund Kettleby, for being a valued customer.
