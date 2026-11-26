@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import sampleText from '../../../samples/bills/itemized-er-laceration/bill.txt?raw';
 import sampleTruth from '../../../samples/bills/itemized-er-laceration/ground-truth.json';
 import schema from '../../../samples/schema/ground-truth.schema.json';
@@ -114,8 +114,12 @@ describe('W5 mock privacy boundary', () => {
 });
 
 describe('W5 mock redaction and device scenarios', () => {
+  afterEach(() => { vi.unstubAllEnvs(); });
+
   it('exposes agreed PII categories through the dev factory and keeps removable spans reversible', async () => {
     expect(PII_CATEGORIES).toEqual(schema.$defs.pii.properties.category.enum);
+    // The factory returns the mock only when it is requested in a dev or test run.
+    vi.stubEnv('VITE_AI_MODE', 'mock');
     const ai = await createClearBillAI();
     const { data: draft } = await ai.createRedactionDraft(sample);
     const removedIds = draft.entities.filter((item) => item.category === 'PATIENT_NAME' || item.category === 'SSN' ||

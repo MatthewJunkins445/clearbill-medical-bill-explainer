@@ -4,6 +4,9 @@ import type { AppCheck, AppCheckOptions } from 'firebase/app-check';
 import type { Auth } from 'firebase/auth';
 import type { RemoteConfig, Value } from 'firebase/remote-config';
 import {
+  ANONYMOUS_SIGN_IN_TIMEOUT_MS,
+  REMOTE_CONFIG_DEV_FETCH_INTERVAL_MS,
+  REMOTE_CONFIG_FETCH_INTERVAL_MS,
   appCheckDebugToken,
   ConfigError,
   initializeFirebase,
@@ -16,7 +19,7 @@ const mocks = vi.hoisted(() => {
   const app = { name: 'app' } as FirebaseApp;
   const auth = { name: 'auth' } as Auth;
   const appCheck = {} as AppCheck;
-  const remoteConfig = {} as RemoteConfig;
+  const remoteConfig = { settings: { minimumFetchIntervalMillis: 43_200_000, fetchTimeoutMillis: 60_000 } } as RemoteConfig;
 
   return {
     app,
@@ -333,5 +336,58 @@ describe('initializeFirebase', () => {
     expect(runtime.remoteConfig.fetched).toBe(false);
     expect(runtime.remoteConfig.getBoolean('cloud_region_allowed', false)).toBe(false);
     expect(runtime.remoteConfig.getBoolean('cloud_features_enabled', true)).toBe(true);
+  });
+});
+
+describe('startup bounds (final fix wave)', () => {
+  it('continues with authReady false when anonymous sign-in stalls past the timeout', async () => {
+    vi.useFakeTimers();
+    let rejectLate: (reason: unknown) => void = () => undefined;
+    mocks.signInAnonymously.mockImplementation(() => new Promise((_resolve, reject) => { rejectLate = reject; }));
+
+    const pending = initializeFirebase(clientEnv);
+    await vi.advanceTimersByTimeAsync(ANONYMOUS_SIGN_IN_TIMEOUT_MS);
+    const runtime = await pending;
+
+    expect(ANONYMOUS_SIGN_IN_TIMEOUT_MS).toBe(8000);
+    expect(runtime.authReady).toBe(false);
+    expect(runtime.cloudReady).toBe(false);
+    expect(runtime.remoteConfig.fetched).toBe(true);
+    // A late failure after the timeout is swallowed (vitest fails the run on an unhandled rejection).
+    rejectLate(new Error('late auth failure'));
+    await vi.advanceTimersByTimeAsync(10);
+  });
+
+  it('does not time out a sign-in that completes in time', async () => {
+    vi.useFakeTimers();
+    mocks.signInAnonymously.mockImplementation(() => new Promise((resolve) => setTimeout(() => { resolve({}); }, ANONYMOUS_SIGN_IN_TIMEOUT_MS - 1)));
+
+    const pending = initializeFirebase(clientEnv);
+    await vi.advanceTimersByTimeAsync(ANONYMOUS_SIGN_IN_TIMEOUT_MS - 1);
+    expect((await pending).authReady).toBe(true);
+  });
+
+  it('sets a 10 minute Remote Config fetch interval outside development', async () => {
+    vi.stubEnv('DEV', false);
+    await initializeFirebase(clientEnv);
+    expect(REMOTE_CONFIG_FETCH_INTERVAL_MS).toBe(600_000);
+    expect(mocks.remoteConfig.settings.minimumFetchIntervalMillis).toBe(600_000);
+  });
+
+  it('always refetches Remote Config in development', async () => {
+    vi.stubEnv('DEV', true);
+    await initializeFirebase(clientEnv);
+    expect(REMOTE_CONFIG_DEV_FETCH_INTERVAL_MS).toBe(0);
+    expect(mocks.remoteConfig.settings.minimumFetchIntervalMillis).toBe(0);
+  });
+
+  it('takes an explicit fetch interval and sets it before the fetch', async () => {
+    let intervalAtFetch: number | undefined;
+    mocks.fetchAndActivate.mockImplementation((rc) => {
+      intervalAtFetch = rc.settings.minimumFetchIntervalMillis;
+      return Promise.resolve(true);
+    });
+    await initializeFirebase(clientEnv, { remoteConfigFetchIntervalMs: 1234 });
+    expect(intervalAtFetch).toBe(1234);
   });
 });

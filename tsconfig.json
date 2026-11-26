@@ -19,6 +19,7 @@
     "isolatedModules": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
+    "paths": { "@design/*": ["./design/*"] },
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "noEmit": true

@@ -2,7 +2,7 @@ import { PII_CATEGORIES } from '../contract.ts';
 import type { LocalVault, PiiCategory, RedactionEntity, RedactionReview, TextRange } from '../contract.ts';
 import type { BillFixture } from './fixtures.ts';
 
-const guardPatterns = {
+export const guardPatterns = {
   SSN: /\b(\d{3}[- ]\d{2}[- ]\d{4}|XXX[- ]XX[- ]\d{4})\b/gi,
   PHONE: /(?:\+?1[- .]?)?(?:\(\d{3}\)\s*|\b\d{3}[- .])\d{3}[- .]\d{4}\b/g,
   EMAIL: /[\w.%+-]+@[\w.-]+\.[a-z]{2,}\b/gi,
@@ -10,12 +10,14 @@ const guardPatterns = {
   ACCOUNT_NUMBER: /\b(?:account|acct)(?:[ \t]+(?:number|no\.?|id))?[ \t]*:?[ \t]*([a-z0-9-]*\d[a-z0-9-]*)/gi,
   DOB: /\b(?:dob|date of birth|birth date)[ \t]*:?[ \t]*(\d{4}[-/]\d{1,2}[-/]\d{1,2}|\d{1,2}[-/]\d{1,2}[-/]\d{2,4}|\d{1,2}-[a-z]{3}-\d{4}|[a-z]{3,9} +\d{1,2},? +\d{4}|\d{8})\b/gi,
 } satisfies Partial<Record<PiiCategory, RegExp>>;
-const locked = new Set<PiiCategory>(Object.keys(guardPatterns) as (keyof typeof guardPatterns)[]);
+// The six categories the guard always redacts, derived from guardPatterns so they cannot drift.
+export const lockedCategories: ReadonlySet<PiiCategory> = new Set<PiiCategory>(Object.keys(guardPatterns) as (keyof typeof guardPatterns)[]);
+const locked = lockedCategories;
 
-type Candidate = Pick<RedactionEntity, 'category' | 'value' | 'occurrences'>;
+export type Candidate = Pick<RedactionEntity, 'category' | 'value' | 'occurrences'>;
 
 // shortcut: common fixture identifier formats, replace with the full redaction rules in W6.
-function rules(text: string, fixture?: BillFixture): Candidate[] {
+export function rules(text: string, fixture?: BillFixture): Candidate[] {
   const result: Candidate[] = [];
   for (const category of Object.keys(guardPatterns) as (keyof typeof guardPatterns)[]) {
     for (const match of text.matchAll(guardPatterns[category])) {
@@ -50,7 +52,7 @@ export function redactionEntities(text: string, fixture: BillFixture | undefined
   return Object.freeze([...groups.values()]);
 }
 
-function findOccurrences(text: string, value: string): TextRange[] {
+export function findOccurrences(text: string, value: string): TextRange[] {
   const matches: TextRange[] = [];
   for (let start = text.indexOf(value); start !== -1; start = text.indexOf(value, start + value.length)) {
     matches.push({ start, end: start + value.length });

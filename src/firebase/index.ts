@@ -118,6 +118,24 @@ export interface FirebaseRuntime {
 const REMOTE_CONFIG_FETCH_TIMEOUT_MS = 5000;
 
 /**
+ * Anonymous sign-in waits for an App Check token, which can stall for a long time when reCAPTCHA is slow or
+ * blocked. After this long startup continues with authReady false (cloud closed); a late result is ignored.
+ */
+export const ANONYMOUS_SIGN_IN_TIMEOUT_MS = 8000;
+
+/**
+ * Remote Config minimum fetch interval. The SDK default is 12 hours, which would delay a kill switch by up to
+ * half a day. Production refetches at most every 10 minutes (on page load); development always refetches.
+ */
+export const REMOTE_CONFIG_FETCH_INTERVAL_MS = 600_000;
+export const REMOTE_CONFIG_DEV_FETCH_INTERVAL_MS = 0;
+
+export interface InitializeOptions {
+  /** Defaults to REMOTE_CONFIG_DEV_FETCH_INTERVAL_MS in development, REMOTE_CONFIG_FETCH_INTERVAL_MS otherwise. */
+  readonly remoteConfigFetchIntervalMs?: number;
+}
+
+/**
  * Used whenever Remote Config is unavailable. Every key resolves to the caller's fallback; ai
  * passes false for `cloud_region_allowed` (fail closed) and true for `cloud_features_enabled`,
  * so a failed fetch does not look like a kill switch.
@@ -201,9 +219,29 @@ function initializeAppCheckSafe(app: FirebaseApp, siteKey: string): boolean {
   }
 }
 
-async function initializeRemoteConfig(app: FirebaseApp): Promise<RemoteConfigReader> {
+/** Resolves true on sign-in, false on failure or timeout. A late settle after the timeout is swallowed. */
+async function signInWithTimeout(auth: Auth): Promise<boolean> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const signIn = signInAnonymously(auth).then(
+    () => true,
+    () => false,
+  );
+  const timedOut = new Promise<false>((resolve) => {
+    timer = setTimeout(() => {
+      resolve(false);
+    }, ANONYMOUS_SIGN_IN_TIMEOUT_MS);
+  });
+  try {
+    return await Promise.race([signIn, timedOut]);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function initializeRemoteConfig(app: FirebaseApp, fetchIntervalMs: number): Promise<RemoteConfigReader> {
   try {
     const remoteConfig = getRemoteConfig(app);
+    remoteConfig.settings.minimumFetchIntervalMillis = fetchIntervalMs;
     if (!(await fetchAndActivateWithTimeout(remoteConfig))) {
       return FALLBACK_READER;
     }
@@ -218,22 +256,19 @@ async function initializeRemoteConfig(app: FirebaseApp): Promise<RemoteConfigRea
  * Boots the Firebase runtime. Only configuration and app creation can reject; App Check, Anonymous
  * Auth and Remote Config failures resolve with their readiness flags set to false.
  */
-export async function initializeFirebase(env?: ClientEnv): Promise<FirebaseRuntime> {
+export async function initializeFirebase(env?: ClientEnv, options: InitializeOptions = {}): Promise<FirebaseRuntime> {
   const config = env ?? readEnvFromVite();
   const app = getApps().length > 0 ? getApp() : initializeApp(config.firebase);
 
   const appCheckReady = initializeAppCheckSafe(app, config.recaptchaSiteKey);
 
   const auth = getAuth(app);
-  let authReady = false;
-  try {
-    await signInAnonymously(auth);
-    authReady = true;
-  } catch {
-    // Anonymous sign-in can fail offline; startup continues and authReady reports it.
-  }
+  // Anonymous sign-in can fail offline or stall on App Check; startup continues and authReady reports it.
+  const authReady = await signInWithTimeout(auth);
 
-  const remoteConfig = await initializeRemoteConfig(app);
+  const fetchIntervalMs = options.remoteConfigFetchIntervalMs ??
+    (import.meta.env.DEV ? REMOTE_CONFIG_DEV_FETCH_INTERVAL_MS : REMOTE_CONFIG_FETCH_INTERVAL_MS);
+  const remoteConfig = await initializeRemoteConfig(app, fetchIntervalMs);
 
   return {
     app,

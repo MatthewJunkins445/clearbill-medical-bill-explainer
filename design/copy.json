@@ -115,8 +115,10 @@
       "downloading": {
         "badge": "Downloading",
         "title": "Downloading the on-device model",
-        "bodyProgress": "{percent}% done. Keep this tab open.",
-        "bodyIndeterminate": "This can take several minutes. Keep this tab open.",
+        "bodyProgress": "{percent}% downloaded. Keep this tab open.",
+        "bodyIndeterminate": "Waiting for Chrome to report a download percentage. Keep this tab open.",
+        "bodyFinalizing": "100% downloaded. Chrome is getting the model ready.",
+        "trackAction": "Show download progress",
         "progressLabel": "Model download progress",
         "srProgressUpdate": "Download {percent}% done",
         "secondaryAction": "Use simple rules while I wait",
@@ -178,7 +180,11 @@
     "guardAppliedNotice_one": "{count} detail you kept will still be removed, because it is always removed.",
     "guardAppliedNotice_other": "{count} details you kept will still be removed, because they are always removed.",
     "continue": "Looks right, continue",
-    "backToImport": "Use a different bill"
+    "backToImport": "Use a different bill",
+    "manualTag": "Added by you",
+    "undoAdd": "Undo",
+    "undoAddLabel": "Undo removing {original} as {category}",
+    "undoAddAnnounce": "{original} will stay in the text."
   },
 
   "pii": {
@@ -284,6 +290,7 @@
     ],
     "answerFor": "Answer to: {question}",
     "standsAlone": "Each answer stands alone.",
+    "aboutChargePrefill": "What is {description}, and why was I charged for it?",
     "historyTitle": "Your earlier questions",
     "historyEmpty": "Your questions and answers will show here.",
     "deviceUnavailable": "The on-device model isn't ready. Set it up to ask questions."
@@ -336,7 +343,9 @@
     "regenerate": "Draft again",
     "nextSteps": "Before you send it: keep a copy, note the date, and ask for a reply in writing.",
     "unavailableDeclined": "The letter needs the cloud. You chose to keep everything on this computer.",
-    "changeChoice": "Change my choice"
+    "changeChoice": "Change my choice",
+    "editsNotKept": "Your edits and filled-in details are not kept if you leave this tab.",
+    "redraftWarning": "Your edits will be replaced by a new draft. Choose \"Draft again\" once more to continue."
   },
 
   "badges": {
@@ -442,8 +451,8 @@
       "primaryAction": "Edit my question"
     },
     "QUOTA_OR_RATE_LIMIT": {
-      "title": "Too many requests right now",
-      "body": "ClearBill reached a cloud limit. Wait a minute and try again.",
+      "title": "Cloud AI is temporarily unavailable",
+      "body": "The cloud model is busy or has reached a usage limit. If the daily quota is used up, try again after it resets.",
       "primaryAction": "Try again"
     },
     "APP_CHECK_FAILED": {
@@ -537,6 +546,7 @@
       "NONE": "Rules only"
     },
     "latencyValue": "{ms} ms",
+    "fellBackValue": "Used a fallback",
     "sentValue": "{characters} characters",
     "sentNone": "Nothing",
     "errorValue": "Failed ({code})",
