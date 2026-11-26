@@ -1,0 +1,39 @@
+# CODEOWNERS for ClearBill.
+#
+# Every Squad agent shares one GitHub account, so each path lists that account as the
+# GitHub owner. The comment above each rule names the Squad role that owns the folder.
+# Later rules win, so the catch-all comes first.
+
+# Default: lead
+* @MatthewJunkins445
+
+# devops
+/.github/ @MatthewJunkins445
+
+# ai
+/src/ai/ @MatthewJunkins445
+
+# devops
+/src/firebase/ @MatthewJunkins445
+
+# frontend
+/src/ui/ @MatthewJunkins445
+/index.html @MatthewJunkins445
+/public/ @MatthewJunkins445
+
+# python-dev
+/src/store/ @MatthewJunkins445
+/firestore/ @MatthewJunkins445
+/samples/ @MatthewJunkins445
+
+# tester
+/tests/ @MatthewJunkins445
+
+# ux-designer
+/design/ @MatthewJunkins445
+
+# docs
+/docs/ @MatthewJunkins445
+
+# devrel
+/submission/ @MatthewJunkins445
