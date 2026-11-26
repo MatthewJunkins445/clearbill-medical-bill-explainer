@@ -160,7 +160,7 @@ export function createMockAI(scenario: MockScenario = {}): MockClearBillAI {
       let fixture: BillFixture | undefined;
       let text: string;
       if (input.kind === 'sample') {
-        if (input.sampleId !== SAMPLE_IDS[0]) throw new ClearBillAIError('UNSUPPORTED_INPUT', false);
+        if (!Object.is(input.sampleId, SAMPLE_IDS[0])) throw new ClearBillAIError('UNSUPPORTED_INPUT', false);
         fixture = builtInSample;
         text = SAMPLE_TEXTS[input.sampleId];
       } else if (input.kind === 'image') {
@@ -194,7 +194,7 @@ export function createMockAI(scenario: MockScenario = {}): MockClearBillAI {
       if (!state) throw new ClearBillAIError('UNSUPPORTED_INPUT', false);
       const { text, vault, guardAppliedCount, applied } = applyReview(draft.text, draft.entities, review, state.fixture);
       const bill = Object.freeze({
-        redactedText: text, kind: draft.kind, provenance: draft.provenance, consentToCloud: review.consentToCloud === true,
+        redactedText: text, kind: draft.kind, provenance: draft.provenance, consentToCloud: Object.is(review.consentToCloud, true),
       }) as ApprovedBill;
       state.approved = bill;
       approvals.set(bill, state);
@@ -251,7 +251,7 @@ export function createMockAI(scenario: MockScenario = {}): MockClearBillAI {
         operation: 'draftLetter', mode: 'PREFER_IN_CLOUD', text: bill.redactedText, letterKind: kind,
         flagIds: flags.map((flag) => flag.id),
       });
-      const account = bill.redactedText.match(/\[ACCOUNT_NUMBER_\d+\]/)?.[0];
+      const account = /\[ACCOUNT_NUMBER_\d+\]/.exec(bill.redactedText)?.[0];
       const request = {
         itemized: 'Could you send me an itemized statement?',
         dispute: 'Could you review the charges on this statement?',

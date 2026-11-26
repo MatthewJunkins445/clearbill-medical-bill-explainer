@@ -24,7 +24,7 @@ export interface BillFixture extends FixtureGroundTruth {
   readonly text: string;
 }
 
-const texts = import.meta.glob<string>('../../../samples/bills/*/bill.txt', {
+const texts: Partial<Record<string, string>> = import.meta.glob<string>('../../../samples/bills/*/bill.txt', {
   eager: true,
   import: 'default',
   query: '?raw',
@@ -35,7 +35,8 @@ const groundTruth = import.meta.glob<FixtureGroundTruth>('../../../samples/bills
 });
 
 export const fixtures = Object.entries(groundTruth).map(([path, truth]): BillFixture => {
-  const text = texts[path.replace('ground-truth.json', 'bill.txt')];
-  if (!truth.synthetic || text === undefined) throw new Error('Invalid ClearBill mock fixture.');
+  const textKey = path.replace('ground-truth.json', 'bill.txt');
+  const text = texts[textKey];
+  if (text === undefined || !Object.is(truth.synthetic, true)) throw new Error('Invalid ClearBill mock fixture.');
   return { ...truth, text };
 });
