@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "id": "eob-specialist-visit",
+  "synthetic": true,
+  "kind": "eob",
+  "description": "Insurer EOB for a cardiology visit where the echocardiogram was denied for missing prior authorization.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf",
+    "image": "bill.png"
+  },
+  "approxTokens": 437,
+  "pii": [
+    {
+      "category": "PATIENT_NAME",
+      "value": "HORATIO DUNKELBERRY",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 246,
+          "end": 265
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "240 Crumbcake Crescent\nSampleton, OH 44986",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 266,
+          "end": 308
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Horatio Dunkelberry",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 318,
+          "end": 337
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "5/3/52",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 356,
+          "end": 362
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "PMH861398476",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 374,
+          "end": 386
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "GRP-20551",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 397,
+          "end": 406
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "CLM77505112165",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 421,
+          "end": 435
+        }
+      ]
+    },
+    {
+      "category": "PROVIDER_NAME",
+      "value": "Ophelia Quackenbush, MD",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 471,
+          "end": 494
+        }
+      ]
+    },
+    {
+      "category": "FACILITY_NAME",
+      "value": "Sampleton Heart and Vascular Clinic",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 496,
+          "end": 531
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "I48.91 Atrial fibrillation, unspecified",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 579,
+          "end": 618
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "99204",
+      "reason": "CPT code"
+    },
+    {
+      "value": "93000",
+      "reason": "CPT code"
+    },
+    {
+      "value": "93306",
+      "reason": "CPT code"
+    },
+    {
+      "value": "09/15/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "420.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "95.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "2,100.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "2,615.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "187.00",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "258.00",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "2,170.00",
+      "reason": "total patientResponsibility"
+    },
+    {
+      "value": "THIS IS NOT A BILL",
+      "reason": "EOB disclaimer the explanation must surface"
+    }
+  ],
+  "lineItems": [
+    {
+      "serviceDate": "2026-09-15",
+      "code": "99204",
+      "codeSystem": "CPT",
+      "description": "New patient office visit",
+      "units": 1,
+      "charge": 420.0,
+      "insurancePaid": 210.0,
+      "patientOwes": 60.0
+    },
+    {
+      "serviceDate": "2026-09-15",
+      "code": "93000",
+      "codeSystem": "CPT",
+      "description": "ECG, 12-lead with interpretation",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 48.0,
+      "patientOwes": 10.0
+    },
+    {
+      "serviceDate": "2026-09-15",
+      "code": "93306",
+      "codeSystem": "CPT",
+      "description": "Echo, transthoracic, complete *A1",
+      "units": 1,
+      "charge": 2100.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 2100.0
+    }
+  ],
+  "totals": {
+    "charges": 2615.0,
+    "adjustments": 187.0,
+    "insurancePaid": 258.0,
+    "patientResponsibility": 2170.0
+  },
+  "plantedIssues": [
+    {
+      "type": "OTHER",
+      "lineIndexes": [
+        2
+      ],
+      "note": "Echo denied for missing prior authorization. For in-network providers obtaining authorization is usually the provider's job; ask the provider to resubmit or appeal before paying."
+    }
+  ],
+  "tags": [
+    "eob",
+    "insured",
+    "denial",
+    "png"
+  ]
+}

@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  web:
+    name: Typecheck, lint, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - name: App Check debug token stays out of the production bundle
+        env:
+          VITE_APPCHECK_DEBUG_TOKEN: CANARY_DEBUG_TOKEN_DO_NOT_SHIP
+        run: |
+          # Keep the debug-token reader reachable until Firebase initialization is wired up.
+          cat >> src/ui/main.ts <<'EOF'
+          import { appCheckDebugToken } from '../firebase/index.ts';
+          document.documentElement.dataset['appCheckProbe'] =
+            appCheckDebugToken() ?? 'app-check-probe-compiled';
+          EOF
+          npm run build
+          if grep -rla 'CANARY_DEBUG_TOKEN_DO_NOT_SHIP' dist/; then
+            echo "::error::The App Check debug token canary was found in dist/ (files listed above)."
+            exit 1
+          fi
+          if ! grep -rl --include='*.js' 'app-check-probe-compiled' dist/; then
+            echo "::error::The App Check probe did not reach the production bundle."
+            exit 1
+          fi
+          echo "Canary not found in $(find dist -type f | wc -l) files under dist/."
+
+  secrets:
+    name: Secret scan (gitleaks)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Personal-account repos need no GITLEAKS_LICENSE.
+
+  samples:
+    name: Validate synthetic samples
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # samples/ holds a placeholder README until python-dev adds the generator, so the gate is
+      # the validator script itself rather than the folder.
+      - name: Check for the sample validator
+        id: gate
+        run: |
+          if [ -f samples/generator/validate.py ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::samples/generator/validate.py not found; skipping sample validation."
+          fi
+      - if: steps.gate.outputs.present == 'true'
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - if: steps.gate.outputs.present == 'true'
+        run: python samples/generator/validate.py

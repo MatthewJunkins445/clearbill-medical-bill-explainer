@@ -1,0 +1,5429 @@
+{
+  "schemaVersion": 1,
+  "id": "itemized-long-icu-stay",
+  "synthetic": true,
+  "kind": "itemized_bill",
+  "description": "Eighteen-day ICU stay with 459 line items across 11 pages (long-context test) including a duplicated CT and a transfusion to confirm.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf"
+  },
+  "approxTokens": 12922,
+  "pii": [
+    {
+      "category": "FACILITY_NAME",
+      "value": "Nonesuch Valley General Hospital",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 74,
+          "end": 106
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "4400 Placeholder Pkwy\nSampleton, OH 44985",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 107,
+          "end": 148
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(330) 555-0110",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 166,
+          "end": 180
+        },
+        {
+          "start": 51672,
+          "end": 51686
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "GUMBLEWORTH, PERCIVAL",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 243,
+          "end": 264
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "1949-06-21",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 273,
+          "end": 283
+        },
+        {
+          "start": 778,
+          "end": 788
+        },
+        {
+          "start": 5705,
+          "end": 5715
+        },
+        {
+          "start": 10632,
+          "end": 10642
+        },
+        {
+          "start": 15559,
+          "end": 15569
+        },
+        {
+          "start": 20486,
+          "end": 20496
+        },
+        {
+          "start": 25413,
+          "end": 25423
+        },
+        {
+          "start": 30340,
+          "end": 30350
+        },
+        {
+          "start": 35267,
+          "end": 35277
+        },
+        {
+          "start": 40194,
+          "end": 40204
+        },
+        {
+          "start": 45121,
+          "end": 45131
+        },
+        {
+          "start": 50049,
+          "end": 50059
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "MRN2390802",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 292,
+          "end": 302
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "NV31404067",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 312,
+          "end": 322
+        },
+        {
+          "start": 760,
+          "end": 770
+        },
+        {
+          "start": 5687,
+          "end": 5697
+        },
+        {
+          "start": 10614,
+          "end": 10624
+        },
+        {
+          "start": 15541,
+          "end": 15551
+        },
+        {
+          "start": 20468,
+          "end": 20478
+        },
+        {
+          "start": 25395,
+          "end": 25405
+        },
+        {
+          "start": 30322,
+          "end": 30332
+        },
+        {
+          "start": 35249,
+          "end": 35259
+        },
+        {
+          "start": 40176,
+          "end": 40186
+        },
+        {
+          "start": 45103,
+          "end": 45113
+        },
+        {
+          "start": 50031,
+          "end": 50041
+        }
+      ]
+    },
+    {
+      "category": "PROVIDER_NAME",
+      "value": "Dr. Cornelius Fumblebee",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 378,
+          "end": 401
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "1876836169",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 407,
+          "end": 417
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "J96.01 Acute respiratory failure with hypoxia",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 440,
+          "end": 485
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "A41.9 Sepsis, unspecified organism",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 507,
+          "end": 541
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "PMH720399895",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 593,
+          "end": 605
+        }
+      ]
+    },
+    {
+      "category": "PERSON_NAME",
+      "value": "Euphemia Gumbleworth",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 625,
+          "end": 645
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(330) 555-0197",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 647,
+          "end": 661
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "4021 Butterscotch Bluff Rd\nSampleton, OH 44988",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 671,
+          "end": 717
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Percival Gumbleworth",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 728,
+          "end": 748
+        },
+        {
+          "start": 5655,
+          "end": 5675
+        },
+        {
+          "start": 10582,
+          "end": 10602
+        },
+        {
+          "start": 15509,
+          "end": 15529
+        },
+        {
+          "start": 20436,
+          "end": 20456
+        },
+        {
+          "start": 25363,
+          "end": 25383
+        },
+        {
+          "start": 30290,
+          "end": 30310
+        },
+        {
+          "start": 35217,
+          "end": 35237
+        },
+        {
+          "start": 40144,
+          "end": 40164
+        },
+        {
+          "start": 45071,
+          "end": 45091
+        },
+        {
+          "start": 49999,
+          "end": 50019
+        },
+        {
+          "start": 51645,
+          "end": 51665
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "0200",
+      "reason": "REVENUE code"
+    },
+    {
+      "value": "99291",
+      "reason": "CPT code"
+    },
+    {
+      "value": "94003",
+      "reason": "CPT code"
+    },
+    {
+      "value": "36600",
+      "reason": "CPT code"
+    },
+    {
+      "value": "76937",
+      "reason": "CPT code"
+    },
+    {
+      "value": "80048",
+      "reason": "CPT code"
+    },
+    {
+      "value": "82803",
+      "reason": "CPT code"
+    },
+    {
+      "value": "82962",
+      "reason": "CPT code"
+    },
+    {
+      "value": "83605",
+      "reason": "CPT code"
+    },
+    {
+      "value": "83735",
+      "reason": "CPT code"
+    },
+    {
+      "value": "84100",
+      "reason": "CPT code"
+    },
+    {
+      "value": "84132",
+      "reason": "CPT code"
+    },
+    {
+      "value": "85025",
+      "reason": "CPT code"
+    },
+    {
+      "value": "85610",
+      "reason": "CPT code"
+    },
+    {
+      "value": "85730",
+      "reason": "CPT code"
+    },
+    {
+      "value": "87040",
+      "reason": "CPT code"
+    },
+    {
+      "value": "93005",
+      "reason": "CPT code"
+    },
+    {
+      "value": "94640",
+      "reason": "CPT code"
+    },
+    {
+      "value": "96365",
+      "reason": "CPT code"
+    },
+    {
+      "value": "96366",
+      "reason": "CPT code"
+    },
+    {
+      "value": "J0696",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "J1170",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "J2250",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "J2270",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "J2405",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "J7050",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "71045",
+      "reason": "CPT code"
+    },
+    {
+      "value": "87070",
+      "reason": "CPT code"
+    },
+    {
+      "value": "A4216",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "J1644",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "74177",
+      "reason": "CPT code"
+    },
+    {
+      "value": "99233",
+      "reason": "CPT code"
+    },
+    {
+      "value": "P9016",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "97110",
+      "reason": "CPT code"
+    },
+    {
+      "value": "08/03/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/04/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/05/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/06/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/07/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/08/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/09/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/10/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/11/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/12/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/13/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/14/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/15/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/16/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/17/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/18/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/19/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "08/20/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "6,850.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "1,450.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "1,650.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "210.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "480.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "215.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "310.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "108.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "118.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "68.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "64.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "59.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "95.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "78.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "82.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "390.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "160.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "98.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "410.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "96.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "84.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "60.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "62.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "88.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "25.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "380.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "36.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "175.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "12.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "168.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "24.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "15.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "31.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "44.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "4,200.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "620.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "120.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "192.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "28.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "90.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "93.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "22.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "195.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "18.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "75.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "72.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "294.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "240.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "56.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "100.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "520.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "196.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "30.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "54.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "1,960.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "48.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "285.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "144.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "50.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "190.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "360.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "66.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "392.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "45.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "227,071.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "68,121.30",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "131,701.18",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "27,248.52",
+      "reason": "total patientResponsibility"
+    }
+  ],
+  "lineItems": [
+    {
+      "serviceDate": "2026-08-03",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "99291",
+      "codeSystem": "CPT",
+      "description": "Critical care, first hour",
+      "units": 1,
+      "charge": 1450.0,
+      "insurancePaid": 841.0,
+      "patientOwes": 174.0
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "94003",
+      "codeSystem": "CPT",
+      "description": "Ventilator mgmt, subsequent day",
+      "units": 1,
+      "charge": 1650.0,
+      "insurancePaid": 957.0,
+      "patientOwes": 198.0
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 1,
+      "charge": 310.0,
+      "insurancePaid": 179.8,
+      "patientOwes": 37.2
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 6,
+      "charge": 108.0,
+      "insurancePaid": 62.64,
+      "patientOwes": 12.96
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 1,
+      "charge": 98.0,
+      "insurancePaid": 56.84,
+      "patientOwes": 11.76
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 4,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 4,
+      "charge": 96.0,
+      "insurancePaid": 55.68,
+      "patientOwes": 11.52
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 3,
+      "charge": 84.0,
+      "insurancePaid": 48.72,
+      "patientOwes": 10.08
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 4,
+      "charge": 60.0,
+      "insurancePaid": 34.8,
+      "patientOwes": 7.2
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 2,
+      "charge": 62.0,
+      "insurancePaid": 35.96,
+      "patientOwes": 7.44
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 4,
+      "charge": 88.0,
+      "insurancePaid": 51.04,
+      "patientOwes": 10.56
+    },
+    {
+      "serviceDate": "2026-08-03",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 1,
+      "charge": 25.0,
+      "insurancePaid": 14.5,
+      "patientOwes": 3.0
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "99291",
+      "codeSystem": "CPT",
+      "description": "Critical care, first hour",
+      "units": 1,
+      "charge": 1450.0,
+      "insurancePaid": 841.0,
+      "patientOwes": 174.0
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "94003",
+      "codeSystem": "CPT",
+      "description": "Ventilator mgmt, subsequent day",
+      "units": 1,
+      "charge": 1650.0,
+      "insurancePaid": 957.0,
+      "patientOwes": 198.0
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 1,
+      "charge": 310.0,
+      "insurancePaid": 179.8,
+      "patientOwes": 37.2
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 2,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 1,
+      "charge": 98.0,
+      "insurancePaid": 56.84,
+      "patientOwes": 11.76
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 4,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 2,
+      "charge": 12.0,
+      "insurancePaid": 6.96,
+      "patientOwes": 1.44
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 7,
+      "charge": 168.0,
+      "insurancePaid": 97.44,
+      "patientOwes": 20.16
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 2,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 1,
+      "charge": 15.0,
+      "insurancePaid": 8.7,
+      "patientOwes": 1.8
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 1,
+      "charge": 31.0,
+      "insurancePaid": 17.98,
+      "patientOwes": 3.72
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 2,
+      "charge": 44.0,
+      "insurancePaid": 25.52,
+      "patientOwes": 5.28
+    },
+    {
+      "serviceDate": "2026-08-04",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 1,
+      "charge": 25.0,
+      "insurancePaid": 14.5,
+      "patientOwes": 3.0
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "99291",
+      "codeSystem": "CPT",
+      "description": "Critical care, first hour",
+      "units": 1,
+      "charge": 1450.0,
+      "insurancePaid": 841.0,
+      "patientOwes": 174.0
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "94003",
+      "codeSystem": "CPT",
+      "description": "Ventilator mgmt, subsequent day",
+      "units": 1,
+      "charge": 1650.0,
+      "insurancePaid": 957.0,
+      "patientOwes": 198.0
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "74177",
+      "codeSystem": "CPT",
+      "description": "CT abd/pelvis with contrast",
+      "units": 1,
+      "charge": 4200.0,
+      "insurancePaid": 2436.0,
+      "patientOwes": 504.0
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "74177",
+      "codeSystem": "CPT",
+      "description": "CT abd/pelvis with contrast",
+      "units": 1,
+      "charge": 4200.0,
+      "insurancePaid": 2436.0,
+      "patientOwes": 504.0
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 2,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 1,
+      "charge": 120.0,
+      "insurancePaid": 69.6,
+      "patientOwes": 14.4
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 8,
+      "charge": 192.0,
+      "insurancePaid": 111.36,
+      "patientOwes": 23.04
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 1,
+      "charge": 28.0,
+      "insurancePaid": 16.24,
+      "patientOwes": 3.36
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 5,
+      "charge": 60.0,
+      "insurancePaid": 34.8,
+      "patientOwes": 7.2
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 6,
+      "charge": 90.0,
+      "insurancePaid": 52.2,
+      "patientOwes": 10.8
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 3,
+      "charge": 93.0,
+      "insurancePaid": 53.94,
+      "patientOwes": 11.16
+    },
+    {
+      "serviceDate": "2026-08-05",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 1,
+      "charge": 22.0,
+      "insurancePaid": 12.76,
+      "patientOwes": 2.64
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "99291",
+      "codeSystem": "CPT",
+      "description": "Critical care, first hour",
+      "units": 1,
+      "charge": 1450.0,
+      "insurancePaid": 841.0,
+      "patientOwes": 174.0
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "94003",
+      "codeSystem": "CPT",
+      "description": "Ventilator mgmt, subsequent day",
+      "units": 1,
+      "charge": 1650.0,
+      "insurancePaid": 957.0,
+      "patientOwes": 198.0
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 1,
+      "charge": 195.0,
+      "insurancePaid": 113.1,
+      "patientOwes": 23.4
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 3,
+      "charge": 18.0,
+      "insurancePaid": 10.44,
+      "patientOwes": 2.16
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 7,
+      "charge": 168.0,
+      "insurancePaid": 97.44,
+      "patientOwes": 20.16
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 1,
+      "charge": 28.0,
+      "insurancePaid": 16.24,
+      "patientOwes": 3.36
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 1,
+      "charge": 12.0,
+      "insurancePaid": 6.96,
+      "patientOwes": 1.44
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 5,
+      "charge": 75.0,
+      "insurancePaid": 43.5,
+      "patientOwes": 9.0
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 1,
+      "charge": 31.0,
+      "insurancePaid": 17.98,
+      "patientOwes": 3.72
+    },
+    {
+      "serviceDate": "2026-08-06",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 2,
+      "charge": 44.0,
+      "insurancePaid": 25.52,
+      "patientOwes": 5.28
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "99291",
+      "codeSystem": "CPT",
+      "description": "Critical care, first hour",
+      "units": 1,
+      "charge": 1450.0,
+      "insurancePaid": 841.0,
+      "patientOwes": 174.0
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "94003",
+      "codeSystem": "CPT",
+      "description": "Ventilator mgmt, subsequent day",
+      "units": 1,
+      "charge": 1650.0,
+      "insurancePaid": 957.0,
+      "patientOwes": 198.0
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 1,
+      "charge": 310.0,
+      "insurancePaid": 179.8,
+      "patientOwes": 37.2
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 4,
+      "charge": 72.0,
+      "insurancePaid": 41.76,
+      "patientOwes": 8.64
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 3,
+      "charge": 294.0,
+      "insurancePaid": 170.52,
+      "patientOwes": 35.28
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 2,
+      "charge": 240.0,
+      "insurancePaid": 139.2,
+      "patientOwes": 28.8
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 3,
+      "charge": 72.0,
+      "insurancePaid": 41.76,
+      "patientOwes": 8.64
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 2,
+      "charge": 56.0,
+      "insurancePaid": 32.48,
+      "patientOwes": 6.72
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 2,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 4,
+      "charge": 60.0,
+      "insurancePaid": 34.8,
+      "patientOwes": 7.2
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 2,
+      "charge": 62.0,
+      "insurancePaid": 35.96,
+      "patientOwes": 7.44
+    },
+    {
+      "serviceDate": "2026-08-07",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 2,
+      "charge": 44.0,
+      "insurancePaid": 25.52,
+      "patientOwes": 5.28
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "99291",
+      "codeSystem": "CPT",
+      "description": "Critical care, first hour",
+      "units": 1,
+      "charge": 1450.0,
+      "insurancePaid": 841.0,
+      "patientOwes": 174.0
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "94003",
+      "codeSystem": "CPT",
+      "description": "Ventilator mgmt, subsequent day",
+      "units": 1,
+      "charge": 1650.0,
+      "insurancePaid": 957.0,
+      "patientOwes": 198.0
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 1,
+      "charge": 310.0,
+      "insurancePaid": 179.8,
+      "patientOwes": 37.2
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 4,
+      "charge": 72.0,
+      "insurancePaid": 41.76,
+      "patientOwes": 8.64
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 1,
+      "charge": 195.0,
+      "insurancePaid": 113.1,
+      "patientOwes": 23.4
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 2,
+      "charge": 240.0,
+      "insurancePaid": 139.2,
+      "patientOwes": 28.8
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 3,
+      "charge": 18.0,
+      "insurancePaid": 10.44,
+      "patientOwes": 2.16
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 5,
+      "charge": 120.0,
+      "insurancePaid": 69.6,
+      "patientOwes": 14.4
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 5,
+      "charge": 60.0,
+      "insurancePaid": 34.8,
+      "patientOwes": 7.2
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 6,
+      "charge": 90.0,
+      "insurancePaid": 52.2,
+      "patientOwes": 10.8
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 2,
+      "charge": 62.0,
+      "insurancePaid": 35.96,
+      "patientOwes": 7.44
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 4,
+      "charge": 88.0,
+      "insurancePaid": 51.04,
+      "patientOwes": 10.56
+    },
+    {
+      "serviceDate": "2026-08-08",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 4,
+      "charge": 100.0,
+      "insurancePaid": 58.0,
+      "patientOwes": 12.0
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 6,
+      "charge": 108.0,
+      "insurancePaid": 62.64,
+      "patientOwes": 12.96
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 2,
+      "charge": 196.0,
+      "insurancePaid": 113.68,
+      "patientOwes": 23.52
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 5,
+      "charge": 30.0,
+      "insurancePaid": 17.4,
+      "patientOwes": 3.6
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 4,
+      "charge": 96.0,
+      "insurancePaid": 55.68,
+      "patientOwes": 11.52
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 3,
+      "charge": 84.0,
+      "insurancePaid": 48.72,
+      "patientOwes": 10.08
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 2,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 6,
+      "charge": 90.0,
+      "insurancePaid": 52.2,
+      "patientOwes": 10.8
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 2,
+      "charge": 62.0,
+      "insurancePaid": 35.96,
+      "patientOwes": 7.44
+    },
+    {
+      "serviceDate": "2026-08-09",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 1,
+      "charge": 25.0,
+      "insurancePaid": 14.5,
+      "patientOwes": 3.0
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 3,
+      "charge": 54.0,
+      "insurancePaid": 31.32,
+      "patientOwes": 6.48
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 1,
+      "charge": 120.0,
+      "insurancePaid": 69.6,
+      "patientOwes": 14.4
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 3,
+      "charge": 84.0,
+      "insurancePaid": 48.72,
+      "patientOwes": 10.08
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 3,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 1,
+      "charge": 31.0,
+      "insurancePaid": 17.98,
+      "patientOwes": 3.72
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 4,
+      "charge": 88.0,
+      "insurancePaid": 51.04,
+      "patientOwes": 10.56
+    },
+    {
+      "serviceDate": "2026-08-10",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 1,
+      "charge": 25.0,
+      "insurancePaid": 14.5,
+      "patientOwes": 3.0
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "P9016",
+      "codeSystem": "HCPCS",
+      "description": "Red blood cells, leukoreduced",
+      "units": 2,
+      "charge": 1960.0,
+      "insurancePaid": 1136.8,
+      "patientOwes": 235.2
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 2,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 1,
+      "charge": 98.0,
+      "insurancePaid": 56.84,
+      "patientOwes": 11.76
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 4,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 2,
+      "charge": 48.0,
+      "insurancePaid": 27.84,
+      "patientOwes": 5.76
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 2,
+      "charge": 56.0,
+      "insurancePaid": 32.48,
+      "patientOwes": 6.72
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 4,
+      "charge": 48.0,
+      "insurancePaid": 27.84,
+      "patientOwes": 5.76
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 1,
+      "charge": 15.0,
+      "insurancePaid": 8.7,
+      "patientOwes": 1.8
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 3,
+      "charge": 93.0,
+      "insurancePaid": 53.94,
+      "patientOwes": 11.16
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 4,
+      "charge": 88.0,
+      "insurancePaid": 51.04,
+      "patientOwes": 10.56
+    },
+    {
+      "serviceDate": "2026-08-11",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 1,
+      "charge": 25.0,
+      "insurancePaid": 14.5,
+      "patientOwes": 3.0
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 3,
+      "charge": 285.0,
+      "insurancePaid": 165.3,
+      "patientOwes": 34.2
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 5,
+      "charge": 90.0,
+      "insurancePaid": 52.2,
+      "patientOwes": 10.8
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 1,
+      "charge": 195.0,
+      "insurancePaid": 113.1,
+      "patientOwes": 23.4
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 2,
+      "charge": 196.0,
+      "insurancePaid": 113.68,
+      "patientOwes": 23.52
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 6,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 6,
+      "charge": 144.0,
+      "insurancePaid": 83.52,
+      "patientOwes": 17.28
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 3,
+      "charge": 84.0,
+      "insurancePaid": 48.72,
+      "patientOwes": 10.08
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 2,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 6,
+      "charge": 90.0,
+      "insurancePaid": 52.2,
+      "patientOwes": 10.8
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 2,
+      "charge": 62.0,
+      "insurancePaid": 35.96,
+      "patientOwes": 7.44
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 2,
+      "charge": 44.0,
+      "insurancePaid": 25.52,
+      "patientOwes": 5.28
+    },
+    {
+      "serviceDate": "2026-08-12",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 2,
+      "charge": 50.0,
+      "insurancePaid": 29.0,
+      "patientOwes": 6.0
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 2,
+      "charge": 190.0,
+      "insurancePaid": 110.2,
+      "patientOwes": 22.8
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 1,
+      "charge": 310.0,
+      "insurancePaid": 179.8,
+      "patientOwes": 37.2
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 2,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 1,
+      "charge": 195.0,
+      "insurancePaid": 113.1,
+      "patientOwes": 23.4
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 1,
+      "charge": 120.0,
+      "insurancePaid": 69.6,
+      "patientOwes": 14.4
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 3,
+      "charge": 18.0,
+      "insurancePaid": 10.44,
+      "patientOwes": 2.16
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 5,
+      "charge": 120.0,
+      "insurancePaid": 69.6,
+      "patientOwes": 14.4
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 3,
+      "charge": 84.0,
+      "insurancePaid": 48.72,
+      "patientOwes": 10.08
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 3,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 2,
+      "charge": 30.0,
+      "insurancePaid": 17.4,
+      "patientOwes": 3.6
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 1,
+      "charge": 31.0,
+      "insurancePaid": 17.98,
+      "patientOwes": 3.72
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 2,
+      "charge": 44.0,
+      "insurancePaid": 25.52,
+      "patientOwes": 5.28
+    },
+    {
+      "serviceDate": "2026-08-13",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 2,
+      "charge": 50.0,
+      "insurancePaid": 29.0,
+      "patientOwes": 6.0
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 2,
+      "charge": 190.0,
+      "insurancePaid": 110.2,
+      "patientOwes": 22.8
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 2,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 2,
+      "charge": 196.0,
+      "insurancePaid": 113.68,
+      "patientOwes": 23.52
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 3,
+      "charge": 360.0,
+      "insurancePaid": 208.8,
+      "patientOwes": 43.2
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 3,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 2,
+      "charge": 30.0,
+      "insurancePaid": 17.4,
+      "patientOwes": 3.6
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 3,
+      "charge": 93.0,
+      "insurancePaid": 53.94,
+      "patientOwes": 11.16
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 3,
+      "charge": 66.0,
+      "insurancePaid": 38.28,
+      "patientOwes": 7.92
+    },
+    {
+      "serviceDate": "2026-08-14",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 4,
+      "charge": 100.0,
+      "insurancePaid": 58.0,
+      "patientOwes": 12.0
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 3,
+      "charge": 285.0,
+      "insurancePaid": 165.3,
+      "patientOwes": 34.2
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 6,
+      "charge": 108.0,
+      "insurancePaid": 62.64,
+      "patientOwes": 12.96
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 4,
+      "charge": 392.0,
+      "insurancePaid": 227.36,
+      "patientOwes": 47.04
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 2,
+      "charge": 240.0,
+      "insurancePaid": 139.2,
+      "patientOwes": 28.8
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 4,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 2,
+      "charge": 48.0,
+      "insurancePaid": 27.84,
+      "patientOwes": 5.76
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 2,
+      "charge": 62.0,
+      "insurancePaid": 35.96,
+      "patientOwes": 7.44
+    },
+    {
+      "serviceDate": "2026-08-15",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 4,
+      "charge": 88.0,
+      "insurancePaid": 51.04,
+      "patientOwes": 10.56
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 3,
+      "charge": 285.0,
+      "insurancePaid": 165.3,
+      "patientOwes": 34.2
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 3,
+      "charge": 54.0,
+      "insurancePaid": 31.32,
+      "patientOwes": 6.48
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 1,
+      "charge": 195.0,
+      "insurancePaid": 113.1,
+      "patientOwes": 23.4
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 2,
+      "charge": 196.0,
+      "insurancePaid": 113.68,
+      "patientOwes": 23.52
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 4,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 1,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 3,
+      "charge": 84.0,
+      "insurancePaid": 48.72,
+      "patientOwes": 10.08
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 2,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 6,
+      "charge": 90.0,
+      "insurancePaid": 52.2,
+      "patientOwes": 10.8
+    },
+    {
+      "serviceDate": "2026-08-16",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 3,
+      "charge": 75.0,
+      "insurancePaid": 43.5,
+      "patientOwes": 9.0
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 2,
+      "charge": 190.0,
+      "insurancePaid": 110.2,
+      "patientOwes": 22.8
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 1,
+      "charge": 310.0,
+      "insurancePaid": 179.8,
+      "patientOwes": 37.2
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 3,
+      "charge": 54.0,
+      "insurancePaid": 31.32,
+      "patientOwes": 6.48
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 1,
+      "charge": 195.0,
+      "insurancePaid": 113.1,
+      "patientOwes": 23.4
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 3,
+      "charge": 294.0,
+      "insurancePaid": 170.52,
+      "patientOwes": 35.28
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 6,
+      "charge": 36.0,
+      "insurancePaid": 20.88,
+      "patientOwes": 4.32
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 5,
+      "charge": 120.0,
+      "insurancePaid": 69.6,
+      "patientOwes": 14.4
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 3,
+      "charge": 84.0,
+      "insurancePaid": 48.72,
+      "patientOwes": 10.08
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 1,
+      "charge": 12.0,
+      "insurancePaid": 6.96,
+      "patientOwes": 1.44
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 2,
+      "charge": 30.0,
+      "insurancePaid": 17.4,
+      "patientOwes": 3.6
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 1,
+      "charge": 22.0,
+      "insurancePaid": 12.76,
+      "patientOwes": 2.64
+    },
+    {
+      "serviceDate": "2026-08-17",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 1,
+      "charge": 25.0,
+      "insurancePaid": 14.5,
+      "patientOwes": 3.0
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 3,
+      "charge": 285.0,
+      "insurancePaid": 165.3,
+      "patientOwes": 34.2
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 1,
+      "charge": 310.0,
+      "insurancePaid": 179.8,
+      "patientOwes": 37.2
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 2,
+      "charge": 196.0,
+      "insurancePaid": 113.68,
+      "patientOwes": 23.52
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "96366",
+      "codeSystem": "CPT",
+      "description": "IV infusion, each additional hr",
+      "units": 1,
+      "charge": 120.0,
+      "insurancePaid": 69.6,
+      "patientOwes": 14.4
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 4,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 3,
+      "charge": 72.0,
+      "insurancePaid": 41.76,
+      "patientOwes": 8.64
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 2,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 6,
+      "charge": 90.0,
+      "insurancePaid": 52.2,
+      "patientOwes": 10.8
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 3,
+      "charge": 93.0,
+      "insurancePaid": 53.94,
+      "patientOwes": 11.16
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 1,
+      "charge": 22.0,
+      "insurancePaid": 12.76,
+      "patientOwes": 2.64
+    },
+    {
+      "serviceDate": "2026-08-18",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 2,
+      "charge": 50.0,
+      "insurancePaid": 29.0,
+      "patientOwes": 6.0
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "71045",
+      "codeSystem": "CPT",
+      "description": "Chest x-ray, single view",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.4,
+      "patientOwes": 45.6
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 1,
+      "charge": 310.0,
+      "insurancePaid": 179.8,
+      "patientOwes": 37.2
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "82962",
+      "codeSystem": "CPT",
+      "description": "Glucose, monitoring device",
+      "units": 3,
+      "charge": 54.0,
+      "insurancePaid": 31.32,
+      "patientOwes": 6.48
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "85610",
+      "codeSystem": "CPT",
+      "description": "Prothrombin time (PT/INR)",
+      "units": 1,
+      "charge": 78.0,
+      "insurancePaid": 45.24,
+      "patientOwes": 9.36
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 2,
+      "charge": 390.0,
+      "insurancePaid": 226.2,
+      "patientOwes": 46.8
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 3,
+      "charge": 294.0,
+      "insurancePaid": 170.52,
+      "patientOwes": 35.28
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 1,
+      "charge": 24.0,
+      "insurancePaid": 13.92,
+      "patientOwes": 2.88
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 1,
+      "charge": 28.0,
+      "insurancePaid": 16.24,
+      "patientOwes": 3.36
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "J1644",
+      "codeSystem": "HCPCS",
+      "description": "Heparin sodium, per 1000 units",
+      "units": 5,
+      "charge": 60.0,
+      "insurancePaid": 34.8,
+      "patientOwes": 7.2
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 1,
+      "charge": 15.0,
+      "insurancePaid": 8.7,
+      "patientOwes": 1.8
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 3,
+      "charge": 93.0,
+      "insurancePaid": 53.94,
+      "patientOwes": 11.16
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 3,
+      "charge": 66.0,
+      "insurancePaid": 38.28,
+      "patientOwes": 7.92
+    },
+    {
+      "serviceDate": "2026-08-19",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 1,
+      "charge": 25.0,
+      "insurancePaid": 14.5,
+      "patientOwes": 3.0
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "0200",
+      "codeSystem": "REVENUE",
+      "description": "ICU room and board",
+      "units": 1,
+      "charge": 6850.0,
+      "insurancePaid": 3973.0,
+      "patientOwes": 822.0
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "99233",
+      "codeSystem": "CPT",
+      "description": "Subsequent hospital care, high",
+      "units": 1,
+      "charge": 520.0,
+      "insurancePaid": 301.6,
+      "patientOwes": 62.4
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "97110",
+      "codeSystem": "CPT",
+      "description": "Therapeutic exercise, 15 min",
+      "units": 3,
+      "charge": 285.0,
+      "insurancePaid": 165.3,
+      "patientOwes": 34.2
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "36600",
+      "codeSystem": "CPT",
+      "description": "Arterial puncture, withdrawal",
+      "units": 1,
+      "charge": 210.0,
+      "insurancePaid": 121.8,
+      "patientOwes": 25.2
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "76937",
+      "codeSystem": "CPT",
+      "description": "US guidance, vascular access",
+      "units": 1,
+      "charge": 480.0,
+      "insurancePaid": 278.4,
+      "patientOwes": 57.6
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "80048",
+      "codeSystem": "CPT",
+      "description": "Basic metabolic panel",
+      "units": 1,
+      "charge": 215.0,
+      "insurancePaid": 124.7,
+      "patientOwes": 25.8
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "82803",
+      "codeSystem": "CPT",
+      "description": "Blood gases, arterial",
+      "units": 2,
+      "charge": 620.0,
+      "insurancePaid": 359.6,
+      "patientOwes": 74.4
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "83605",
+      "codeSystem": "CPT",
+      "description": "Lactate (lactic acid)",
+      "units": 1,
+      "charge": 118.0,
+      "insurancePaid": 68.44,
+      "patientOwes": 14.16
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "83735",
+      "codeSystem": "CPT",
+      "description": "Magnesium",
+      "units": 1,
+      "charge": 68.0,
+      "insurancePaid": 39.44,
+      "patientOwes": 8.16
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "84100",
+      "codeSystem": "CPT",
+      "description": "Phosphorus",
+      "units": 1,
+      "charge": 64.0,
+      "insurancePaid": 37.12,
+      "patientOwes": 7.68
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "84132",
+      "codeSystem": "CPT",
+      "description": "Potassium, serum",
+      "units": 1,
+      "charge": 59.0,
+      "insurancePaid": 34.22,
+      "patientOwes": 7.08
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.1,
+      "patientOwes": 11.4
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "85730",
+      "codeSystem": "CPT",
+      "description": "Partial thromboplastin time",
+      "units": 1,
+      "charge": 82.0,
+      "insurancePaid": 47.56,
+      "patientOwes": 9.84
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "87040",
+      "codeSystem": "CPT",
+      "description": "Blood culture",
+      "units": 1,
+      "charge": 195.0,
+      "insurancePaid": 113.1,
+      "patientOwes": 23.4
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "87070",
+      "codeSystem": "CPT",
+      "description": "Culture, bacterial, other source",
+      "units": 1,
+      "charge": 175.0,
+      "insurancePaid": 101.5,
+      "patientOwes": 21.0
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "93005",
+      "codeSystem": "CPT",
+      "description": "ECG tracing only",
+      "units": 1,
+      "charge": 160.0,
+      "insurancePaid": 92.8,
+      "patientOwes": 19.2
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "94640",
+      "codeSystem": "CPT",
+      "description": "Nebulizer treatment",
+      "units": 1,
+      "charge": 98.0,
+      "insurancePaid": 56.84,
+      "patientOwes": 11.76
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "96365",
+      "codeSystem": "CPT",
+      "description": "IV infusion, initial hour",
+      "units": 1,
+      "charge": 410.0,
+      "insurancePaid": 237.8,
+      "patientOwes": 49.2
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "A4216",
+      "codeSystem": "HCPCS",
+      "description": "Sterile water/saline, 10 ml",
+      "units": 2,
+      "charge": 12.0,
+      "insurancePaid": 6.96,
+      "patientOwes": 1.44
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 6,
+      "charge": 144.0,
+      "insurancePaid": 83.52,
+      "patientOwes": 17.28
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "J1170",
+      "codeSystem": "HCPCS",
+      "description": "Hydromorphone, up to 4 mg",
+      "units": 1,
+      "charge": 28.0,
+      "insurancePaid": 16.24,
+      "patientOwes": 3.36
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "J2250",
+      "codeSystem": "HCPCS",
+      "description": "Midazolam, per 1 mg",
+      "units": 3,
+      "charge": 45.0,
+      "insurancePaid": 26.1,
+      "patientOwes": 5.4
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "J2270",
+      "codeSystem": "HCPCS",
+      "description": "Morphine sulfate, up to 10 mg",
+      "units": 2,
+      "charge": 62.0,
+      "insurancePaid": 35.96,
+      "patientOwes": 7.44
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "J2405",
+      "codeSystem": "HCPCS",
+      "description": "Ondansetron, per 1 mg",
+      "units": 4,
+      "charge": 88.0,
+      "insurancePaid": 51.04,
+      "patientOwes": 10.56
+    },
+    {
+      "serviceDate": "2026-08-20",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 1,
+      "charge": 25.0,
+      "insurancePaid": 14.5,
+      "patientOwes": 3.0
+    }
+  ],
+  "totals": {
+    "charges": 227071.0,
+    "adjustments": 68121.3,
+    "insurancePaid": 131701.18,
+    "patientResponsibility": 27248.52
+  },
+  "plantedIssues": [
+    {
+      "type": "DUPLICATE_CHARGE",
+      "lineIndexes": [
+        55,
+        56
+      ],
+      "note": "CT abdomen/pelvis 74177 billed twice on 08/05/2026."
+    },
+    {
+      "type": "SERVICE_NOT_RECEIVED_CHECK",
+      "lineIndexes": [
+        210
+      ],
+      "note": "Two units of red blood cells billed on 08/11/2026 with no transfusion administration charge; confirm a transfusion happened."
+    }
+  ],
+  "tags": [
+    "hospital",
+    "inpatient",
+    "icu",
+    "long"
+  ]
+}

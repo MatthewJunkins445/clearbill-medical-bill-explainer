@@ -1,0 +1,31 @@
+SYNTHETIC SAMPLE - NOT A REAL BILL - ALL NAMES AND NUMBERS ARE FICTIONAL
+
+FICTITIA HEALTH ASSURANCE CO.
+Claims Dept, 77 Nowhere Plaza, Fauxville, PA 17996
+Questions: 1-717-555-0161
+
+EXPLANATION OF BENEFITS - THIS IS NOT A BILL
+
+Prepared for: WILHELMINA CRUMPET
+6 Teacup Terrace Apt 2
+Fauxville, PA 17997
+
+Patient: Wilhelmina Crumpet   Born: 30 DEC 1990
+ID: FHA-0262899363   Claim: FH075248930178
+Rendering provider: Fauxville Emergency Physicians (NPI 1858394120)
+Place of service: Saint Placeholder Memorial Hospital, emergency department
+Network status: OUT OF NETWORK
+Diagnosis: S01.81XA Laceration of face, initial encounter
+
+DATE       CODE    SERVICE                            QTY      BILLED  PLAN PAID   DISCOUNT    YOU OWE
+------------------------------------------------------------------------------------------------------
+08/22/2026 99284   ER visit, moderate complexity        1    1,450.00     310.00       0.00   1,140.00
+08/22/2026 12001   Simple repair, 2.5 cm or less        1      520.00     140.00       0.00     380.00
+
+                                                    TOTAL BILLED                      1,970.00
+                                                    TOTAL DISCOUNTS                       0.00
+                                                    TOTAL PLAN PAID                     450.00
+                                                    TOTAL YOU MAY OWE                 1,520.00
+
+Out-of-network providers may bill you for the difference between their charge and our allowed
+amount. Your emergency room copay of 200.00 is included in YOU OWE.

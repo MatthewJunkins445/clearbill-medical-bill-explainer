@@ -1,0 +1,34 @@
+SYNTHETIC SAMPLE - NOT A REAL BILL - ALL NAMES AND NUMBERS ARE FICTIONAL
+
+Mount Hypothetical Regional Medical Center
+9 Summit Placeholder Dr
+Nowhere Falls, CO 81399
+(970) 555-0133
+
+PATIENT STATEMENT - OUTPATIENT IMAGING
+
+MARIGOLD PENNYWHISTLE
+512 Quince Cottage Ln
+Nowhere Falls, CO 81398
+
+Patient: Marigold Pennywhistle    Date of birth: July 9, 1988
+Account no.: MH-377347257    Statement date: 10/30/2026
+Ordering physician: Dr. Leopold Wigglesworth   NPI 1796429283
+Reason for exam: M25.561 Pain in right knee
+Insurance: Nonesuch Benefit Trust   Member NBT03125518
+Insurance applied to annual deductible. Remaining deductible after this claim: 1,756.00
+E-statement sent to marigold.p@example.org
+
+DATE       CODE    DESCRIPTION                        QTY      CHARGE   INS PAID     ADJUST    PT OWES
+------------------------------------------------------------------------------------------------------
+10/14/2026 73721   MRI knee joint w/o contrast          1    3,120.00       0.00   1,248.00   1,872.00
+10/14/2026 A9579   Gadolinium contrast, per ml         15      270.00       0.00     108.00     162.00
+10/14/2026 G0463   Hospital outpatient clinic visit     1      350.00       0.00     140.00     210.00
+
+                                                    TOTAL CHARGES                     3,840.00
+                                                    TOTAL ADJUSTMENTS                 1,496.00
+                                                    TOTAL INSURANCE PAID                  0.00
+                                                    PATIENT RESPONSIBILITY            2,244.00
+
+Please pay 2,244.00 by 11/29/2026.
+Pay at https://billing.example.org/mhrmc or call (970) 555-0133.

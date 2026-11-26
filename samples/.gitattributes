@@ -1,0 +1,5 @@
+# bill.txt offsets are byte-exact: never convert line endings.
+bills/**/bill.txt -text
+bills/**/*.json text eol=lf
+*.pdf binary
+*.png binary

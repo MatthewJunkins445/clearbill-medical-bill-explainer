@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "id": "itemized-inpatient-appendectomy",
+  "synthetic": true,
+  "kind": "itemized_bill",
+  "description": "Two-day inpatient stay for a laparoscopic appendectomy with lab unbundling, an out-of-network anesthesia charge and a personal-care kit.",
+  "files": {
+    "text": "bill.txt",
+    "pdf": "bill.pdf"
+  },
+  "approxTokens": 742,
+  "pii": [
+    {
+      "category": "FACILITY_NAME",
+      "value": "Saint Placeholder Memorial Hospital",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 74,
+          "end": 109
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "1200 Imaginary Ave\nFauxville, PA 17999",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 110,
+          "end": 148
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(717) 555-0122",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 176,
+          "end": 190
+        },
+        {
+          "start": 2795,
+          "end": 2809
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "Odessa Thimbleton",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 231,
+          "end": 248
+        },
+        {
+          "start": 579,
+          "end": 596
+        }
+      ]
+    },
+    {
+      "category": "DOB",
+      "value": "1974-08-02",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 254,
+          "end": 264
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "SPM84979753",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 273,
+          "end": 284
+        }
+      ]
+    },
+    {
+      "category": "ACCOUNT_NUMBER",
+      "value": "7043-864707",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 297,
+          "end": 308
+        },
+        {
+          "start": 2934,
+          "end": 2945
+        }
+      ]
+    },
+    {
+      "category": "PROVIDER_NAME",
+      "value": "Dr. Ambrose Fiddlesticks",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 389,
+          "end": 413
+        }
+      ]
+    },
+    {
+      "category": "OTHER_ID",
+      "value": "1372964479",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 419,
+          "end": 429
+        }
+      ]
+    },
+    {
+      "category": "DIAGNOSIS",
+      "value": "K35.80 Acute appendicitis, unspecified",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 442,
+          "end": 480
+        }
+      ]
+    },
+    {
+      "category": "MEMBER_ID",
+      "value": "FHA-6762021072",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 539,
+          "end": 553
+        }
+      ]
+    },
+    {
+      "category": "ADDRESS",
+      "value": "3 Thimble Row\nFauxville, PA 17998",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 597,
+          "end": 630
+        }
+      ]
+    },
+    {
+      "category": "PHONE",
+      "value": "(717) 555-0133",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 654,
+          "end": 668
+        }
+      ]
+    },
+    {
+      "category": "FACILITY_NAME",
+      "value": "Fauxville Anesthesia Associates",
+      "mustRedact": false,
+      "occurrences": [
+        {
+          "start": 1825,
+          "end": 1856
+        }
+      ]
+    },
+    {
+      "category": "PATIENT_NAME",
+      "value": "THIMBLETON, ODESSA",
+      "mustRedact": true,
+      "occurrences": [
+        {
+          "start": 2908,
+          "end": 2926
+        }
+      ]
+    }
+  ],
+  "mustKeep": [
+    {
+      "value": "0450",
+      "reason": "REVENUE code"
+    },
+    {
+      "value": "74177",
+      "reason": "CPT code"
+    },
+    {
+      "value": "80053",
+      "reason": "CPT code"
+    },
+    {
+      "value": "82947",
+      "reason": "CPT code"
+    },
+    {
+      "value": "84295",
+      "reason": "CPT code"
+    },
+    {
+      "value": "82565",
+      "reason": "CPT code"
+    },
+    {
+      "value": "85025",
+      "reason": "CPT code"
+    },
+    {
+      "value": "44970",
+      "reason": "CPT code"
+    },
+    {
+      "value": "00840",
+      "reason": "CPT code"
+    },
+    {
+      "value": "0120",
+      "reason": "REVENUE code"
+    },
+    {
+      "value": "J0696",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "99070",
+      "reason": "CPT code"
+    },
+    {
+      "value": "J7050",
+      "reason": "HCPCS code"
+    },
+    {
+      "value": "09/07/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "09/08/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "09/09/2026",
+      "reason": "service date"
+    },
+    {
+      "value": "1,850.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "4,200.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "380.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "65.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "58.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "62.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "95.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "12,500.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "3,600.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "6,400.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "96.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "48.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "75.00",
+      "reason": "line charge"
+    },
+    {
+      "value": "29,429.00",
+      "reason": "total charges"
+    },
+    {
+      "value": "8,160.00",
+      "reason": "total adjustments"
+    },
+    {
+      "value": "16,380.00",
+      "reason": "total insurancePaid"
+    },
+    {
+      "value": "4,889.00",
+      "reason": "total patientResponsibility"
+    }
+  ],
+  "lineItems": [
+    {
+      "serviceDate": "2026-09-07",
+      "code": "0450",
+      "codeSystem": "REVENUE",
+      "description": "Emergency room, general",
+      "units": 1,
+      "charge": 1850.0,
+      "insurancePaid": 1200.0,
+      "patientOwes": 100.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "74177",
+      "codeSystem": "CPT",
+      "description": "CT abd/pelvis with contrast",
+      "units": 1,
+      "charge": 4200.0,
+      "insurancePaid": 2600.0,
+      "patientOwes": 200.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "80053",
+      "codeSystem": "CPT",
+      "description": "Comprehensive metabolic panel",
+      "units": 1,
+      "charge": 380.0,
+      "insurancePaid": 220.0,
+      "patientOwes": 30.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "82947",
+      "codeSystem": "CPT",
+      "description": "Glucose, quantitative, blood",
+      "units": 1,
+      "charge": 65.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 65.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "84295",
+      "codeSystem": "CPT",
+      "description": "Sodium, serum",
+      "units": 1,
+      "charge": 58.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 58.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "82565",
+      "codeSystem": "CPT",
+      "description": "Creatinine, blood",
+      "units": 1,
+      "charge": 62.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 62.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "85025",
+      "codeSystem": "CPT",
+      "description": "CBC with automated diff",
+      "units": 1,
+      "charge": 95.0,
+      "insurancePaid": 55.0,
+      "patientOwes": 10.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "44970",
+      "codeSystem": "CPT",
+      "description": "Laparoscopic appendectomy",
+      "units": 1,
+      "charge": 12500.0,
+      "insurancePaid": 8000.0,
+      "patientOwes": 500.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "00840",
+      "codeSystem": "CPT",
+      "description": "Anesthesia, lower abdomen by Fauxville Anesthesia Associates (out of network)",
+      "units": 1,
+      "charge": 3600.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 3600.0
+    },
+    {
+      "serviceDate": "2026-09-07",
+      "code": "0120",
+      "codeSystem": "REVENUE",
+      "description": "Room and board, semi-private",
+      "units": 2,
+      "charge": 6400.0,
+      "insurancePaid": 4200.0,
+      "patientOwes": 200.0
+    },
+    {
+      "serviceDate": "2026-09-08",
+      "code": "J0696",
+      "codeSystem": "HCPCS",
+      "description": "Ceftriaxone sodium, 250 mg",
+      "units": 4,
+      "charge": 96.0,
+      "insurancePaid": 60.0,
+      "patientOwes": 6.0
+    },
+    {
+      "serviceDate": "2026-09-08",
+      "code": "99070",
+      "codeSystem": "CPT",
+      "description": "Personal care / admission kit",
+      "units": 1,
+      "charge": 48.0,
+      "insurancePaid": 0.0,
+      "patientOwes": 48.0
+    },
+    {
+      "serviceDate": "2026-09-09",
+      "code": "J7050",
+      "codeSystem": "HCPCS",
+      "description": "Normal saline, 250 cc",
+      "units": 3,
+      "charge": 75.0,
+      "insurancePaid": 45.0,
+      "patientOwes": 10.0
+    }
+  ],
+  "totals": {
+    "charges": 29429.0,
+    "adjustments": 8160.0,
+    "insurancePaid": 16380.0,
+    "patientResponsibility": 4889.0
+  },
+  "plantedIssues": [
+    {
+      "type": "POSSIBLE_UNBUNDLING",
+      "lineIndexes": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "note": "Glucose, sodium and creatinine are components of the comprehensive metabolic panel 80053 billed the same day; the insurer paid $0 on them and the patient is being billed in full."
+    },
+    {
+      "type": "OUT_OF_NETWORK_SURPRISE",
+      "lineIndexes": [
+        8
+      ],
+      "note": "Out-of-network anesthesia at an in-network hospital. Under the No Surprises Act the patient should generally owe only in-network cost sharing."
+    },
+    {
+      "type": "OTHER",
+      "lineIndexes": [
+        11
+      ],
+      "note": "Routine personal-care/admission kit billed separately; such supplies are normally included in the room and board charge."
+    }
+  ],
+  "tags": [
+    "hospital",
+    "inpatient",
+    "surgery",
+    "insured"
+  ]
+}
